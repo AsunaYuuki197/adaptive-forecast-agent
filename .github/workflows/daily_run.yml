@@ -15,12 +15,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Build and Run Docker Container
+      - name: Build Docker Image
+        run: |
+          docker build -t adaptive-forecast-agent .
+
+      - name: Run Docker Container
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: |
-          docker build -t adaptive-forecast-agent .
+          docker run \
             -e GOOGLE_API_KEY=$GOOGLE_API_KEY \
             -e TAVILY_API_KEY=$TAVILY_API_KEY \
             -v ${{ github.workspace }}/reports:/app/reports \
