@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 23.293359375,
+        "RMSE": 28.08698437450454,
+        "MAPE": 0.0008851660718724799
+    },
+    "metrics_holdout_final": {
+        "MAE": 21.03625,
+        "RMSE": 25.28269687657033,
+        "MAPE": 0.0007992827873512724
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a narrow, sideways trend that lacks sensitivity to current macroeconomic stressors.",
+        "diagnose": "The model is likely overfitted, evidenced by the extremely low MAPE (0.0009) and unnaturally narrow confidence intervals.",
+        "contextualize": "Vietnam's manufacturing sector is growing, but supply chain disruptions and inflation represent significant risk factors for the VND not captured by the current model.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26314.451171875,
+            26292.2578125,
+            26269.55078125,
+            26321.287109375,
+            26273.34375,
+            26292.01953125,
+            26293.890625
+        ],
+        "80_ci_lower": [
+            26221.255859375,
+            26221.255859375,
+            26221.255859375,
+            26221.255859375,
+            26220.412109375,
+            26221.255859375,
+            26221.255859375
+        ],
+        "80_ci_upper": [
+            26343.873046875,
+            26318.474609375,
+            26304.990234375,
+            26333.087890625,
+            26292.873046875,
+            26327.583984375,
+            26313.849609375
+        ],
+        "95_ci_lower": [
+            26052.86328125,
+            26052.86328125,
+            26052.86328125,
+            26052.86328125,
+            26052.86328125,
+            26052.86328125,
+            26052.86328125
+        ],
+        "95_ci_upper": [
+            26330.064453125,
+            26340.609375,
+            26340.919921875,
+            26340.6015625,
+            26341.318359375,
+            26340.375,
+            26342.15234375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate May 2026 and recent economic news Vietnam May 2026"
+        ],
+        "key_findings": "Vietnam is seeing strong trade and manufacturing growth (22.2% YoY increase in early 2026), but faces inflationary pressures, supply chain disruptions from Middle East conflict, and a manufacturing PMI drop to 50.5 in April. The USD/VND pair reflects these global headwinds and domestic manufacturing expansion needs."
+    }
+}

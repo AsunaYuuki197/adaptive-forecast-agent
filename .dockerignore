@@ -1,0 +1,10 @@
+.git
+.venv
+.env
+.vscode
+.DS_Store
+__pycache__
+*.egg-info
+build
+dist
+Dockerfile

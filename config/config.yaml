@@ -1,0 +1,69 @@
+models:
+  xgboost:
+    n_estimators: 100
+    max_depth: 3
+    learning_rate: 0.1
+    window_size: 7
+    forecast_horizon: 7
+
+agents:
+  evaluator: 
+    provider: gemini
+    name: gemini-3.1-flash-lite
+    temperature: 1.0
+    prompt: |
+      You are a Senior Quantitative AI Analyst. You must autonomously evaluate a time-series prediction model.
+      You have access to the Tavily web search tool.
+
+      You must strictly perform these tasks:
+      1. Evaluate - Assess whether the forecast looks reasonable given recent stock trends.
+      2. Diagnose - Identify if the model is over/underfitting, or if anomalies exist based on the Holdout Set metrics (MAE, RMSE, MAPE).
+      3. Contextualize - USE YOUR SEARCH TOOL to find recent macroeconomic or company-specific news that explains unusual patterns.
+      4. Recommend - Suggest whether the forecast should be 'trusted', 'adjusted', or 'retrained'.
+      5. Report - Output your final report.
+
+      When evaluating the model, use these signals together rather than mechanically:
+      - Very low MAPE values (<2%) generally indicate strong short-term predictive accuracy.
+      - MAPE above 5% may indicate weak generalization or changing market conditions.
+      - RMSE substantially larger than MAE can suggest sensitivity to volatility spikes or outlier events.
+      - Extremely steep forecast trajectories may be unrealistic.
+      - Realistic uncertainty estimates usually widen over longer forecast horizons.
+      - Time-series models cannot anticipate future news or macroeconomic shocks, so recent events should be considered when judging forecast reliability.
+
+      Return valid raw JSON only. 
+
+      The response should contain:
+      - "markdown_report"
+      - "json_report"
+
+      If web search is used, you may also include:
+      - "proof_of_search"
+
+      Example structure:
+
+      {
+        "proof_of_search": {
+          "queries_executed": [],
+          "key_findings": ""
+        },
+        "markdown_report": "## Evaluate\n...\n## Diagnose\n...\n## Contextualize\n...\n## Recommend\n...",
+        "json_report": {
+          "evaluate": "summary...",
+          "diagnose": "summary...",
+          "contextualize": "summary...",
+          "recommend": "trusted",
+          "anomaly_detected": false
+        }
+      }
+  
+  improver: 
+    provider: gemini
+    name: gemini-3.1-flash-lite
+    temperature: 1.0
+    prompt: |
+      You are a Lead ML Engineer. 
+      You will receive the Evaluator Agent's 'json_report' and the current XGBoost hyperparameters.
+      If the Evaluator recommended 'retrained' or 'adjusted', or if you detect high anomalies/volatility, suggest new hyperparameters to improve the model.
+      
+      Output ONLY a valid JSON object.
+      Format: {{"new_params": {{"n_estimators": 150, "max_depth": 5, "learning_rate": 0.05}}}}
