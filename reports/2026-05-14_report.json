@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 24.584375,
+        "RMSE": 29.790475232039874,
+        "MAPE": 0.0009341795183160758
+    },
+    "metrics_holdout_final": {
+        "MAE": 20.619310461956523,
+        "RMSE": 26.710197765737213,
+        "MAPE": 0.0007833697057881042
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a narrow, range-bound oscillation that lacks the expected dynamism of the USD/VND market in the current economic climate.",
+        "diagnose": "The model displays signs of overfitting (extremely low MAPE) and potentially over-smoothing, failing to account for market volatility reflected in the RMSE/MAE ratio.",
+        "contextualize": "Regional economic cooling and global currency strength against Asian markets suggest a need for higher sensitivity to volatility than the current model displays.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26320.369140625,
+            26320.08984375,
+            26318.333984375,
+            26307.916015625,
+            26316.681640625,
+            26309.041015625,
+            26300.509765625
+        ],
+        "80_ci_lower": [
+            26262.259765625,
+            26263.646484375,
+            26262.259765625,
+            26263.646484375,
+            26263.693359375,
+            26263.556640625,
+            26263.814453125
+        ],
+        "80_ci_upper": [
+            26342.36328125,
+            26330.951171875,
+            26334.787109375,
+            26334.232421875,
+            26339.677734375,
+            26343.912109375,
+            26334.60546875
+        ],
+        "95_ci_lower": [
+            25967.14453125,
+            25967.14453125,
+            25967.14453125,
+            25967.14453125,
+            25967.14453125,
+            25967.14453125,
+            25967.14453125
+        ],
+        "95_ci_upper": [
+            26348.048828125,
+            26348.048828125,
+            26338.87109375,
+            26348.048828125,
+            26348.048828125,
+            26348.048828125,
+            26338.87109375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate May 2026 trends news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been under pressure with central rates reported near 25,100 in early 2026. Global currency markets are currently reacting to geopolitical tensions and regional economic shifts, specifically regarding the Chinese yuan and broader ASEAN economic cooling. The forecast provided for VND=X suggests a very tight, oscillating range between 26,250 and 26,320, which appears to be a consolidation pattern."
+    }
+}
