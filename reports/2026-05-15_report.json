@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 26.16609375,
+        "RMSE": 30.535978145520588,
+        "MAPE": 0.0009941255292487878
+    },
+    "metrics_holdout_final": {
+        "MAE": 26.16609375,
+        "RMSE": 30.535978145520588,
+        "MAPE": 0.0009941255292487878
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast exhibits a realistic but very conservative sideways movement, typical of high-frequency FX pairs in stable market conditions.",
+        "diagnose": "The model appears to be well-behaved but highly smoothed. Low MAPE suggests potential for overfitting to local persistence; RMSE/MAE ratio indicates low sensitivity to extreme volatility.",
+        "contextualize": "Vietnam's manufacturing sector remains robust in May 2026, with no signs of immediate currency instability, providing a fundamental basis for the model's low-volatility projection.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 120,
+        "max_depth": 4,
+        "learning_rate": 0.08
+    },
+    "7_day_forecast": {
+        "point": [
+            26310.322265625,
+            26247.25,
+            26307.423828125,
+            26304.80859375,
+            26305.955078125,
+            26303.8515625,
+            26291.240234375
+        ],
+        "80_ci_lower": [
+            26283.859375,
+            26257.146484375,
+            26299.212890625,
+            26286.166015625,
+            26274.71875,
+            26279.76953125,
+            26305.02734375
+        ],
+        "80_ci_upper": [
+            26332.61328125,
+            26303.865234375,
+            26322.93359375,
+            26335.6015625,
+            26335.412109375,
+            26332.765625,
+            26340.216796875
+        ],
+        "95_ci_lower": [
+            26184.16015625,
+            26184.16015625,
+            26184.16015625,
+            26184.16015625,
+            26184.16015625,
+            26184.16015625,
+            26184.16015625
+        ],
+        "95_ci_upper": [
+            26340.0078125,
+            26303.951171875,
+            26332.205078125,
+            26340.75,
+            26336.15625,
+            26336.15625,
+            26349.244140625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X Vietnamese Dong USD exchange rate news May 2026"
+        ],
+        "key_findings": "The exchange rate for VND/USD has been trending in the 25,100 range as of March/May 2026. Vietnam is experiencing strong manufacturing-led growth. No major negative economic shocks were identified that would justify a sudden spike or crash in the VND=X pair, suggesting current market conditions are stable."
+    }
+}
