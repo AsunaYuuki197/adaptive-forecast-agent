@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 22.78390625,
+        "RMSE": 28.02658268783769,
+        "MAPE": 0.0008657346924149794
+    },
+    "metrics_holdout_final": {
+        "MAE": 23.346171875,
+        "RMSE": 27.190614430204423,
+        "MAPE": 0.0008869136320040558
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a sharp depreciation of the VND that is inconsistent with current market benchmarks (~25,100).",
+        "diagnose": "The extremely low MAPE (0.0009) combined with a high RMSE/MAE ratio indicates potential overfitting to noise and poor generalization.",
+        "contextualize": "No fundamental macroeconomic news supports the predicted jump to 26,300. The forecast reflects an unrealistic deviation from current spot rates.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 80,
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26307.744140625,
+            26313.072265625,
+            26309.310546875,
+            26310.373046875,
+            26326.595703125,
+            26321.025390625,
+            26317.744140625
+        ],
+        "80_ci_lower": [
+            26224.283203125,
+            26224.283203125,
+            26224.283203125,
+            26224.283203125,
+            26224.283203125,
+            26224.283203125,
+            26224.283203125
+        ],
+        "80_ci_upper": [
+            26326.197265625,
+            26338.365234375,
+            26340.361328125,
+            26337.515625,
+            26355.875,
+            26354.66015625,
+            26337.892578125
+        ],
+        "95_ci_lower": [
+            26031.255859375,
+            26031.255859375,
+            26031.255859375,
+            26031.255859375,
+            26031.255859375,
+            26031.255859375,
+            26031.255859375
+        ],
+        "95_ci_upper": [
+            26336.275390625,
+            26343.380859375,
+            26340.654296875,
+            26340.361328125,
+            26352.83984375,
+            26354.7109375,
+            26340.361328125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X current price and market trend May 2026"
+        ],
+        "key_findings": "The exchange rate for VND=X has historically traded around 25,100. The provided forecast (>$26,300) represents a significant upward deviation (depreciation of the VND) from the current market anchor of approximately 25,102. There is no immediate macroeconomic or company-specific news in May 2026 suggesting a sudden 5% depreciation of the Vietnamese Dong."
+    }
+}
