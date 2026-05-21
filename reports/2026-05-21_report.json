@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 24.00140625,
+        "RMSE": 29.590005084131132,
+        "MAPE": 0.0009118891858767586
+    },
+    "metrics_holdout_final": {
+        "MAE": 21.529296875,
+        "RMSE": 25.410748416788483,
+        "MAPE": 0.0008178250266542489
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows an unrealistic, flat trajectory that fails to reflect currency market dynamics.",
+        "diagnose": "High evidence of overfitting; the model is producing a naive mean-reversion output despite low historical MAPE.",
+        "contextualize": "The model lacks exogenous inputs to account for the current macroeconomic environment (FDI inflows in Vietnam vs. US market volatility).",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26312.306640625,
+            26313.462890625,
+            26331.7890625,
+            26328.205078125,
+            26316.783203125,
+            26319.146484375,
+            26317.083984375
+        ],
+        "80_ci_lower": [
+            26248.666015625,
+            26248.666015625,
+            26248.666015625,
+            26248.666015625,
+            26248.666015625,
+            26248.666015625,
+            26248.666015625
+        ],
+        "80_ci_upper": [
+            26324.38671875,
+            26331.59375,
+            26345.25390625,
+            26338.109375,
+            26336.51953125,
+            26337.16796875,
+            26331.4296875
+        ],
+        "95_ci_lower": [
+            26104.18359375,
+            26104.18359375,
+            26104.18359375,
+            26104.18359375,
+            26104.18359375,
+            26104.18359375,
+            26104.18359375
+        ],
+        "95_ci_upper": [
+            26339.1328125,
+            26340.265625,
+            26347.1015625,
+            26339.681640625,
+            26340.2890625,
+            26340.2421875,
+            26325.349609375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend May 2026 news"
+        ],
+        "key_findings": "The Vietnamese Dong is supported by steady FDI inflows, particularly in high-tech manufacturing and the textile sector, as of May 2026. The USD/VND exchange rate is reflecting macroeconomic stability in Vietnam. Global markets (S&P 500, Nasdaq) hit record highs mid-May 2026, driven by tech shares, while oil prices and Fed policy remain fluid, creating potential volatility for emerging market currencies."
+    }
+}
