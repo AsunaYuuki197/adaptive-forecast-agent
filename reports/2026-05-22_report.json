@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 25.19609375,
+        "RMSE": 30.1191436368222,
+        "MAPE": 0.0009571519037443434
+    },
+    "metrics_holdout_final": {
+        "MAE": 24.196328125,
+        "RMSE": 29.431441260149974,
+        "MAPE": 0.0009191523672255407
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is numerically plausible but assumes a state of stability that may not align with current high-volatility global conditions.",
+        "diagnose": "High risk of overfitting suggested by extremely low MAPE. The model may be overly confident, failing to capture the potential for larger swings in FX markets.",
+        "contextualize": "External macro pressures, specifically USD strength driven by geopolitical risk, are likely to exert more influence than the historical time-series patterns suggest.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26306.685546875,
+            26324.37109375,
+            26336.49609375,
+            26334.177734375,
+            26320.322265625,
+            26304.0,
+            26322.2109375
+        ],
+        "80_ci_lower": [
+            26267.82421875,
+            26267.82421875,
+            26267.82421875,
+            26267.82421875,
+            26267.82421875,
+            26267.82421875,
+            26267.82421875
+        ],
+        "80_ci_upper": [
+            26330.49609375,
+            26346.259765625,
+            26343.232421875,
+            26337.970703125,
+            26339.2421875,
+            26339.15625,
+            26347.599609375
+        ],
+        "95_ci_lower": [
+            26101.27734375,
+            26101.27734375,
+            26101.27734375,
+            26101.27734375,
+            26101.27734375,
+            26101.27734375,
+            26101.27734375
+        ],
+        "95_ci_upper": [
+            26340.10546875,
+            26345.517578125,
+            26342.78125,
+            26340.10546875,
+            26340.10546875,
+            26344.556640625,
+            26348.02734375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate news May 2026"
+        ],
+        "key_findings": "The US dollar is experiencing upward pressure due to rate-hike expectations and geopolitical uncertainty (specifically ongoing Middle East conflict). Global markets are facing volatility, which generally supports the USD against emerging market currencies like the Vietnamese Dong (VND)."
+    }
+}
