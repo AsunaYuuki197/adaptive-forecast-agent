@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 26.051328125,
+        "RMSE": 29.50898730689791,
+        "MAPE": 0.0009895365447783959
+    },
+    "metrics_holdout_final": {
+        "MAE": 22.74984375,
+        "RMSE": 26.128876052316606,
+        "MAPE": 0.0008640666660001097
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stagnant, narrow range that ignores observed currency volatility.",
+        "diagnose": "High likelihood of overfitting; extremely low MAPE (0.0010) is suspicious for daily exchange rate data.",
+        "contextualize": "Model ignores significant structural headwinds for the VND, including a Q1 2026 trade deficit and global USD strength.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26316.6796875,
+            26318.44921875,
+            26316.1875,
+            26319.947265625,
+            26328.12890625,
+            26316.25,
+            26307.013671875
+        ],
+        "80_ci_lower": [
+            26240.689453125,
+            26240.689453125,
+            26240.689453125,
+            26240.689453125,
+            26240.689453125,
+            26240.689453125,
+            26240.689453125
+        ],
+        "80_ci_upper": [
+            26325.439453125,
+            26321.38671875,
+            26328.888671875,
+            26332.33984375,
+            26340.5234375,
+            26332.61328125,
+            26320.529296875
+        ],
+        "95_ci_lower": [
+            26112.6171875,
+            26112.6171875,
+            26112.6171875,
+            26112.6171875,
+            26112.6171875,
+            26112.6171875,
+            26112.6171875
+        ],
+        "95_ci_upper": [
+            26336.0390625,
+            26333.56640625,
+            26329.548828125,
+            26335.400390625,
+            26346.890625,
+            26336.8828125,
+            26334.3359375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news May 2026"
+        ],
+        "key_findings": "The USD remains strong against global currencies (six-week highs), driven by expectations of 'higher for longer' US interest rates. Vietnam's economy is showing strong GDP growth (7.8% YoY in Q1 2026), but the country has recorded its first quarterly trade deficit in five years, exerting pressure on the VND, which has weakened by over 3% YTD."
+    }
+}
