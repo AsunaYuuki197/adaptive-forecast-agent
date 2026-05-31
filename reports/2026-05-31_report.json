@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 26.857578125,
+        "RMSE": 30.433363081829437,
+        "MAPE": 0.0010203706030452897
+    },
+    "metrics_holdout_final": {
+        "MAE": 26.277734375,
+        "RMSE": 28.826635931329754,
+        "MAPE": 0.0009983046564569996
+    },
+    "agent_evaluation": {
+        "evaluate": "Trajectory is directionally consistent with current macroeconomic trends for the VND, showing mild depreciation.",
+        "diagnose": "Possible overfitting indicated by an abnormally low MAPE (0.0010). RMSE is slightly higher than MAE, suggesting moderate sensitivity to volatility.",
+        "contextualize": "Recent trade deficits and geopolitical tensions (oil prices) are exerting downward pressure on the VND. Forecast does not incorporate these external shocks.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26330.6953125,
+            26329.07421875,
+            26322.283203125,
+            26298.298828125,
+            26299.962890625,
+            26282.208984375,
+            26265.62109375
+        ],
+        "80_ci_lower": [
+            26260.736328125,
+            26255.642578125,
+            26257.833984375,
+            26255.51171875,
+            26251.568359375,
+            26239.255859375,
+            26243.654296875
+        ],
+        "80_ci_upper": [
+            26325.0,
+            26334.869140625,
+            26333.7109375,
+            26323.09765625,
+            26315.677734375,
+            26290.99609375,
+            26300.1328125
+        ],
+        "95_ci_lower": [
+            26125.962890625,
+            26125.962890625,
+            26125.962890625,
+            26125.962890625,
+            26125.962890625,
+            26125.962890625,
+            26125.962890625
+        ],
+        "95_ci_upper": [
+            26315.111328125,
+            26327.3203125,
+            26336.072265625,
+            26318.396484375,
+            26327.31640625,
+            26321.23828125,
+            26324.3046875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate news May 2026"
+        ],
+        "key_findings": "The Vietnamese Dong (VND) has been under pressure, weakening by over 3% against the USD in 2026. Macroeconomic reports indicate trade deficits and geopolitical tensions (specifically rising oil prices) as key factors. Current market context involves large-scale IPOs and efforts to maintain economic stability despite an uncertain global environment."
+    }
+}
