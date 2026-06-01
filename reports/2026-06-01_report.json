@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.989375,
+        "RMSE": 33.032712506241744,
+        "MAPE": 0.0010635305009595083
+    },
+    "metrics_holdout_final": {
+        "MAE": 24.066640625,
+        "RMSE": 27.54681805410574,
+        "MAPE": 0.0009144776577108515
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a tight, mean-reverting range-bound trend, failing to account for potential volatility spikes.",
+        "diagnose": "The extremely low MAPE (0.11%) suggests potential overfitting to historical noise. The model likely underestimates variance in a changing geopolitical environment.",
+        "contextualize": "Recent developments regarding U.S.-Vietnam trade relations and geopolitical volatility in the Middle East create significant risks to the current currency stability, which the model does not reflect.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26339.09375,
+            26327.951171875,
+            26295.578125,
+            26311.701171875,
+            26280.701171875,
+            26310.380859375,
+            26260.849609375
+        ],
+        "80_ci_lower": [
+            26292.599609375,
+            26278.529296875,
+            26270.427734375,
+            26266.767578125,
+            26231.849609375,
+            26270.619140625,
+            26237.583984375
+        ],
+        "80_ci_upper": [
+            26335.970703125,
+            26331.099609375,
+            26323.927734375,
+            26331.80859375,
+            26286.36328125,
+            26332.474609375,
+            26286.921875
+        ],
+        "95_ci_lower": [
+            25998.10546875,
+            25998.10546875,
+            25998.10546875,
+            25998.10546875,
+            25998.10546875,
+            25998.10546875,
+            25998.10546875
+        ],
+        "95_ci_upper": [
+            26348.08203125,
+            26340.267578125,
+            26339.123046875,
+            26345.396484375,
+            26341.603515625,
+            26340.505859375,
+            26273.744140625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news June 2026"
+        ],
+        "key_findings": "The USD/VND market is currently sensitive to geopolitical tensions involving the U.S. and Iran, as well as trade-related concerns, specifically U.S. tariff threats following Vietnam's designation as a 'priority foreign country' for IP rights. While market sentiment is cautiously optimistic due to ceasefire hopes in the Middle East, volatility remains a risk factor."
+    }
+}
