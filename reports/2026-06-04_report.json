@@ -1,0 +1,79 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.655703125,
+        "RMSE": 30.755397428382928,
+        "MAPE": 0.001051133354179454
+    },
+    "metrics_holdout_final": {
+        "MAE": 22.916953125,
+        "RMSE": 25.818155796487275,
+        "MAPE": 0.0008709396833668455
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly stable but lacks realistic currency volatility.",
+        "diagnose": "The model is likely overfitting; extremely low MAPE and static confidence intervals indicate poor generalization.",
+        "contextualize": "Currency markets typically reflect higher volatility than the model captures; external economic shocks are currently ignored.",
+        "recommend": "retrained",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02
+    },
+    "7_day_forecast": {
+        "point": [
+            26310.8359375,
+            26260.1328125,
+            26279.201171875,
+            26249.65625,
+            26269.2734375,
+            26267.548828125,
+            26267.8515625
+        ],
+        "80_ci_lower": [
+            26252.42578125,
+            26245.685546875,
+            26252.07421875,
+            26245.103515625,
+            26245.20703125,
+            26252.42578125,
+            26250.6875
+        ],
+        "80_ci_upper": [
+            26340.548828125,
+            26291.705078125,
+            26311.265625,
+            26294.419921875,
+            26290.66015625,
+            26305.978515625,
+            26306.880859375
+        ],
+        "95_ci_lower": [
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625
+        ],
+        "95_ci_upper": [
+            26350.0,
+            26350.0,
+            26350.0,
+            26350.0,
+            26350.0,
+            26350.0,
+            26350.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate forecast June 2026 economic context",
+            "USD VND current rate June 2026"
+        ],
+        "key_findings": "The search tool returned parsing errors, however, the provided data for VND=X shows an extremely narrow confidence interval and a MAPE of 0.0011 (0.11%), which is anomalously low for a currency pair. Currency markets typically exhibit higher volatility than this model suggests."
+    }
+}
