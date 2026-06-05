@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.2621875,
+        "RMSE": 30.770314166201143,
+        "MAPE": 0.0010364144520074734
+    },
+    "metrics_holdout_final": {
+        "MAE": 20.5365625,
+        "RMSE": 23.816089320765236,
+        "MAPE": 0.000780662631833123
+    },
+    "agent_evaluation": {
+        "evaluate": "Forecast is overly simplistic and static; reflects a mean-reverting bias without accounting for volatility expansion.",
+        "diagnose": "High signs of overfitting (extremely low MAPE) and lack of proper uncertainty propagation (constant CI).",
+        "contextualize": "USD/VND pair typically has managed volatility; model fails to capture standard FX stochastic nature.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26266.53125,
+            26286.48046875,
+            26245.962890625,
+            26266.759765625,
+            26260.98828125,
+            26270.802734375,
+            26279.767578125
+        ],
+        "80_ci_lower": [
+            26235.638671875,
+            26236.017578125,
+            26227.896484375,
+            26233.068359375,
+            26235.923828125,
+            26235.451171875,
+            26235.578125
+        ],
+        "80_ci_upper": [
+            26285.154296875,
+            26315.755859375,
+            26287.9609375,
+            26285.21875,
+            26282.787109375,
+            26313.26953125,
+            26285.958984375
+        ],
+        "95_ci_lower": [
+            26106.48828125,
+            26106.48828125,
+            26106.48828125,
+            26106.48828125,
+            26106.48828125,
+            26106.48828125,
+            26106.48828125
+        ],
+        "95_ci_upper": [
+            26311.115234375,
+            26324.455078125,
+            26311.3046875,
+            26311.40234375,
+            26311.177734375,
+            26327.98828125,
+            26311.154296875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate news June 2026"
+        ],
+        "key_findings": "Search tools failed to return live 2026 data, likely due to the future date of the prompt. Analysis proceeded based on statistical interpretation of provided model outputs."
+    }
+}
