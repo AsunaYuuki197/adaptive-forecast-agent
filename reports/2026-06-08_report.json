@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.381640625,
+        "RMSE": 30.762138129581743,
+        "MAPE": 0.001041075354178235
+    },
+    "metrics_holdout_final": {
+        "MAE": 20.135,
+        "RMSE": 23.722815104492415,
+        "MAPE": 0.0007655634601456495
+    },
+    "agent_evaluation": {
+        "evaluate": "The model displays a static, mean-reverting behavior that ignores current regional market instability.",
+        "diagnose": "The extremely low MAPE (0.0010) and narrow range suggest underfitting or possible data leakage; the model lacks sensitivity to volatility.",
+        "contextualize": "Regional market instability (e.g., KOSPI drops, global tech sentiment) contradicts the model's 'flat-line' prediction.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 300,
+        "max_depth": 7,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26292.322265625,
+            26247.994140625,
+            26263.310546875,
+            26260.67578125,
+            26272.646484375,
+            26261.79296875,
+            26263.958984375
+        ],
+        "80_ci_lower": [
+            26274.2890625,
+            26237.578125,
+            26241.7109375,
+            26249.048828125,
+            26252.5234375,
+            26260.26171875,
+            26245.865234375
+        ],
+        "80_ci_upper": [
+            26301.73046875,
+            26285.7890625,
+            26274.015625,
+            26276.4765625,
+            26316.9921875,
+            26281.68359375,
+            26278.80859375
+        ],
+        "95_ci_lower": [
+            26221.572265625,
+            26221.572265625,
+            26221.572265625,
+            26221.572265625,
+            26222.740234375,
+            26224.24609375,
+            26224.2109375
+        ],
+        "95_ci_upper": [
+            26319.63671875,
+            26298.76171875,
+            26299.75390625,
+            26300.947265625,
+            26323.740234375,
+            26301.01171875,
+            26300.05859375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend news June 2026"
+        ],
+        "key_findings": "The Vietnamese Dong (VND=X) is operating within a volatile regional landscape in early June 2026. Regional markets, particularly in South Korea (Kospi dropping 5%), are experiencing instability. While Vietnam is seeing growth in specific sectors like tourism, the broader macro environment is characterized by uncertainty, impacted by global tech sector shifts and regional economic fragility."
+    }
+}
