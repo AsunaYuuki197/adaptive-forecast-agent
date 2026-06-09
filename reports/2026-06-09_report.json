@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 28.872890625,
+        "RMSE": 34.39168406594602,
+        "MAPE": 0.0010979605582717641
+    },
+    "metrics_holdout_final": {
+        "MAE": 22.731640625,
+        "RMSE": 26.721261123888322,
+        "MAPE": 0.0008643739487281431
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is mathematically tight but economically narrow, displaying limited sensitivity to potential market shifts.",
+        "diagnose": "High predictive accuracy (MAPE 0.0011) suggests low error on historical data, but the extremely narrow CI suggests a risk of underestimating future volatility.",
+        "contextualize": "Global markets are currently volatile due to a technology-led sell-off. While the VND is managed, the model should reflect broader macro uncertainty.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26237.130859375,
+            26267.166015625,
+            26241.6015625,
+            26279.80859375,
+            26271.966796875,
+            26239.474609375,
+            26278.802734375
+        ],
+        "80_ci_lower": [
+            26233.537109375,
+            26232.83203125,
+            26254.990234375,
+            26255.29296875,
+            26255.05078125,
+            26235.240234375,
+            26255.99609375
+        ],
+        "80_ci_upper": [
+            26286.333984375,
+            26285.693359375,
+            26285.7265625,
+            26291.30859375,
+            26284.7109375,
+            26277.388671875,
+            26314.341796875
+        ],
+        "95_ci_lower": [
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate news June 2026"
+        ],
+        "key_findings": "As of June 8, 2026, global financial markets are experiencing significant volatility due to a drop in Big Tech stocks, affecting Asian markets (e.g., KOSPI down 5%). There is no specific news indicating a major structural shift in the USD/VND peg or managed float, though Vietnam's economy remains focused on infrastructure and foreign investment in tech and tourism. The exchange rate appears to be following a relatively narrow, stable trading range typical of a managed currency system."
+    }
+}
