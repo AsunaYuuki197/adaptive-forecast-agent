@@ -1,0 +1,82 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 19.58515625,
+        "RMSE": 24.790706825289615,
+        "MAPE": 0.0007445652617279955
+    },
+    "metrics_holdout_final": {
+        "MAE": 19.469921875,
+        "RMSE": 23.416803990659417,
+        "MAPE": 0.0007399410085947489
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast displays an unrealistic degree of precision (MAPE 0.0007), suggesting the model is likely overfitting historical data.",
+        "diagnose": "Severe overfitting detected. The static nature of the confidence interval and the extremely low MAPE suggest the model is not generalizing well to the actual volatility of the USD/VND pair.",
+        "contextualize": "Recent reports highlight significant structural credit risks in Vietnam (LDR > 112%) and broader global market volatility. The model ignores these fundamental indicators.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.01,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26275.4375,
+            26265.71484375,
+            26259.27734375,
+            26270.06640625,
+            26256.6953125,
+            26248.66796875,
+            26238.482421875
+        ],
+        "80_ci_lower": [
+            26167.56640625,
+            26167.56640625,
+            26167.56640625,
+            26167.56640625,
+            26167.56640625,
+            26167.56640625,
+            26167.56640625
+        ],
+        "80_ci_upper": [
+            26322.61328125,
+            26290.958984375,
+            26289.1875,
+            26313.03125,
+            26285.822265625,
+            26288.576171875,
+            26287.146484375
+        ],
+        "95_ci_lower": [
+            25949.75,
+            25949.75,
+            25949.75,
+            25949.75,
+            25949.75,
+            25949.75,
+            25949.75
+        ],
+        "95_ci_upper": [
+            26347.7734375,
+            26347.7734375,
+            26347.7734375,
+            26347.7734375,
+            26347.7734375,
+            26347.7734375,
+            26347.7734375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend June 2026 news"
+        ],
+        "key_findings": "The Vietnamese economy is facing significant credit-risk pressures in June 2026, with the State Bank of Vietnam (SBV) managing a fragile balance between stimulating growth through 'cheap money' and a loan-to-deposit ratio (LDR) exceeding 112%, well above the 85% regulatory threshold. Global markets remain volatile due to tech-stock fluctuations and geopolitical developments regarding Iran. The USD/VND pair remains under pressure due to domestic credit imbalances and global capital flows."
+    }
+}
