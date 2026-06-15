@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 23.07328125,
+        "RMSE": 28.562941079104213,
+        "MAPE": 0.0008772917555482814
+    },
+    "metrics_holdout_final": {
+        "MAE": 21.17921875,
+        "RMSE": 26.71426469456696,
+        "MAPE": 0.0008053162788641899
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, range-bound movement around 26,260, which is reasonable in the absence of an immediate catalyst.",
+        "diagnose": "The model shows signs of overfitting (MAPE < 0.1%) and likely underestimates volatility given the tight confidence intervals relative to current market conditions.",
+        "contextualize": "Internal pressure from high loan-to-deposit ratios (112%) and aggressive real estate investment agendas in Vietnam pose risks to currency stability that the model does not currently factor in.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26258.080078125,
+            26273.9140625,
+            26252.8203125,
+            26258.90625,
+            26257.06640625,
+            26280.6484375,
+            26234.02734375
+        ],
+        "80_ci_lower": [
+            26255.962890625,
+            26275.384765625,
+            26257.462890625,
+            26233.68359375,
+            26225.3671875,
+            26258.431640625,
+            26226.013671875
+        ],
+        "80_ci_upper": [
+            26285.060546875,
+            26290.72265625,
+            26321.818359375,
+            26307.064453125,
+            26278.7890625,
+            26325.1796875,
+            26284.0703125
+        ],
+        "95_ci_lower": [
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend June 2026 news macroeconomic context"
+        ],
+        "key_findings": "The State Bank of Vietnam (SBV) is under pressure to lower interest rates to drive double-digit growth, but faces a significant loan-to-deposit ratio issue (112%). The economy is currently experiencing a massive surge in 'mega-urban' real estate projects ($115B+ in 2025), creating capital flow imbalances. The textile sector remains resilient, though reliant on global market stability. These factors contribute to a sensitive financial environment where the VND is managed to balance growth targets against domestic credit-to-deposit gaps."
+    }
+}
