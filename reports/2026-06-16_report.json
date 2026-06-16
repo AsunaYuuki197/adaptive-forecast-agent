@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 22.384140625,
+        "RMSE": 28.71140413364417,
+        "MAPE": 0.0008511323546248553
+    },
+    "metrics_holdout_final": {
+        "MAE": 20.629609375,
+        "RMSE": 26.248057426145657,
+        "MAPE": 0.0007843765310769481
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows an unrealistic, tight-range stability that fails to reflect the inherent volatility of the USD/VND currency pair.",
+        "diagnose": "The model exhibits clear signs of overfitting, indicated by an extremely low MAPE and non-dynamic confidence intervals, suggesting it is failing to generalize market volatility.",
+        "contextualize": "External macroeconomic conditions, including global financial market volatility and regional economic pressures, are inconsistent with the static, low-volatility trajectory predicted by the model.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26266.8203125,
+            26270.240234375,
+            26257.55859375,
+            26258.79296875,
+            26277.8515625,
+            26232.7265625,
+            26237.416015625
+        ],
+        "80_ci_lower": [
+            26234.04296875,
+            26237.37109375,
+            26235.994140625,
+            26233.64453125,
+            26237.64453125,
+            26228.583984375,
+            26225.044921875
+        ],
+        "80_ci_upper": [
+            26281.22265625,
+            26313.24609375,
+            26295.4609375,
+            26274.53125,
+            26294.59765625,
+            26273.65234375,
+            26271.408203125
+        ],
+        "95_ci_lower": [
+            26092.458984375,
+            26092.458984375,
+            26092.458984375,
+            26092.458984375,
+            26092.458984375,
+            26092.458984375,
+            26092.458984375
+        ],
+        "95_ci_upper": [
+            26320.03125,
+            26317.662109375,
+            26328.484375,
+            26314.8828125,
+            26319.73046875,
+            26317.12890625,
+            26317.91015625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend June 2026 macroeconomic news"
+        ],
+        "key_findings": "Current macroeconomic conditions in 2026 are marked by global market volatility (e.g., recent tech stock swings, fluctuations in oil and silver prices) and regional economic headwinds in Southeast Asia. While specific USD/VND central bank intervention data is limited for mid-June 2026, the overall market environment is characterized by uncertainty, suggesting that currency stability may be pressured by external shifts."
+    }
+}
