@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 22.463828125,
+        "RMSE": 29.48020821227377,
+        "MAPE": 0.000854170391161662
+    },
+    "metrics_holdout_final": {
+        "MAE": 24.503226902173914,
+        "RMSE": 29.19091420048607,
+        "MAPE": 0.0009321596785821698
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows narrow, stable movement that ignores the current upward pressure on the USD/VND exchange rate.",
+        "diagnose": "The extremely low MAPE suggests severe overfitting or over-smoothing. The model is failing to generalize current market momentum.",
+        "contextualize": "There is a systemic credit-to-deposit mismatch in the Vietnamese banking sector (LDR 112%) driving USD/VND higher, which the model is ignoring.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.02
+    },
+    "7_day_forecast": {
+        "point": [
+            26287.76171875,
+            26267.3046875,
+            26254.6015625,
+            26292.38671875,
+            26267.48046875,
+            26261.81640625,
+            26255.74609375
+        ],
+        "80_ci_lower": [
+            26243.302734375,
+            26230.123046875,
+            26233.548828125,
+            26246.490234375,
+            26243.3203125,
+            26244.28125,
+            26238.099609375
+        ],
+        "80_ci_upper": [
+            26328.322265625,
+            26284.97265625,
+            26293.72265625,
+            26293.72265625,
+            26307.607421875,
+            26293.728515625,
+            26292.16015625
+        ],
+        "95_ci_lower": [
+            25992.494140625,
+            25992.494140625,
+            25992.494140625,
+            25992.494140625,
+            25992.494140625,
+            25992.494140625,
+            25992.494140625
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend news June 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate is experiencing a strong upward trend in formal banking channels, driven by systemic pressures including high credit demand relative to deposits (LDR ~112%). Macroeconomic policy is in a delicate state, attempting to balance growth-oriented interest rate cuts with currency stability concerns. Recent global market volatility and geopolitical developments, including U.S.-Iran war talk breakthroughs, are contributing to broad market shifts, though the specific domestic credit-deposit mismatch remains the primary driver of VND weakness."
+    }
+}
