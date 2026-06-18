@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 24.49890625,
+        "RMSE": 30.074547382605022,
+        "MAPE": 0.0009318016140260504
+    },
+    "metrics_holdout_final": {
+        "MAE": 22.925390625,
+        "RMSE": 28.701945740673,
+        "MAPE": 0.0008720382902575459
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a highly unrealistic, stagnant trajectory that does not account for significant macroeconomic instability in Vietnam.",
+        "diagnose": "Suspected overfitting or reliance on a naive persistence model given the extremely low MAPE and lack of projected volatility.",
+        "contextualize": "Macroeconomic data (rising inflation, significant trade deficit, and banking system strain) suggests higher volatility than the model's flat output.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26264.3984375,
+            26269.0390625,
+            26295.87890625,
+            26235.779296875,
+            26249.900390625,
+            26232.525390625,
+            26238.48046875
+        ],
+        "80_ci_lower": [
+            26235.87109375,
+            26231.158203125,
+            26233.48046875,
+            26231.498046875,
+            26223.587890625,
+            26223.849609375,
+            26220.4765625
+        ],
+        "80_ci_upper": [
+            26297.236328125,
+            26284.859375,
+            26300.7890625,
+            26267.779296875,
+            26270.951171875,
+            26275.05078125,
+            26280.484375
+        ],
+        "95_ci_lower": [
+            26117.583984375,
+            26117.583984375,
+            26117.583984375,
+            26117.583984375,
+            26117.583984375,
+            26117.583984375,
+            26117.583984375
+        ],
+        "95_ci_upper": [
+            26326.515625,
+            26319.09765625,
+            26316.85546875,
+            26311.361328125,
+            26309.912109375,
+            26311.42578125,
+            26308.623046875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend news June 2026"
+        ],
+        "key_findings": "The Vietnamese economy is currently under significant stress as of mid-June 2026. Key macroeconomic headwinds include a $15 billion trade deficit in the first half of the year (swinging from a surplus), inflation at 5.6% (above the 4.5% target), and a strained banking system with a loan-to-deposit ratio of 112%, well above the 85% regulatory limit. Monetary policy is in a delicate 'tightrope' situation, attempting to balance stimulative interest rate cuts with these inflationary and credit-related pressures."
+    }
+}
