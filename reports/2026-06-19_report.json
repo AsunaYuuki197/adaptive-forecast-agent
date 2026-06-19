@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 25.489921875,
+        "RMSE": 32.36434410266268,
+        "MAPE": 0.0009694851264099555
+    },
+    "metrics_holdout_final": {
+        "MAE": 25.2978125,
+        "RMSE": 32.42677597558688,
+        "MAPE": 0.0009622677681565987
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is too static and narrow, failing to reflect the volatility typical of emerging market currencies in a high-inflation, high-trade-deficit environment.",
+        "diagnose": "The model is likely overfitting to historical means; low MAPE combined with a higher RMSE suggests a lack of robust generalization and poor performance during market shocks.",
+        "contextualize": "Vietnam's widening trade deficit and inflationary pressures, coupled with shifting global geopolitical and US central bank policy, create a high-volatility environment that the model currently ignores.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.03,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26278.43359375,
+            26307.103515625,
+            26264.556640625,
+            26248.40625,
+            26280.017578125,
+            26278.0703125,
+            26319.03515625
+        ],
+        "80_ci_lower": [
+            26266.556640625,
+            26272.51171875,
+            26244.83984375,
+            26244.546875,
+            26251.138671875,
+            26268.619140625,
+            26285.4375
+        ],
+        "80_ci_upper": [
+            26280.51171875,
+            26295.474609375,
+            26280.216796875,
+            26289.009765625,
+            26308.734375,
+            26296.408203125,
+            26333.01953125
+        ],
+        "95_ci_lower": [
+            26185.32421875,
+            26185.32421875,
+            26185.32421875,
+            26185.32421875,
+            26185.32421875,
+            26185.32421875,
+            26185.32421875
+        ],
+        "95_ci_upper": [
+            26309.125,
+            26308.740234375,
+            26304.1796875,
+            26295.994140625,
+            26327.544921875,
+            26311.765625,
+            26332.94140625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD VND exchange rate June 2026 news"
+        ],
+        "key_findings": "Vietnam is currently facing a significant trade deficit ($15 billion in H1 2026) and inflationary pressure (5.6% inflation in May 2026). These macro challenges typically put downward pressure on the local currency (VND). Globally, market sentiment is shifting due to geopolitical developments (Iran war talks breakthrough) and leadership changes at the US Federal Reserve (Kevin Warsh taking the helm)."
+    }
+}
