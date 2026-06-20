@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 25.489921875,
+        "RMSE": 32.36434410266268,
+        "MAPE": 0.0009694851264099555
+    },
+    "metrics_holdout_final": {
+        "MAE": 25.89515625,
+        "RMSE": 33.41962212358633,
+        "MAPE": 0.0009849487044307883
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast predicts a sideways trend that appears inconsistent with current macroeconomic headwinds putting upward pressure on the USD/VND pair.",
+        "diagnose": "The model exhibits signs of potential overfitting and lack of sensitivity to volatility, as evidenced by the high RMSE relative to the MAE, despite a very low MAPE.",
+        "contextualize": "External factors, including a significant trade deficit and shifting Fed policy, suggest a more bullish trend for USD/VND than the model's stationary forecast implies.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02
+    },
+    "7_day_forecast": {
+        "point": [
+            26271.021484375,
+            26314.03125,
+            26251.6796875,
+            26252.6328125,
+            26277.404296875,
+            26269.021484375,
+            26319.8828125
+        ],
+        "80_ci_lower": [
+            26236.453125,
+            26247.7734375,
+            26236.076171875,
+            26223.880859375,
+            26221.3125,
+            26249.17578125,
+            26260.279296875
+        ],
+        "80_ci_upper": [
+            26289.384765625,
+            26288.529296875,
+            26287.65625,
+            26279.615234375,
+            26330.962890625,
+            26295.8046875,
+            26318.8203125
+        ],
+        "95_ci_lower": [
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625,
+            26062.09765625
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate outlook June 2026 economic news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been experiencing upward pressure. Recent macroeconomic factors include a widening trade deficit in Vietnam, shifting global monetary policies with the US Fed potentially maintaining higher rates for longer, and general economic volatility. The market remains sensitive to these shifts."
+    }
+}
