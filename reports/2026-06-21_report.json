@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 25.489921875,
+        "RMSE": 32.36434410266268,
+        "MAPE": 0.0009694851264099555
+    },
+    "metrics_holdout_final": {
+        "MAE": 25.489921875,
+        "RMSE": 32.36434410266268,
+        "MAPE": 0.0009694851264099555
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a consistent, narrow-range upward trajectory for USD/VND, aligning with current market trends.",
+        "diagnose": "High precision metrics (MAPE 0.001) indicate good fitting, but the tight CI suggests potential underestimation of volatility.",
+        "contextualize": "Recent market news confirms USD strength against VND and heightened volatility in related assets (gold).",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26263.8046875,
+            26303.912109375,
+            26249.94921875,
+            26269.28125,
+            26270.505859375,
+            26264.693359375,
+            26303.048828125
+        ],
+        "80_ci_lower": [
+            26245.138671875,
+            26270.537109375,
+            26237.91796875,
+            26228.568359375,
+            26240.005859375,
+            26266.6640625,
+            26277.369140625
+        ],
+        "80_ci_upper": [
+            26280.935546875,
+            26305.611328125,
+            26288.740234375,
+            26278.0,
+            26337.45703125,
+            26286.794921875,
+            26347.58203125
+        ],
+        "95_ci_lower": [
+            26184.357421875,
+            26184.357421875,
+            26184.357421875,
+            26184.357421875,
+            26184.357421875,
+            26184.357421875,
+            26184.357421875
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend news June 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate has been experiencing a strong upward trend as of mid-June 2026. Market volatility is high due to broader geopolitical and macroeconomic shifts, including a recent sell-off in gold and fluctuations in global commodity prices following events like the US-Iran situation. The model predicts a range of 26249\u201326303, which is consistent with the current observed upward pressure on the dollar against the dong."
+    }
+}
