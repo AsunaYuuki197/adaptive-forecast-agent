@@ -1,0 +1,82 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 22.98296875,
+        "RMSE": 30.320366700302625,
+        "MAPE": 0.000874099348432953
+    },
+    "metrics_holdout_final": {
+        "MAE": 21.26609375,
+        "RMSE": 27.437562581123462,
+        "MAPE": 0.0008089511760267049
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, sideways movement for VND=X, implying a lack of expected directional momentum.",
+        "diagnose": "The model displays signs of overfitting (MAPE < 0.1%) and structural weakness in uncertainty estimation (static confidence intervals).",
+        "contextualize": "USD/VND is a managed float currency; the current model likely fails to account for potential central bank intervention or macro-shocks.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26286.330078125,
+            26269.8203125,
+            26267.9296875,
+            26261.767578125,
+            26282.0,
+            26289.23828125,
+            26305.484375
+        ],
+        "80_ci_lower": [
+            26249.37890625,
+            26237.177734375,
+            26234.8984375,
+            26234.447265625,
+            26233.69140625,
+            26248.599609375,
+            26253.244140625
+        ],
+        "80_ci_upper": [
+            26292.953125,
+            26278.53125,
+            26285.20703125,
+            26296.916015625,
+            26319.98828125,
+            26295.8203125,
+            26333.17578125
+        ],
+        "95_ci_lower": [
+            26102.240234375,
+            26102.240234375,
+            26102.240234375,
+            26102.240234375,
+            26102.240234375,
+            26102.240234375,
+            26102.240234375
+        ],
+        "95_ci_upper": [
+            26340.044921875,
+            26340.0078125,
+            26339.359375,
+            26340.37109375,
+            26343.5234375,
+            26340.88671875,
+            26345.982421875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend June 2026",
+            "current USD/VND exchange rate June 2026 news",
+            "Vietnam macroeconomic outlook June 2026 exchange rate pressure"
+        ],
+        "key_findings": "Direct market data for June 2026 is limited or unreachable in the current environment. The model suggests a highly stable, range-bound movement for the USD/VND (ticker: VND=X) with minimal volatility."
+    }
+}
