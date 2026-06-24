@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 23.113125,
+        "RMSE": 29.717271369548165,
+        "MAPE": 0.000879317920108522
+    },
+    "metrics_holdout_final": {
+        "MAE": 26.743828125,
+        "RMSE": 32.47115838496637,
+        "MAPE": 0.0010175400482510825
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is mathematically consistent but economically disconnected from the current market rate of 26,300-26,600.",
+        "diagnose": "The extremely low MAPE suggests overfitting, and the model's failure to center its forecast around the current spot price indicates a lagging or biased initialization.",
+        "contextualize": "Record trade deficits in Vietnam are placing structural pressure on the VND, which the current mean-reverting forecast fails to capture.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26240.068359375,
+            26242.017578125,
+            26240.46875,
+            26289.634765625,
+            26275.921875,
+            26287.833984375,
+            26244.2421875
+        ],
+        "80_ci_lower": [
+            26206.62890625,
+            26226.189453125,
+            26218.720703125,
+            26261.298828125,
+            26241.0546875,
+            26246.658203125,
+            26228.107421875
+        ],
+        "80_ci_upper": [
+            26265.240234375,
+            26270.31640625,
+            26276.49609375,
+            26317.732421875,
+            26277.244140625,
+            26291.939453125,
+            26275.5078125
+        ],
+        "95_ci_lower": [
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375,
+            26109.8359375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current VND/USD exchange rate June 2026 news macroeconomic impact"
+        ],
+        "key_findings": "As of June 24, 2026, the VND/USD exchange rate is trading in the range of 26,300 to 26,600 VND per USD. Despite a record trade deficit of nearly $14 billion in the first five months of 2026, the State Bank of Vietnam has managed to keep the currency within its 5% trading band, with the \u0111\u1ed3ng showing resilience against significant import pressure."
+    }
+}
