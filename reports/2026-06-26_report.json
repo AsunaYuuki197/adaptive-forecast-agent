@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.617890625,
+        "RMSE": 33.50874600469813,
+        "MAPE": 0.0010506949459640068
+    },
+    "metrics_holdout_final": {
+        "MAE": 27.617890625,
+        "RMSE": 33.50874600469813,
+        "MAPE": 0.0010506949459640068
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, narrow-range movement for VND=X, which aligns with recent currency market behaviors characterized by consolidation.",
+        "diagnose": "Model shows very high precision (MAPE 0.11%). While metrics are excellent, the near-zero MAPE indicates a potential for overfitting to noise; however, RMSE/MAE ratio is balanced.",
+        "contextualize": "Recent market data confirms upward pressure on USD/VND due to global dollar strength. The model correctly identifies a stable, slightly bullish trend for the USD.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 120,
+        "max_depth": 3,
+        "learning_rate": 0.08,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26250.361328125,
+            26258.974609375,
+            26279.892578125,
+            26291.08203125,
+            26288.302734375,
+            26324.564453125,
+            26281.1953125
+        ],
+        "80_ci_lower": [
+            26244.701171875,
+            26251.03515625,
+            26265.25,
+            26271.986328125,
+            26271.26171875,
+            26289.06640625,
+            26284.099609375
+        ],
+        "80_ci_upper": [
+            26282.25390625,
+            26320.68359375,
+            26281.51953125,
+            26345.7421875,
+            26321.5,
+            26326.0703125,
+            26290.08984375
+        ],
+        "95_ci_lower": [
+            26183.28515625,
+            26183.28515625,
+            26183.28515625,
+            26183.28515625,
+            26183.28515625,
+            26183.28515625,
+            26183.28515625
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend June 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been experiencing slight upward pressure as of late June 2026, driven by a strengthening US dollar affecting regional Asian currencies. Market reports from June 22, 2026, indicate consistent fluctuations in the exchange rate within both banking and black markets."
+    }
+}
