@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 30.049765625,
+        "RMSE": 35.95924510897542,
+        "MAPE": 0.0011433741085069152
+    },
+    "metrics_holdout_final": {
+        "MAE": 36.370849609375,
+        "RMSE": 42.939852859687385,
+        "MAPE": 0.0013845807664568629
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects high-stability, narrow-range movement for USD/VND, which may not reflect current global market volatility.",
+        "diagnose": "The extremely low MAPE (0.11%) suggests potential overfitting or an underestimation of volatility; the model is too confident in its narrow CI.",
+        "contextualize": "Recent macro data indicates slight upward pressure on the USD/VND rate, while global conditions show significant uncertainty from potential tariff actions and Fed policy shifts.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26284.369140625,
+            26301.892578125,
+            26296.771484375,
+            26297.998046875,
+            26262.767578125,
+            26273.568359375,
+            26277.029296875
+        ],
+        "80_ci_lower": [
+            26255.81640625,
+            26266.30859375,
+            26271.166015625,
+            26262.033203125,
+            26242.52734375,
+            26241.7578125,
+            26242.416015625
+        ],
+        "80_ci_upper": [
+            26319.57421875,
+            26302.25390625,
+            26286.130859375,
+            26301.5703125,
+            26273.478515625,
+            26265.58203125,
+            26278.978515625
+        ],
+        "95_ci_lower": [
+            26110.365234375,
+            26110.365234375,
+            26110.365234375,
+            26110.365234375,
+            26110.365234375,
+            26110.365234375,
+            26110.365234375
+        ],
+        "95_ci_upper": [
+            26342.72265625,
+            26345.099609375,
+            26346.7578125,
+            26343.525390625,
+            26345.333984375,
+            26346.71875,
+            26346.71484375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate news June 2026 macroeconomic outlook"
+        ],
+        "key_findings": "As of late June 2026, the USD/VND exchange rate has experienced slight upward pressure in both banking and black markets. The broader Vietnamese macroeconomic environment shows strong growth, particularly in the real estate and credit sectors. However, global market volatility is present, with ongoing uncertainty regarding US Federal Reserve policy and potential tariff escalations mentioned in June 2026 financial news."
+    }
+}
