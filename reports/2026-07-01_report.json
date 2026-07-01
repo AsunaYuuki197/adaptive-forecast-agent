@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 31.833828125,
+        "RMSE": 37.66066576684747,
+        "MAPE": 0.0012119100601223941
+    },
+    "metrics_holdout_final": {
+        "MAE": 34.225703125,
+        "RMSE": 40.6937086505589,
+        "MAPE": 0.0013029311596500165
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is overly static and likely underestimates current market volatility.",
+        "diagnose": "Possible overfitting; extremely low MAPE combined with narrow CI suggests inability to model current macro-instability.",
+        "contextualize": "Recent USD strength driven by Gulf tensions and new domestic fiscal policies in Vietnam are likely to invalidate this narrow mean-reverting prediction.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26319.58203125,
+            26311.607421875,
+            26325.166015625,
+            26296.8203125,
+            26262.587890625,
+            26291.15234375,
+            26309.86328125
+        ],
+        "80_ci_lower": [
+            26302.255859375,
+            26257.333984375,
+            26315.935546875,
+            26282.77734375,
+            26222.478515625,
+            26223.08984375,
+            26245.666015625
+        ],
+        "80_ci_upper": [
+            26344.166015625,
+            26320.462890625,
+            26348.62890625,
+            26297.8203125,
+            26297.48046875,
+            26329.072265625,
+            26329.060546875
+        ],
+        "95_ci_lower": [
+            26161.3515625,
+            26161.3515625,
+            26161.3515625,
+            26161.3515625,
+            26161.3515625,
+            26161.3515625,
+            26161.3515625
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X Vietnamese Dong USD exchange rate news July 2026 current trends"
+        ],
+        "key_findings": "The USD is currently experiencing its strongest monthly gain in nearly a year due to geopolitical tensions in the Gulf and upcoming US labor data. Domestically in Vietnam, there is high volatility in gold prices, and multiple regulatory shifts are taking effect as of July 1, 2026 (e.g., pension increases, civil service position regulations). The exchange rate environment remains complex."
+    }
+}
