@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 31.7603125,
+        "RMSE": 37.20318328609331,
+        "MAPE": 0.001208883217371338
+    },
+    "metrics_holdout_final": {
+        "MAE": 31.95171875,
+        "RMSE": 37.96594869745845,
+        "MAPE": 0.001216284855010205
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a narrow, range-bound trajectory that appears reasonable in direction but lacks evidence of modeling market noise.",
+        "diagnose": "The extremely low MAPE (0.0012) is a strong indicator of model overfitting or an inability to generalize to stochastic market conditions.",
+        "contextualize": "Recent Vietnamese economic data shows mixed signals\u2014rising FDI interest vs. domestic inflationary pressure\u2014which are not reflected in the model's static forecast.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26293.7265625,
+            26316.79296875,
+            26279.337890625,
+            26265.55859375,
+            26302.912109375,
+            26309.783203125,
+            26315.212890625
+        ],
+        "80_ci_lower": [
+            26261.765625,
+            26261.11328125,
+            26251.955078125,
+            26238.5703125,
+            26246.736328125,
+            26262.8203125,
+            26269.796875
+        ],
+        "80_ci_upper": [
+            26296.556640625,
+            26329.69921875,
+            26294.748046875,
+            26274.90625,
+            26302.119140625,
+            26307.689453125,
+            26327.212890625
+        ],
+        "95_ci_lower": [
+            26119.43359375,
+            26119.43359375,
+            26119.43359375,
+            26119.43359375,
+            26119.43359375,
+            26119.43359375,
+            26119.43359375
+        ],
+        "95_ci_upper": [
+            26341.10546875,
+            26349.0390625,
+            26341.560546875,
+            26340.919921875,
+            26342.212890625,
+            26343.548828125,
+            26343.001953125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate forecast news July 2026"
+        ],
+        "key_findings": "The Vietnamese economy is experiencing mixed signals in early July 2026. While there is strong interest from global tech firms for high-tech investment (supporting potential future FDI and currency stability), there is ongoing concern regarding high borrowing costs, inflationary pressures, and volatility in global commodity markets (gold/silver). There is no specific news indicating an immediate currency crisis or extreme volatility for VND=X, suggesting a relatively stable macroeconomic backdrop for the near term."
+    }
+}
