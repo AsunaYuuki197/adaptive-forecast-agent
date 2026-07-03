@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 32.679921875,
+        "RMSE": 38.17048808216772,
+        "MAPE": 0.0012439236391647496
+    },
+    "metrics_holdout_final": {
+        "MAE": 32.679921875,
+        "RMSE": 38.17048808216772,
+        "MAPE": 0.0012439236391647496
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, sideways movement for VND=X, which is consistent with the current lack of significant market catalysts.",
+        "diagnose": "The model exhibits very high accuracy (MAPE 0.0012). Low RMSE/MAE delta suggests reliable performance with moderate sensitivity to volatility.",
+        "contextualize": "Macroeconomic conditions in Vietnam reflect a 'wait-and-see' sentiment regarding interest rates and investment, supporting the model's lateral projection.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26307.587890625,
+            26281.341796875,
+            26254.15625,
+            26297.28515625,
+            26300.7109375,
+            26319.62890625,
+            26317.439453125
+        ],
+        "80_ci_lower": [
+            26300.921875,
+            26273.26953125,
+            26228.41796875,
+            26227.341796875,
+            26277.625,
+            26288.12109375,
+            26284.62109375
+        ],
+        "80_ci_upper": [
+            26337.34375,
+            26296.31640625,
+            26281.65234375,
+            26296.818359375,
+            26303.462890625,
+            26337.447265625,
+            26311.85546875
+        ],
+        "95_ci_lower": [
+            26201.615234375,
+            26201.615234375,
+            26181.095703125,
+            26181.095703125,
+            26201.615234375,
+            26201.615234375,
+            26201.615234375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend July 2026 macroeconomic news"
+        ],
+        "key_findings": "The USD/VND environment in early July 2026 is influenced by a 'wait-and-see' approach regarding interest rate policies (Fed signals no urgent hike), moderate industrial growth, and high volatility in precious metals. The exchange rate remains relatively stable, though market participants are cautious due to persistent high borrowing costs domestically."
+    }
+}
