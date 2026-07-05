@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 33.039921875,
+        "RMSE": 38.41508579556876,
+        "MAPE": 0.0012576037675106108
+    },
+    "metrics_holdout_final": {
+        "MAE": 36.197578125,
+        "RMSE": 41.08886705891637,
+        "MAPE": 0.001377922629686894
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, sideways range for the USD/VND, which is plausible given the current economic transition in Vietnam, but may underestimate near-term volatility.",
+        "diagnose": "The MAPE is suspiciously low (0.0013), suggesting the model may be overfitting or failing to capture potential exogenous market volatility.",
+        "contextualize": "Economic growth is strong (8.18% GDP), but the currency is facing pressure from global commodity volatility (gold) and high domestic borrowing costs.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26319.38671875,
+            26288.84375,
+            26262.73046875,
+            26300.669921875,
+            26312.146484375,
+            26332.4453125,
+            26319.65625
+        ],
+        "80_ci_lower": [
+            26293.876953125,
+            26268.560546875,
+            26237.9765625,
+            26259.791015625,
+            26286.046875,
+            26300.517578125,
+            26292.333984375
+        ],
+        "80_ci_upper": [
+            26317.5546875,
+            26285.337890625,
+            26273.888671875,
+            26293.25,
+            26303.060546875,
+            26326.513671875,
+            26316.525390625
+        ],
+        "95_ci_lower": [
+            26197.11328125,
+            26197.11328125,
+            26197.11328125,
+            26197.11328125,
+            26197.11328125,
+            26197.11328125,
+            26197.11328125
+        ],
+        "95_ci_upper": [
+            26347.35546875,
+            26339.142578125,
+            26335.447265625,
+            26339.365234375,
+            26342.08203125,
+            26340.814453125,
+            26335.345703125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend July 2026"
+        ],
+        "key_findings": "The Vietnamese economy showed strong H1 2026 growth (8.18% GDP). Gold prices globally have been extremely volatile, impacting local sentiment. The exchange rate environment is influenced by high interest rate expectations and strong export-oriented industrial growth, though borrowing costs remain high."
+    }
+}
