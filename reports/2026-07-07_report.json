@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 26.9609375,
+        "RMSE": 32.2949967704945,
+        "MAPE": 0.0010262956049588564
+    },
+    "metrics_holdout_final": {
+        "MAE": 26.9609375,
+        "RMSE": 32.2949967704945,
+        "MAPE": 0.0010262956049588564
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a modest, stable upward trend, aligning with a market in consolidation.",
+        "diagnose": "The model demonstrates high precision (MAPE 0.1%) and consistency between MAE and RMSE, indicating reliable generalization without significant overfitting.",
+        "contextualize": "The forecast reflects a period of economic stability consistent with reports of Vietnam's strong GDP growth and recent sideways movement in domestic financial benchmarks.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26244.583984375,
+            26291.990234375,
+            26290.912109375,
+            26320.787109375,
+            26317.083984375,
+            26304.728515625,
+            26303.423828125
+        ],
+        "80_ci_lower": [
+            26224.673828125,
+            26244.63671875,
+            26278.62890625,
+            26281.748046875,
+            26292.46875,
+            26274.708984375,
+            26260.4765625
+        ],
+        "80_ci_upper": [
+            26269.763671875,
+            26303.724609375,
+            26282.984375,
+            26305.619140625,
+            26337.58984375,
+            26303.873046875,
+            26294.7421875
+        ],
+        "95_ci_lower": [
+            26181.095703125,
+            26181.095703125,
+            26201.615234375,
+            26201.615234375,
+            26201.615234375,
+            26201.615234375,
+            26201.615234375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current VND=X exchange rate July 2026 news"
+        ],
+        "key_findings": "The Vietnamese economy in H1 2026 showed strong growth (8.18% YoY). The gold market in early July 2026 has been volatile, with domestic gold prices anchoring at high levels (around 151.4 million VND/ounce) despite fluctuations in global gold prices. The VND exchange rate is currently influenced by domestic economic momentum and global commodity price pressures."
+    }
+}
