@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 28.802421875,
+        "RMSE": 34.824584303412976,
+        "MAPE": 0.0010963605135857453
+    },
+    "metrics_holdout_final": {
+        "MAE": 33.354375,
+        "RMSE": 38.96735835009435,
+        "MAPE": 0.0012696398296224854
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a narrow, flat trajectory that lacks realistic dispersion given current macroeconomic conditions.",
+        "diagnose": "Possible overfitting to historical stability (very low MAPE); the model fails to project expanding uncertainty over the 7-day horizon.",
+        "contextualize": "External shocks\u2014specifically the surge in global gold prices and US labor market weakness\u2014are currently driving volatility that the model is failing to capture.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26288.587890625,
+            26305.265625,
+            26330.82421875,
+            26312.4296875,
+            26310.98828125,
+            26319.03125,
+            26320.58984375
+        ],
+        "80_ci_lower": [
+            26277.189453125,
+            26282.10546875,
+            26290.03125,
+            26296.2265625,
+            26285.16015625,
+            26290.1953125,
+            26295.40234375
+        ],
+        "80_ci_upper": [
+            26311.671875,
+            26295.443359375,
+            26317.85546875,
+            26334.181640625,
+            26317.3046875,
+            26317.6875,
+            26336.0
+        ],
+        "95_ci_lower": [
+            26206.81640625,
+            26197.623046875,
+            26197.623046875,
+            26197.623046875,
+            26197.623046875,
+            26197.623046875,
+            26197.623046875
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend July 2026 news"
+        ],
+        "key_findings": "The Vietnamese economy is experiencing strong GDP growth (8.18% in H1 2026), but the exchange rate environment is pressured by global volatility in gold prices, which recently surged past $4,180/oz due to US labor market weakness. Analysts note that Vietnam's stock market and currency are sensitive to these external shocks and high domestic interest rates."
+    }
+}
