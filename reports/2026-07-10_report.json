@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 28.10484375,
+        "RMSE": 33.265234868103335,
+        "MAPE": 0.0010697093736546403
+    },
+    "metrics_holdout_final": {
+        "MAE": 28.10484375,
+        "RMSE": 33.265234868103335,
+        "MAPE": 0.0010697093736546403
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a logical, tight consolidation consistent with current market stability.",
+        "diagnose": "High predictive accuracy with a very low MAPE (0.11%) and no evidence of overfitting or sensitivity to noise.",
+        "contextualize": "Economic data from July 2026 confirms stability in the USD/VND pair, matching the model's flat trajectory.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26320.955078125,
+            26318.873046875,
+            26313.294921875,
+            26314.814453125,
+            26308.62890625,
+            26313.84375,
+            26302.869140625
+        ],
+        "80_ci_lower": [
+            26298.216796875,
+            26297.140625,
+            26297.162109375,
+            26300.138671875,
+            26299.0625,
+            26299.0625,
+            26299.0625
+        ],
+        "80_ci_upper": [
+            26324.44140625,
+            26330.75,
+            26320.0625,
+            26319.5546875,
+            26319.939453125,
+            26335.42578125,
+            26334.33984375
+        ],
+        "95_ci_lower": [
+            26202.53515625,
+            26202.53515625,
+            26202.53515625,
+            26202.53515625,
+            26202.53515625,
+            26202.53515625,
+            26202.53515625
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend July 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate is reported to be stable as of July 7, 2026, amid a broader context of Vietnam's strong economic performance (8.18% GDP growth in H1 2026). Gold prices are seeing downward adjustments, and commodity prices (coffee/pepper) remain high but volatile."
+    }
+}
