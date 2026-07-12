@@ -1,0 +1,82 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 29.30484375,
+        "RMSE": 34.84121447122758,
+        "MAPE": 0.0011154579145028513
+    },
+    "metrics_holdout_final": {
+        "MAE": 32.3071875,
+        "RMSE": 39.408080675284936,
+        "MAPE": 0.0012298425881834042
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is significantly lower than current spot rates (~26,470) and shows unrealistic, flat-lined volatility.",
+        "diagnose": "Suspected overfitting (extremely low MAPE) and lack of uncertainty propagation (static CI).",
+        "contextualize": "Model ignores fundamental macroeconomic headwinds for the VND, including a $16B+ trade deficit and potential US Fed rate hikes.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26321.169921875,
+            26320.052734375,
+            26315.126953125,
+            26311.736328125,
+            26301.056640625,
+            26317.26953125,
+            26317.046875
+        ],
+        "80_ci_lower": [
+            26278.974609375,
+            26281.91015625,
+            26280.6015625,
+            26278.865234375,
+            26278.63671875,
+            26270.611328125,
+            26267.53515625
+        ],
+        "80_ci_upper": [
+            26325.2578125,
+            26336.89453125,
+            26320.03515625,
+            26308.76171875,
+            26305.056640625,
+            26336.380859375,
+            26319.1015625
+        ],
+        "95_ci_lower": [
+            26099.548828125,
+            26099.548828125,
+            26099.548828125,
+            26099.548828125,
+            26099.548828125,
+            26099.548828125,
+            26099.548828125
+        ],
+        "95_ci_upper": [
+            26344.55078125,
+            26344.90234375,
+            26343.376953125,
+            26343.41015625,
+            26344.57421875,
+            26344.849609375,
+            26343.4140625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate trends July 2026 economic news Vietnam"
+        ],
+        "key_findings": "The USD/VND exchange rate is currently stable around 26,470 VND/USD (as of July 11, 2026). The Vietnamese economy is dealing with a significant trade deficit (over $16 billion) despite strong export growth. Global macroeconomic focus is on potential Fed interest rate hikes in September, which pressures precious metals and emerging market currencies. The model's prediction of ~$26,300 is lower than the current reported rate of ~26,470, suggesting it may be slightly lagging or under-predicting the current level of VND depreciation/USD strength."
+    }
+}
