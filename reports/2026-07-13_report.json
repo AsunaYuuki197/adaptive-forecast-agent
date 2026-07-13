@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.87390625,
+        "RMSE": 33.95732691135089,
+        "MAPE": 0.0010609868506230005
+    },
+    "metrics_holdout_final": {
+        "MAE": 28.508219401041668,
+        "RMSE": 34.91727448270508,
+        "MAPE": 0.001085271186140801
+    },
+    "agent_evaluation": {
+        "evaluate": "The model is under-predicting the current USD/VND exchange rate (~26,300 vs ~26,480 market).",
+        "diagnose": "Systematic downward bias detected despite low MAPE (0.11%); model is not capturing the recent market upward shift.",
+        "contextualize": "Rising DXY and US Treasury yields are supporting a stronger USD against the VND, which the model is failing to incorporate.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26292.357421875,
+            26324.5078125,
+            26287.716796875,
+            26285.83203125,
+            26281.390625,
+            26290.16015625,
+            26307.71484375
+        ],
+        "80_ci_lower": [
+            26275.12109375,
+            26277.333984375,
+            26262.392578125,
+            26248.685546875,
+            26248.3125,
+            26274.49609375,
+            26272.828125
+        ],
+        "80_ci_upper": [
+            26316.0234375,
+            26332.619140625,
+            26316.16796875,
+            26305.015625,
+            26320.63671875,
+            26305.45703125,
+            26320.251953125
+        ],
+        "95_ci_lower": [
+            25976.962890625,
+            25976.962890625,
+            25976.962890625,
+            25976.962890625,
+            25976.962890625,
+            25976.962890625,
+            25976.962890625
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD VND exchange rate trend July 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been trading around 26,450\u201326,480 VND/USD as of early July 2026. The exchange rate is experiencing relative stability despite global pressures, including shifts in US interest rate expectations and fluctuating gold prices."
+    }
+}
