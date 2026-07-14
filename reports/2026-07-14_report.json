@@ -1,0 +1,82 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 28.236015625,
+        "RMSE": 34.95008319850291,
+        "MAPE": 0.0010747743000834695
+    },
+    "metrics_holdout_final": {
+        "MAE": 28.22171875,
+        "RMSE": 35.68394418187945,
+        "MAPE": 0.0010742171688645121
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows unrealistic stability with extremely narrow movement, failing to reflect typical forex volatility.",
+        "diagnose": "The model is likely overfitting the historical mean (indicated by an ultra-low MAPE of 0.0011) and ignoring market volatility (RMSE > MAE).",
+        "contextualize": "Recent economic data shows a widening trade deficit and gold market instability, which the static forecast fails to capture.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.01,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26317.71875,
+            26308.580078125,
+            26307.96875,
+            26283.115234375,
+            26300.3984375,
+            26295.13671875,
+            26304.7890625
+        ],
+        "80_ci_lower": [
+            26220.796875,
+            26220.796875,
+            26221.111328125,
+            26218.02734375,
+            26214.78125,
+            26216.119140625,
+            26219.966796875
+        ],
+        "80_ci_upper": [
+            26326.76953125,
+            26319.763671875,
+            26311.666015625,
+            26304.369140625,
+            26313.802734375,
+            26314.80859375,
+            26318.150390625
+        ],
+        "95_ci_lower": [
+            25993.966796875,
+            25993.966796875,
+            25993.966796875,
+            25993.966796875,
+            25993.966796875,
+            25993.966796875,
+            25993.966796875
+        ],
+        "95_ci_upper": [
+            26349.0625,
+            26349.0625,
+            26349.0625,
+            26349.12109375,
+            26349.0625,
+            26349.0625,
+            26349.0625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend July 2026 economic news"
+        ],
+        "key_findings": "In mid-July 2026, the VND/USD exchange rate is monitored around 26,470 VND/USD (as per Vietcombank data from July 11, 2026). The Vietnamese economy is facing a significant trade deficit (exceeding $16.65 billion in H1 2026) while manufacturing remains a key export focus. Global gold price fluctuations are impacting domestic sentiment, but the currency market remains relatively constrained within specific trading bands."
+    }
+}
