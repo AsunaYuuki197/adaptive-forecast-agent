@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 27.931484375,
+        "RMSE": 34.848869992822024,
+        "MAPE": 0.0010629893782955551
+    },
+    "metrics_holdout_final": {
+        "MAE": 32.21765625,
+        "RMSE": 39.985878442939274,
+        "MAPE": 0.0012260574744093653
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is overly optimistic for VND appreciation (or underestimating USD strength) compared to observed spot rates.",
+        "diagnose": "Possible overfitting due to suspicious MAPE (0.0011); model exhibits lag and fails to account for recent upward price discovery.",
+        "contextualize": "Model projections are ~170 pips below the current observed market rate of 26,470.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26330.15234375,
+            26310.05859375,
+            26312.71875,
+            26279.458984375,
+            26301.4765625,
+            26292.267578125,
+            26289.986328125
+        ],
+        "80_ci_lower": [
+            26295.060546875,
+            26296.041015625,
+            26299.37109375,
+            26289.154296875,
+            26284.904296875,
+            26285.05859375,
+            26279.037109375
+        ],
+        "80_ci_upper": [
+            26329.791015625,
+            26319.294921875,
+            26301.548828125,
+            26304.71875,
+            26313.66015625,
+            26305.55859375,
+            26305.45703125
+        ],
+        "95_ci_lower": [
+            26232.16015625,
+            26232.16015625,
+            26232.16015625,
+            26228.3203125,
+            26232.09765625,
+            26231.357421875,
+            26233.0
+        ],
+        "95_ci_upper": [
+            26339.58203125,
+            26336.16796875,
+            26336.86328125,
+            26338.56640625,
+            26335.271484375,
+            26325.0625,
+            26321.74609375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate news July 2026"
+        ],
+        "key_findings": "As of mid-July 2026, the USD/VND exchange rate is hovering around 26,470, which is significantly higher than the model's predicted range of ~26,265\u201326,328. Recent macroeconomic news highlights Vietnam's growing agricultural export market to the U.S. and significant manufacturing FDI inflows, which typically create pressure on currency valuations."
+    }
+}
