@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 32.581015625,
+        "RMSE": 38.87783738946634,
+        "MAPE": 0.0012403184382968526
+    },
+    "metrics_holdout_final": {
+        "MAE": 29.14328125,
+        "RMSE": 35.570575405182325,
+        "MAPE": 0.0011095507792720843
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a stagnant, narrow range that is inconsistent with actual recent spot prices, indicating low predictive utility.",
+        "diagnose": "High evidence of overfitting; the extremely low MAPE and suppressed variance indicate the model is unresponsive to market reality.",
+        "contextualize": "Model projections ($26.2k) are lower than observed market rates ($26.4k), failing to capture recent USD strength.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.01
+    },
+    "7_day_forecast": {
+        "point": [
+            26276.857421875,
+            26282.79296875,
+            26268.7109375,
+            26264.984375,
+            26292.59375,
+            26259.634765625,
+            26295.08203125
+        ],
+        "80_ci_lower": [
+            26219.388671875,
+            26219.388671875,
+            26219.388671875,
+            26219.388671875,
+            26219.388671875,
+            26219.388671875,
+            26219.388671875
+        ],
+        "80_ci_upper": [
+            26287.46875,
+            26287.30078125,
+            26284.87890625,
+            26284.359375,
+            26318.904296875,
+            26294.998046875,
+            26300.30078125
+        ],
+        "95_ci_lower": [
+            25962.052734375,
+            25962.052734375,
+            25962.052734375,
+            25962.052734375,
+            25962.052734375,
+            25962.052734375,
+            25962.052734375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate trend July 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate has been trading at elevated levels near 26,470 as of mid-July 2026. The Vietnamese economy remains in a growth phase, but the exchange rate is influenced by broader global USD strength and regional economic factors."
+    }
+}
