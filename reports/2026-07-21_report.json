@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 32.10953125,
+        "RMSE": 39.37336350300846,
+        "MAPE": 0.0012222714175979528
+    },
+    "metrics_holdout_final": {
+        "MAE": 30.674296875,
+        "RMSE": 38.64072449038508,
+        "MAPE": 0.001167670213477555
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a narrow, slightly upward trend that likely underestimates volatility.",
+        "diagnose": "The extremely low MAPE (0.0012) combined with a tight prediction range indicates potential overfitting and lack of responsiveness to market noise.",
+        "contextualize": "Market sentiment is currently jittery due to tech-sector sell-offs and global volatility, which is not reflected in the model's extremely stable forecast.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26279.962890625,
+            26263.6171875,
+            26256.412109375,
+            26296.982421875,
+            26289.419921875,
+            26274.0234375,
+            26273.359375
+        ],
+        "80_ci_lower": [
+            26258.001953125,
+            26239.380859375,
+            26261.291015625,
+            26258.716796875,
+            26255.623046875,
+            26279.462890625,
+            26258.09765625
+        ],
+        "80_ci_upper": [
+            26284.400390625,
+            26273.240234375,
+            26278.26171875,
+            26303.693359375,
+            26299.966796875,
+            26290.099609375,
+            26286.9453125
+        ],
+        "95_ci_lower": [
+            26069.408203125,
+            26069.408203125,
+            26069.408203125,
+            26069.408203125,
+            26069.408203125,
+            26069.408203125,
+            26069.408203125
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate trend July 2026 and macroeconomic news affecting VND"
+        ],
+        "key_findings": "The USD/VND (Vietnam Dong) remains in an environment of USD strength globally. Regional markets are facing volatility, with South Korea's Kospi dropping significantly due to AI-linked stock sell-offs, and general concerns over energy prices. While there are no specific Vietnam-exclusive crises, the prevailing global trend of USD strength and regional market sensitivity to tech-sector pullbacks suggests the currency is likely experiencing consolidation or slight upward pressure, consistent with the model's narrow range."
+    }
+}
