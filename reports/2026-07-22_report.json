@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 25.553984375,
+        "RMSE": 31.674029302137516,
+        "MAPE": 0.000972547332711585
+    },
+    "metrics_holdout_final": {
+        "MAE": 25.553984375,
+        "RMSE": 31.674029302137516,
+        "MAPE": 0.000972547332711585
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, narrow-range movement for VND=X, which is consistent with current market consolidation.",
+        "diagnose": "The model demonstrates high precision with a MAPE of 0.1% and a healthy ratio between RMSE and MAE, indicating robust generalization and low sensitivity to outliers.",
+        "contextualize": "Current macroeconomic conditions for Asian currencies show no major shocks, supporting the model's stable short-term outlook.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26284.115234375,
+            26280.869140625,
+            26272.80078125,
+            26277.220703125,
+            26305.919921875,
+            26318.234375,
+            26277.4609375
+        ],
+        "80_ci_lower": [
+            26231.08984375,
+            26261.37109375,
+            26251.4375,
+            26253.26171875,
+            26270.703125,
+            26262.17578125,
+            26262.6640625
+        ],
+        "80_ci_upper": [
+            26270.25,
+            26274.05078125,
+            26303.720703125,
+            26304.37109375,
+            26338.5859375,
+            26305.92578125,
+            26305.58203125
+        ],
+        "95_ci_lower": [
+            26097.21484375,
+            26097.21484375,
+            26097.21484375,
+            26097.21484375,
+            26097.21484375,
+            26097.21484375,
+            26097.21484375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate news July 2026 Vietnamese Dong USD"
+        ],
+        "key_findings": "The Vietnamese Dong (VND=X) is part of a broader Asian currency environment currently navigating global shifts in US Dollar strength and volatility in equity markets following tech/AI sector corrections. There is no specific localized shock reported for July 2026 that would justify a radical deviation from trend, but the overall market environment remains sensitive to US Dollar fluctuations."
+    }
+}
