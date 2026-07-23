@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 24.13640625,
+        "RMSE": 30.584740702359507,
+        "MAPE": 0.0009187845646242683
+    },
+    "metrics_holdout_final": {
+        "MAE": 22.326875,
+        "RMSE": 29.051398033866942,
+        "MAPE": 0.0008497065829038746
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a highly unrealistic, static trajectory that fails to respond to current market volatility.",
+        "diagnose": "Overfitting suspected; the model exhibits low MAPE but shows sensitivity to volatility in the MAE/RMSE gap, indicating it is ill-equipped for real-world currency fluctuations.",
+        "contextualize": "External factors like rising gold prices and global macroeconomic shifts are likely to introduce more volatility than the model currently predicts.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26252.9921875,
+            26253.189453125,
+            26266.22265625,
+            26281.76953125,
+            26309.275390625,
+            26292.794921875,
+            26269.537109375
+        ],
+        "80_ci_lower": [
+            26243.263671875,
+            26256.9375,
+            26244.12890625,
+            26244.80078125,
+            26264.4453125,
+            26256.689453125,
+            26255.84375
+        ],
+        "80_ci_upper": [
+            26269.701171875,
+            26276.443359375,
+            26287.7734375,
+            26295.65625,
+            26319.19140625,
+            26292.166015625,
+            26292.107421875
+        ],
+        "95_ci_lower": [
+            25999.685546875,
+            25999.685546875,
+            25999.685546875,
+            25999.685546875,
+            25999.685546875,
+            25999.685546875,
+            25999.685546875
+        ],
+        "95_ci_upper": [
+            26340.44140625,
+            26340.5390625,
+            26340.533203125,
+            26339.544921875,
+            26341.37890625,
+            26341.361328125,
+            26340.50390625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend July 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate in late July 2026 is influenced by global economic uncertainty and a strengthening USD trend. Domestic factors include sharp increases in gold prices (safe-haven demand) and continued focus on FDI and export-import credit packages. Regional Asian market volatility is also a factor, though recent days showed some stabilization."
+    }
+}
