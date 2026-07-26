@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 24.773359375,
+        "RMSE": 30.503606321658246,
+        "MAPE": 0.0009428491862938024
+    },
+    "metrics_holdout_final": {
+        "MAE": 24.773359375,
+        "RMSE": 30.503606321658246,
+        "MAPE": 0.0009428491862938024
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows stable, realistic price movement within the expected range for VND=X.",
+        "diagnose": "Strong performance metrics (MAPE < 0.1%) with no evidence of overfitting or anomalous behavior.",
+        "contextualize": "Forecast is consistent with current USD strength and local economic reports from late July 2026.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26279.39453125,
+            26290.8515625,
+            26296.08984375,
+            26321.87109375,
+            26326.11328125,
+            26296.908203125,
+            26282.15625
+        ],
+        "80_ci_lower": [
+            26245.115234375,
+            26246.904296875,
+            26289.84375,
+            26292.421875,
+            26284.146484375,
+            26284.849609375,
+            26268.244140625
+        ],
+        "80_ci_upper": [
+            26302.87109375,
+            26308.861328125,
+            26338.6640625,
+            26338.123046875,
+            26333.81640625,
+            26304.732421875,
+            26326.76953125
+        ],
+        "95_ci_lower": [
+            26010.87109375,
+            26010.87109375,
+            26010.87109375,
+            26010.87109375,
+            26010.87109375,
+            26010.87109375,
+            26010.87109375
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend July 2026 economic news"
+        ],
+        "key_findings": "The VND/USD exchange rate is under pressure as of late July 2026. Market reports indicate free-market USD exchange rates reaching approximately 26,303 VND/USD, which aligns closely with the model's forecast range ($26,279 - $26,326). Domestic gold market volatility and the strength of the US economy are cited as primary drivers for current currency valuations."
+    }
+}
