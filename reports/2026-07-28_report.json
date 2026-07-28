@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 23.4753125,
+        "RMSE": 28.415077806131652,
+        "MAPE": 0.0008935197454596459
+    },
+    "metrics_holdout_final": {
+        "MAE": 23.29109375,
+        "RMSE": 29.24967875508021,
+        "MAPE": 0.0008864232498197445
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is directionally reasonable, aligning with the current market rate of ~26,300 VND/USD, but reflects a static expectation in a volatile environment.",
+        "diagnose": "The model shows signs of potential overfitting (very low MAPE) and underestimation of risk/volatility (too narrow, static confidence interval).",
+        "contextualize": "USD strength, high gold prices, and new US trade tariffs are exerting pressure on the VND, which warrants wider uncertainty bands than the model currently provides.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26313.51953125,
+            26310.51953125,
+            26321.57421875,
+            26321.271484375,
+            26318.21484375,
+            26314.427734375,
+            26318.337890625
+        ],
+        "80_ci_lower": [
+            26292.611328125,
+            26296.78125,
+            26301.05859375,
+            26300.37109375,
+            26302.1953125,
+            26301.05859375,
+            26300.765625
+        ],
+        "80_ci_upper": [
+            26335.677734375,
+            26330.40625,
+            26331.763671875,
+            26330.666015625,
+            26331.548828125,
+            26331.26953125,
+            26332.75
+        ],
+        "95_ci_lower": [
+            26088.0546875,
+            26088.0546875,
+            26088.0546875,
+            26088.0546875,
+            26088.0546875,
+            26088.0546875,
+            26088.0546875
+        ],
+        "95_ci_upper": [
+            26340.111328125,
+            26337.62890625,
+            26339.82421875,
+            26338.357421875,
+            26339.638671875,
+            26337.642578125,
+            26336.927734375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate trend July 2026"
+        ],
+        "key_findings": "As of July 27, 2026, the central USD/VND exchange rate set by the State Bank of Vietnam is 25,283 VND. The market exchange rate has seen fluctuations, with reports mentioning a free-market rate around 26,303 VND/USD, driven by global dollar strength and gold price volatility. The US has recently imposed a 12.5% tariff on certain Vietnamese imports under Section 301, which adds macroeconomic pressure."
+    }
+}
