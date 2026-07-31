@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 20.385078125,
+        "RMSE": 26.47826426035073,
+        "MAPE": 0.0007758116653359918
+    },
+    "metrics_holdout_final": {
+        "MAE": 23.139921875,
+        "RMSE": 28.71256267987502,
+        "MAPE": 0.0008807095606951394
+    },
+    "agent_evaluation": {
+        "evaluate": "Forecast is directionally consistent with current market levels (26,300 range), but displays lack of volatility.",
+        "diagnose": "Possible underfitting of volatility; static confidence intervals indicate poor risk modeling.",
+        "contextualize": "USD/VND is under pressure due to hawkish Fed expectations and recent SBV reference rate adjustments.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26318.63671875,
+            26320.7421875,
+            26317.048828125,
+            26329.4609375,
+            26316.669921875,
+            26287.41015625,
+            26328.166015625
+        ],
+        "80_ci_lower": [
+            26300.240234375,
+            26300.345703125,
+            26301.54296875,
+            26298.83203125,
+            26302.94140625,
+            26271.98828125,
+            26300.576171875
+        ],
+        "80_ci_upper": [
+            26332.78125,
+            26331.6484375,
+            26326.1328125,
+            26329.365234375,
+            26342.21875,
+            26328.837890625,
+            26335.421875
+        ],
+        "95_ci_lower": [
+            25919.98046875,
+            25919.98046875,
+            25919.98046875,
+            25919.98046875,
+            25919.98046875,
+            25919.98046875,
+            25919.98046875
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X Vietnamese Dong US Dollar exchange rate trend July 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate is currently trading around 26,300\u201326,500 levels as of late July 2026. The State Bank of Vietnam (SBV) has maintained a reference rate near 25,300, while commercial bank rates are higher. The market is influenced by a hawkish stance from the US Federal Reserve and global economic pressures. Current commercial bank selling rates for the USD/VND are reported around 26,530."
+    }
+}
