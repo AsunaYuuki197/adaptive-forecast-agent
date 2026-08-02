@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 20.463828125,
+        "RMSE": 25.4252834758128,
+        "MAPE": 0.0007787128135632067
+    },
+    "metrics_holdout_final": {
+        "MAE": 17.666748046875,
+        "RMSE": 21.84408632018623,
+        "MAPE": 0.000672165298650554
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a static, range-bound trajectory that fails to align with the current spot rate of 26,490.",
+        "diagnose": "The model exhibits signs of overfitting or extreme momentum-lag. The near-zero MAPE (0.0008) is unrealistic for a currency pair, and the model is failing to incorporate the current spot price.",
+        "contextualize": "Recent fuel price hikes and inflationary pressures in Vietnam necessitate a more responsive model. The current forecast is failing to reflect the macro-reality of the 26,490 exchange rate.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02
+    },
+    "7_day_forecast": {
+        "point": [
+            26268.458984375,
+            26271.509765625,
+            26274.41015625,
+            26307.751953125,
+            26316.923828125,
+            26318.478515625,
+            26316.814453125
+        ],
+        "80_ci_lower": [
+            26264.810546875,
+            26249.740234375,
+            26249.84375,
+            26262.025390625,
+            26262.64453125,
+            26269.1796875,
+            26261.515625
+        ],
+        "80_ci_upper": [
+            26307.19140625,
+            26310.841796875,
+            26314.849609375,
+            26332.771484375,
+            26330.23828125,
+            26328.779296875,
+            26333.63671875
+        ],
+        "95_ci_lower": [
+            26141.794921875,
+            26141.794921875,
+            26141.794921875,
+            26141.794921875,
+            26141.794921875,
+            26141.794921875,
+            26141.794921875
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend August 2026 news"
+        ],
+        "key_findings": "As of August 1, 2026, the USD/VND exchange rate is reported at 26,490 VND/USD according to Vietcombank data. The Vietnamese market is currently grappling with high domestic gold premiums and recent fuel price increases implemented on July 30, 2026, which are exerting inflationary pressure on the domestic economy."
+    }
+}
