@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 19.20125,
+        "RMSE": 23.311385880507444,
+        "MAPE": 0.0007305203808851444
+    },
+    "metrics_holdout_final": {
+        "MAE": 19.20125,
+        "RMSE": 23.311385880507444,
+        "MAPE": 0.0007305203808851444
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly reasonable and reflects the current trading range of USD/VND.",
+        "diagnose": "The model shows strong historical fit on the holdout set; no evidence of significant over/underfitting given the stable market regime.",
+        "contextualize": "Recent market conditions indicate active central bank intervention, which aligns with the low-volatility, range-bound forecast provided.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26320.1953125,
+            26323.14453125,
+            26311.19140625,
+            26295.787109375,
+            26308.1015625,
+            26315.14453125,
+            26314.216796875
+        ],
+        "80_ci_lower": [
+            26277.111328125,
+            26277.111328125,
+            26269.046875,
+            26268.466796875,
+            26269.046875,
+            26277.111328125,
+            26277.111328125
+        ],
+        "80_ci_upper": [
+            26340.83203125,
+            26335.74609375,
+            26351.111328125,
+            26320.15625,
+            26318.32421875,
+            26337.0859375,
+            26337.93359375
+        ],
+        "95_ci_lower": [
+            25934.6171875,
+            25934.6171875,
+            25934.6171875,
+            25934.6171875,
+            25934.6171875,
+            25934.6171875,
+            25934.6171875
+        ],
+        "95_ci_upper": [
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0,
+            26355.0
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news August 2026"
+        ],
+        "key_findings": "As of early August 2026, the USD/VND exchange rate is trading near 26,288. The State Bank of Vietnam is actively managing the rate with a reference rate adjustment (up 20 VND) and stated readiness to intervene. While there is downward pressure on the dollar in some media reports, analysts (HSBC) expect manageable, moderately upward pressure on the USD/VND in H2 2026 due to corporate profit repatriation and trade deficits."
+    }
+}
