@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 20.47875,
+        "RMSE": 25.54206043365118,
+        "MAPE": 0.0007793621996066599
+    },
+    "metrics_holdout_final": {
+        "MAE": 20.47875,
+        "RMSE": 25.54206043365118,
+        "MAPE": 0.0007793621996066599
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly reasonable and reflects the current range-bound nature of the USD/VND exchange rate.",
+        "diagnose": "The model demonstrates high precision on recent data but may be overly reliant on the current period of policy-driven stability.",
+        "contextualize": "The State Bank of Vietnam's active management to keep the exchange rate stable confirms the model's predicted flat trajectory is realistic in the current environment.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26292.705078125,
+            26299.396484375,
+            26298.962890625,
+            26274.923828125,
+            26277.935546875,
+            26296.09375,
+            26265.814453125
+        ],
+        "80_ci_lower": [
+            26269.37109375,
+            26255.04296875,
+            26265.07421875,
+            26257.203125,
+            26258.228515625,
+            26264.671875,
+            26234.828125
+        ],
+        "80_ci_upper": [
+            26350.162109375,
+            26330.53515625,
+            26321.232421875,
+            26321.232421875,
+            26330.22265625,
+            26298.833984375,
+            26274.064453125
+        ],
+        "95_ci_lower": [
+            26065.478515625,
+            26065.478515625,
+            26065.478515625,
+            26065.478515625,
+            26065.478515625,
+            26065.478515625,
+            26055.99609375
+        ],
+        "95_ci_upper": [
+            26349.41796875,
+            26339.04296875,
+            26336.55078125,
+            26336.55078125,
+            26339.04296875,
+            26336.001953125,
+            26316.078125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate trend August 2026"
+        ],
+        "key_findings": "As of early August 2026, the USD/VND exchange rate has been remarkably stable, generally trading in the 26,200-26,350 range. The State Bank of Vietnam (SBV) continues to intervene to manage volatility, with a reference rate set at 25,405 VND/USD on August 5, 2026. Market reports highlight a period of consolidation for the currency despite wider economic headwinds, with the central bank signaling a firm commitment to stability."
+    }
+}
