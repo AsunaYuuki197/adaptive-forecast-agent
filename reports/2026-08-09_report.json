@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 21.033828125,
+        "RMSE": 26.354107910412413,
+        "MAPE": 0.0008007235124014044
+    },
+    "metrics_holdout_final": {
+        "MAE": 21.033828125,
+        "RMSE": 26.354107910412413,
+        "MAPE": 0.0008007235124014044
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast aligns well with the current, tightly-managed trading environment of the VND/USD pair.",
+        "diagnose": "The model shows strong fit metrics (MAPE < 0.1%), indicating it is well-calibrated to the recent low-volatility, intervention-heavy regime.",
+        "contextualize": "Recent market data confirms the SBV is successfully holding the VND in a narrow corridor despite fundamental trade pressures.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26295.53125,
+            26294.4609375,
+            26273.18359375,
+            26276.40625,
+            26277.87109375,
+            26261.353515625,
+            26266.998046875
+        ],
+        "80_ci_lower": [
+            26253.130859375,
+            26266.212890625,
+            26256.7890625,
+            26256.7890625,
+            26255.427734375,
+            26234.412109375,
+            26237.6953125
+        ],
+        "80_ci_upper": [
+            26330.048828125,
+            26316.4296875,
+            26321.1171875,
+            26311.69140625,
+            26298.58203125,
+            26278.96875,
+            26275.916015625
+        ],
+        "95_ci_lower": [
+            26065.580078125,
+            26065.580078125,
+            26065.580078125,
+            26065.580078125,
+            26065.140625,
+            26055.72265625,
+            26055.72265625
+        ],
+        "95_ci_upper": [
+            26338.6875,
+            26336.119140625,
+            26336.119140625,
+            26335.759765625,
+            26333.59375,
+            26314.34375,
+            26314.34375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current VND USD exchange rate VND=X August 2026 news trends"
+        ],
+        "key_findings": "As of early August 2026, the VND/USD exchange rate is hovering in the ~26,200\u201326,300 range. The State Bank of Vietnam (SBV) actively maintains a stable trading band, though the currency faces pressure from a widening trade deficit. Market reports indicate the rate has remained constrained in a tight band throughout 2026, with the SBV frequently intervening to prevent volatility."
+    }
+}
