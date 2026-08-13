@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 28.5509375,
+        "RMSE": 41.92556621462604,
+        "MAPE": 0.0010887693810748343
+    },
+    "metrics_holdout_final": {
+        "MAE": 30.452734375,
+        "RMSE": 43.57107971555612,
+        "MAPE": 0.0011611995118908818
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows an upward bias that is misaligned with the current market spot rate of ~25,910 VND.",
+        "diagnose": "Possible overfitting indicated by extreme precision (MAPE) and divergence from spot market reality; RMSE sensitivity suggests vulnerability to past volatility.",
+        "contextualize": "Recent news confirms dollar gains against the dong, but not to the extent implied by the forecast's 26,200+ levels.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26280.724609375,
+            26278.0390625,
+            26217.06640625,
+            26239.064453125,
+            26255.45703125,
+            26256.87890625,
+            26241.041015625
+        ],
+        "80_ci_lower": [
+            26203.10546875,
+            26244.287109375,
+            26215.892578125,
+            26216.009765625,
+            26216.009765625,
+            26209.794921875,
+            26209.794921875
+        ],
+        "80_ci_upper": [
+            26310.11328125,
+            26283.416015625,
+            26270.67578125,
+            26274.732421875,
+            26277.365234375,
+            26277.19921875,
+            26274.732421875
+        ],
+        "95_ci_lower": [
+            26109.37890625,
+            26107.201171875,
+            26100.36328125,
+            26112.171875,
+            26109.447265625,
+            26109.447265625,
+            26084.1875
+        ],
+        "95_ci_upper": [
+            26337.06640625,
+            26336.828125,
+            26324.1171875,
+            26324.1171875,
+            26325.640625,
+            26325.640625,
+            26324.1171875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate August 2026 and recent economic news Vietnam"
+        ],
+        "key_findings": "The actual USD/VND exchange rate as of August 10, 2026, was reported at 25,910 VND. However, a report from August 11, 2026, indicates that the dollar is currently gaining ground against the Vietnamese dong. The provided forecast (range ~26,200) is significantly higher than recent observed market rates (25,910), suggesting the model may be overestimating the USD strength or failing to account for very recent shifts in market sentiment or policy."
+    }
+}
