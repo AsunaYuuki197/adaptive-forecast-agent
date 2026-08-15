@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 39.047734375,
+        "RMSE": 60.721568590240864,
+        "MAPE": 0.0014915373103090938
+    },
+    "metrics_holdout_final": {
+        "MAE": 40.069140625,
+        "RMSE": 62.63715670036129,
+        "MAPE": 0.001530744710991912
+    },
+    "agent_evaluation": {
+        "evaluate": "Model is forecasting significantly higher than the current market spot rate.",
+        "diagnose": "Possible overfitting (indicated by extremely low MAPE) and high sensitivity to outliers (indicated by RMSE vs MAE).",
+        "contextualize": "Model prediction of ~26,200 is inconsistent with the current spot rate of 25,920.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 80,
+        "max_depth": 2,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26212.47265625,
+            26218.9921875,
+            26211.779296875,
+            26233.14453125,
+            26233.14453125,
+            26234.326171875,
+            26241.5390625
+        ],
+        "80_ci_lower": [
+            26177.251953125,
+            26206.970703125,
+            26203.7734375,
+            26198.140625,
+            26192.728515625,
+            26192.728515625,
+            26198.98046875
+        ],
+        "80_ci_upper": [
+            26287.61328125,
+            26287.61328125,
+            26287.61328125,
+            26287.61328125,
+            26287.61328125,
+            26287.61328125,
+            26287.61328125
+        ],
+        "95_ci_lower": [
+            26089.27734375,
+            26098.6640625,
+            26095.396484375,
+            26101.04296875,
+            26061.396484375,
+            26064.642578125,
+            26061.396484375
+        ],
+        "95_ci_upper": [
+            26336.806640625,
+            26336.806640625,
+            26336.806640625,
+            26336.806640625,
+            26336.806640625,
+            26336.806640625,
+            26336.806640625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend August 2026 macroeconomic news"
+        ],
+        "key_findings": "As of August 15, 2026, the USD/VND exchange rate is around 25,920. Macro news highlights a rise in the reference exchange rate set by the SBV, alongside efforts to lower domestic lending rates. The model's forecast of ~26,200 is significantly higher than the current market rate (~25,920), indicating a persistent upward bias or a drift in the model's baseline compared to actual market conditions."
+    }
+}
