@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 42.8778125,
+        "RMSE": 66.27510918860432,
+        "MAPE": 0.001638936858812624
+    },
+    "metrics_holdout_final": {
+        "MAE": 42.8778125,
+        "RMSE": 66.27510918860432,
+        "MAPE": 0.001638936858812624
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is realistic, projecting a stable, slightly upward drift that aligns with current market levels (~26,150).",
+        "diagnose": "Strong performance on holdout data, though low MAPE suggests the model is currently optimized for short-term persistence. RMSE/MAE ratio indicates moderate sensitivity to volatility.",
+        "contextualize": "Market data confirms VND=X is hovering near 26,150, with no major economic shocks anticipated to deviate from the stable trend.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26203.28125,
+            26197.96484375,
+            26192.431640625,
+            26206.58203125,
+            26212.115234375,
+            26221.041015625,
+            26244.30078125
+        ],
+        "80_ci_lower": [
+            26177.97265625,
+            26222.390625,
+            26207.134765625,
+            26207.93359375,
+            26207.93359375,
+            26207.93359375,
+            26208.10546875
+        ],
+        "80_ci_upper": [
+            26239.70703125,
+            26225.54296875,
+            26232.08984375,
+            26242.837890625,
+            26242.837890625,
+            26242.837890625,
+            26260.486328125
+        ],
+        "95_ci_lower": [
+            26114.158203125,
+            26127.84375,
+            26121.91015625,
+            26089.4921875,
+            26089.4921875,
+            26089.4921875,
+            26091.900390625
+        ],
+        "95_ci_upper": [
+            26308.03515625,
+            26308.03515625,
+            26308.03515625,
+            26308.03515625,
+            26308.03515625,
+            26308.03515625,
+            26308.03515625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend August 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate (ticker: VND=X) is trading in the vicinity of 26,140\u201326,165 as of mid-August 2026, based on stablecoin parity data and general market indicators. The market is showing stability with minor daily fluctuations."
+    }
+}
