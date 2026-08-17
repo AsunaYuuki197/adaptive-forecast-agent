@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 41.522890625,
+        "RMSE": 63.621565993893775,
+        "MAPE": 0.0015869711671988914
+    },
+    "metrics_holdout_final": {
+        "MAE": 42.671328125,
+        "RMSE": 64.96840021330088,
+        "MAPE": 0.0016310020038732178
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast trajectory is consistent with the current managed float regime of the VND, showing moderate stability.",
+        "diagnose": "The model is likely overfitting or suffering from a technical bug in the uncertainty estimation, evidenced by the static upper CI bound.",
+        "contextualize": "Matches the SBV's upward adjustments to the reference rate, though it lacks sensitivity to the volatility seen in commercial bank retail spreads.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26194.494140625,
+            26207.96484375,
+            26217.671875,
+            26228.24609375,
+            26234.0234375,
+            26235.701171875,
+            26249.802734375
+        ],
+        "80_ci_lower": [
+            26185.123046875,
+            26212.515625,
+            26202.017578125,
+            26173.146484375,
+            26182.310546875,
+            26183.359375,
+            26190.5859375
+        ],
+        "80_ci_upper": [
+            26249.818359375,
+            26243.794921875,
+            26247.99609375,
+            26248.58984375,
+            26252.220703125,
+            26253.197265625,
+            26259.384765625
+        ],
+        "95_ci_lower": [
+            26115.984375,
+            26110.4765625,
+            26111.482421875,
+            26090.3203125,
+            26102.576171875,
+            26104.9921875,
+            26107.806640625
+        ],
+        "95_ci_upper": [
+            26311.818359375,
+            26312.181640625,
+            26312.4921875,
+            26312.4921875,
+            26312.9609375,
+            26314.0859375,
+            26314.0859375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate trend August 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate has been under upward pressure, with the State Bank of Vietnam (SBV) steadily increasing the daily reference rate throughout early August 2026. Conversely, commercial bank exchange rates have shown some volatility, with minor cooling observed in mid-August sessions. The general macroeconomic sentiment involves monitoring inflationary pressures and currency management."
+    }
+}
