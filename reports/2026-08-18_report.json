@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 39.3821875,
+        "RMSE": 60.805179530925535,
+        "MAPE": 0.0015053027089025476
+    },
+    "metrics_holdout_final": {
+        "MAE": 51.881510416666664,
+        "RMSE": 72.54359473642953,
+        "MAPE": 0.00198240007150796
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast provides a narrow, stable range that lacks sensitivity to the current upward volatility seen in the USD/VND pair.",
+        "diagnose": "High likelihood of overfitting or reliance on persistence (lagged values). The low MAPE vs. higher RMSE indicates poor handling of volatility spikes.",
+        "contextualize": "Recent market data shows commercial bank rates have climbed to ~26,330 VND/USD as of August 17, 2026, suggesting the model is currently under-predicting the short-term upward trend.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26292.66015625,
+            26283.126953125,
+            26281.259765625,
+            26285.248046875,
+            26270.671875,
+            26237.951171875,
+            26248.51953125
+        ],
+        "80_ci_lower": [
+            26261.64453125,
+            26263.140625,
+            26253.091796875,
+            26228.40625,
+            26205.380859375,
+            26249.51953125,
+            26242.931640625
+        ],
+        "80_ci_upper": [
+            26296.70703125,
+            26300.095703125,
+            26303.265625,
+            26305.59765625,
+            26293.0,
+            26299.3828125,
+            26299.3828125
+        ],
+        "95_ci_lower": [
+            26224.80859375,
+            26224.80859375,
+            26224.80859375,
+            26178.662109375,
+            26178.662109375,
+            26215.8671875,
+            26215.8671875
+        ],
+        "95_ci_upper": [
+            26333.595703125,
+            26333.595703125,
+            26333.595703125,
+            26333.595703125,
+            26333.595703125,
+            26335.8515625,
+            26335.8515625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate current news August 2026 trends"
+        ],
+        "key_findings": "As of mid-August 2026, the USD/VND exchange rate is experiencing volatility. Recent reports (August 17, 2026) show the State Bank of Vietnam set the reference rate at 25,586 VND/USD, with commercial bank selling rates around 26,330 VND/USD, showing an upward trend compared to mid-August lows. The market is influenced by global currency dynamics and local agricultural export impacts."
+    }
+}
