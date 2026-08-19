@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 40.901015625,
+        "RMSE": 62.63752139214261,
+        "MAPE": 0.00156353277590787
+    },
+    "metrics_holdout_final": {
+        "MAE": 43.5746875,
+        "RMSE": 64.48977517160817,
+        "MAPE": 0.0016654416873689091
+    },
+    "agent_evaluation": {
+        "evaluate": "Model is overestimating; forecast values (26.2k+) are significantly above the current market rate (~25.9k).",
+        "diagnose": "The model exhibits clear upward bias and failure to adapt to recent downward trends in the USD/VND exchange rate.",
+        "contextualize": "Recent market data shows the USD/VND rate has cooled since Q2 2026 peaks, but the model is still projecting near-Q2 highs.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26214.94140625,
+            26216.427734375,
+            26215.140625,
+            26215.689453125,
+            26240.7578125,
+            26223.935546875,
+            26240.376953125
+        ],
+        "80_ci_lower": [
+            26182.990234375,
+            26218.533203125,
+            26184.078125,
+            26219.15625,
+            26229.16796875,
+            26235.419921875,
+            26233.642578125
+        ],
+        "80_ci_upper": [
+            26274.619140625,
+            26274.619140625,
+            26274.619140625,
+            26274.619140625,
+            26274.619140625,
+            26274.619140625,
+            26274.619140625
+        ],
+        "95_ci_lower": [
+            26172.974609375,
+            26172.529296875,
+            26172.529296875,
+            26172.529296875,
+            26173.419921875,
+            26174.57421875,
+            26174.576171875
+        ],
+        "95_ci_upper": [
+            26328.091796875,
+            26328.091796875,
+            26328.091796875,
+            26328.091796875,
+            26328.091796875,
+            26328.091796875,
+            26328.091796875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend August 2026 macroeconomic news"
+        ],
+        "key_findings": "Recent data from August 18, 2026, indicates the USD/VND reference exchange rate is 25,580, with market rates around 25,920. This suggests the market is trading well below the model's predicted levels of 26,200+."
+    }
+}
