@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 43.006171875,
+        "RMSE": 66.1288937587209,
+        "MAPE": 0.0016441258215776605
+    },
+    "metrics_holdout_final": {
+        "MAE": 61.404541015625,
+        "RMSE": 81.3356343237652,
+        "MAPE": 0.002346396756825802
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is slightly bearish compared to current commercial market spot rates (approx. 26,370 VND/USD).",
+        "diagnose": "High evidence of overfitting to historical means; low MAPE masks the inability to track current upward trends.",
+        "contextualize": "The model fails to account for current market pressure where commercial bank selling rates have decoupled upward from the SBV reference rate.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26283.66796875,
+            26290.9921875,
+            26284.072265625,
+            26237.142578125,
+            26269.029296875,
+            26268.94921875,
+            26271.20703125
+        ],
+        "80_ci_lower": [
+            26254.505859375,
+            26254.353515625,
+            26236.43359375,
+            26213.033203125,
+            26225.24609375,
+            26222.6328125,
+            26207.830078125
+        ],
+        "80_ci_upper": [
+            26310.943359375,
+            26310.60546875,
+            26300.37109375,
+            26300.37109375,
+            26300.37109375,
+            26300.001953125,
+            26311.974609375
+        ],
+        "95_ci_lower": [
+            26242.65234375,
+            26242.65234375,
+            26233.380859375,
+            26227.08203125,
+            26223.818359375,
+            26223.818359375,
+            26187.572265625
+        ],
+        "95_ci_upper": [
+            26338.048828125,
+            26338.048828125,
+            26338.048828125,
+            26338.048828125,
+            26338.048828125,
+            26338.048828125,
+            26338.048828125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X Vietnamese Dong USD exchange rate August 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate in commercial banks as of August 19-20, 2026, is trading in the 26,300\u201326,400 range (e.g., Vietcombank selling at 26,370 VND/USD on Aug 19). The State Bank of Vietnam (SBV) reference rate for August 19 was 25,598 VND/USD."
+    }
+}
