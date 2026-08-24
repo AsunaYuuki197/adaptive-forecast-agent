@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 51.00609375,
+        "RMSE": 75.30893775208013,
+        "MAPE": 0.0019511804371035407
+    },
+    "metrics_holdout_final": {
+        "MAE": 79.04239908854167,
+        "RMSE": 100.55755256525069,
+        "MAPE": 0.0030220253234966928
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows an unrealistic flat-lining trajectory (range ~26,210-26,261) that ignores current market upward momentum.",
+        "diagnose": "The extremely low MAPE indicates overfitting or lack of responsiveness to new volatility regimes; the high RMSE vs MAE suggests the model is poorly equipped to handle price spikes.",
+        "contextualize": "Recent market data shows USD/VND trading at or above 26,300-26,400, while the model predicts sub-26,270 values. The model lacks sensitivity to recent macroeconomic volatility and gold-related pressures.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02
+    },
+    "7_day_forecast": {
+        "point": [
+            26293.35546875,
+            26274.7109375,
+            26285.298828125,
+            26274.55859375,
+            26273.15625,
+            26286.94921875,
+            26274.55859375
+        ],
+        "80_ci_lower": [
+            26266.173828125,
+            26258.86328125,
+            26258.86328125,
+            26258.86328125,
+            26258.86328125,
+            26260.91796875,
+            26261.666015625
+        ],
+        "80_ci_upper": [
+            26312.892578125,
+            26312.892578125,
+            26312.892578125,
+            26316.064453125,
+            26316.064453125,
+            26316.064453125,
+            26323.546875
+        ],
+        "95_ci_lower": [
+            26242.513671875,
+            26238.416015625,
+            26238.416015625,
+            26238.416015625,
+            26238.416015625,
+            26238.416015625,
+            26238.416015625
+        ],
+        "95_ci_upper": [
+            26340.994140625,
+            26340.994140625,
+            26340.994140625,
+            26340.994140625,
+            26340.994140625,
+            26340.994140625,
+            26340.994140625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate USD/VND August 2026 trends news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been under upward pressure in August 2026. As of August 18, major banks like Vietcombank were listing selling rates around 26,400 VND/USD. By August 21, the rate was approximately 26,310 VND/USD. The State Bank of Vietnam has been managing the rate via daily reference adjustments, while market sentiment reflects sensitivity to global gold price surges (above $4,600/oz) and broader macroeconomic volatility."
+    }
+}
