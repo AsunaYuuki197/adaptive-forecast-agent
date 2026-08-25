@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 55.754140625,
+        "RMSE": 79.75552162977954,
+        "MAPE": 0.0021328156674887038
+    },
+    "metrics_holdout_final": {
+        "MAE": 55.754140625,
+        "RMSE": 79.75552162977954,
+        "MAPE": 0.0021328156674887038
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is mathematically reasonable and sits within the recent trading range, showing a stable, consolidated outlook.",
+        "diagnose": "The model shows excellent fitting (MAPE 0.21%), though the lack of variance in the prediction suggests it may be missing real-world volatility drivers.",
+        "contextualize": "Market is currently balancing cooling interbank demand with retail pressures and global gold price volatility; SBV intervention remains a key latent variable.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 120,
+        "max_depth": 4,
+        "learning_rate": 0.08
+    },
+    "7_day_forecast": {
+        "point": [
+            26238.802734375,
+            26230.662109375,
+            26234.267578125,
+            26242.408203125,
+            26257.1015625,
+            26255.794921875,
+            26255.30859375
+        ],
+        "80_ci_lower": [
+            26208.5703125,
+            26165.18359375,
+            26184.046875,
+            26210.728515625,
+            26210.728515625,
+            26209.30078125,
+            26209.30078125
+        ],
+        "80_ci_upper": [
+            26265.380859375,
+            26265.380859375,
+            26265.380859375,
+            26265.380859375,
+            26265.380859375,
+            26265.380859375,
+            26265.380859375
+        ],
+        "95_ci_lower": [
+            26201.5390625,
+            26187.892578125,
+            26188.880859375,
+            26204.91796875,
+            26204.91796875,
+            26205.689453125,
+            26205.689453125
+        ],
+        "95_ci_upper": [
+            26324.251953125,
+            26324.251953125,
+            26324.251953125,
+            26324.251953125,
+            26324.251953125,
+            26324.251953125,
+            26324.251953125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate current trends August 2026 news"
+        ],
+        "key_findings": "As of late August 2026, the USD/VND exchange rate has shown mixed short-term signals. While interbank and free market rates showed a slight downward trend in the week ending August 22nd, banking selling rates remain near 26,300-26,370 VND/USD. The State Bank of Vietnam continues to manage liquidity and interest rates to stabilize the currency against domestic demand pressures and global gold price volatility."
+    }
+}
