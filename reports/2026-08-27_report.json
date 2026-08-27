@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 72.353515625,
+        "RMSE": 93.16791539055403,
+        "MAPE": 0.0027684279162565406
+    },
+    "metrics_holdout_final": {
+        "MAE": 72.432890625,
+        "RMSE": 93.76681779898315,
+        "MAPE": 0.002771490208302896
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast displays an unrealistic lack of volatility, projecting a nearly flat trajectory that ignores likely market fluctuations.",
+        "diagnose": "The high RMSE relative to the MAE indicates poor performance in predicting volatility spikes, despite a low MAPE, suggesting the model is smoothing over actual market behavior.",
+        "contextualize": "Macroeconomic factors, including geopolitical tensions and a weakening USD, are currently impacting Asian currency markets. The model fails to reflect these external shocks.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26244.884765625,
+            26248.353515625,
+            26254.966796875,
+            26254.54296875,
+            26265.970703125,
+            26257.705078125,
+            26257.4140625
+        ],
+        "80_ci_lower": [
+            26197.21484375,
+            26198.255859375,
+            26217.181640625,
+            26248.146484375,
+            26255.927734375,
+            26253.611328125,
+            26252.818359375
+        ],
+        "80_ci_upper": [
+            26272.546875,
+            26273.26171875,
+            26273.154296875,
+            26273.025390625,
+            26273.498046875,
+            26271.302734375,
+            26270.166015625
+        ],
+        "95_ci_lower": [
+            26211.880859375,
+            26202.9453125,
+            26210.0,
+            26225.9609375,
+            26227.125,
+            26226.5546875,
+            26229.640625
+        ],
+        "95_ci_upper": [
+            26321.46875,
+            26321.46875,
+            26321.546875,
+            26321.546875,
+            26321.546875,
+            26321.546875,
+            26321.46484375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news August 2026"
+        ],
+        "key_findings": "The USD/VND market is currently influenced by global factors, including geopolitical tensions (Strait of Hormuz/Iran) impacting oil prices, and a generally weakening US dollar which has increased the appeal of safe-haven assets like gold. Asian markets, including Vietnam, are exhibiting volatility linked to these global macroeconomic shifts."
+    }
+}
