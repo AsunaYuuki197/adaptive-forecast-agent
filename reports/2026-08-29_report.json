@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 80.0478125,
+        "RMSE": 102.03678312188836,
+        "MAPE": 0.003063840046579271
+    },
+    "metrics_holdout_final": {
+        "MAE": 80.0478125,
+        "RMSE": 102.03678312188836,
+        "MAPE": 0.003063840046579271
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable trajectory between 26,249 and 26,269, which is highly consistent with current commercial bank selling rates for USD/VND.",
+        "diagnose": "High predictive accuracy (MAPE 0.31%). RMSE/MAE ratio is reasonable, suggesting the model handles recent volatility well without overreacting.",
+        "contextualize": "Recent official data shows a minor downward trend in USD/VND exchange rates, which the model reflects by forecasting a flat, stable plateau rather than aggressive movement.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26249.0,
+            26249.578125,
+            26262.87109375,
+            26262.87109375,
+            26269.255859375,
+            26256.388671875,
+            26256.470703125
+        ],
+        "80_ci_lower": [
+            26186.126953125,
+            26188.404296875,
+            26196.107421875,
+            26238.20703125,
+            26247.111328125,
+            26244.853515625,
+            26242.08203125
+        ],
+        "80_ci_upper": [
+            26277.05078125,
+            26277.05078125,
+            26277.05078125,
+            26277.05078125,
+            26277.05078125,
+            26273.90234375,
+            26272.806640625
+        ],
+        "95_ci_lower": [
+            26185.88671875,
+            26185.88671875,
+            26185.88671875,
+            26224.328125,
+            26224.328125,
+            26224.328125,
+            26224.328125
+        ],
+        "95_ci_upper": [
+            26327.98828125,
+            26327.98828125,
+            26327.98828125,
+            26327.98828125,
+            26327.98828125,
+            26327.98828125,
+            26327.98828125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news August 2026"
+        ],
+        "key_findings": "As of August 28, 2026, the official State Bank of Vietnam reference exchange rate is 25,610 VND/USD. Commercial banks like Vietcombank are quoting selling rates around 26,270 VND/USD, showing a recent slight downward trend in the exchange rate."
+    }
+}
