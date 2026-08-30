@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 80.0478125,
+        "RMSE": 102.03678312188836,
+        "MAPE": 0.003063840046579271
+    },
+    "metrics_holdout_final": {
+        "MAE": 83.606015625,
+        "RMSE": 105.82286839022423,
+        "MAPE": 0.0031999175838529083
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast provides an overly simplistic, flat trajectory that matches the current range but lacks realism regarding market dynamics.",
+        "diagnose": "The model exhibits signs of overfitting or insufficient feature inputs, evidenced by a very low MAPE (0.0031) and failure to model expected volatility.",
+        "contextualize": "Recent USD/VND strength is driven by US trade policy (tariffs/sanctions); the model currently lacks the exogenous inputs to capture these macro-level trends.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26258.353515625,
+            26260.876953125,
+            26264.505859375,
+            26264.224609375,
+            26264.6171875,
+            26254.0625,
+            26256.228515625
+        ],
+        "80_ci_lower": [
+            26181.474609375,
+            26183.640625,
+            26198.56640625,
+            26235.181640625,
+            26245.919921875,
+            26250.693359375,
+            26250.328125
+        ],
+        "80_ci_upper": [
+            26304.2265625,
+            26304.1953125,
+            26304.388671875,
+            26304.380859375,
+            26304.33984375,
+            26304.478515625,
+            26305.080078125
+        ],
+        "95_ci_lower": [
+            26184.7421875,
+            26185.392578125,
+            26193.40234375,
+            26215.76953125,
+            26216.083984375,
+            26217.236328125,
+            26218.8359375
+        ],
+        "95_ci_upper": [
+            26340.37890625,
+            26340.369140625,
+            26340.369140625,
+            26340.369140625,
+            26340.369140625,
+            26340.42578125,
+            26340.380859375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate August 2026 news USD/VND macroeconomic trends"
+        ],
+        "key_findings": "The USD/VND exchange rate has been under upward pressure in late August 2026, recently testing levels near 26,100\u201326,296. Macroeconomic drivers include US policy shifts, specifically new trade tariffs and sanctions against Iran impacting dollar strength. The market is showing sensitivity to global trade policy."
+    }
+}
