@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 102.6268780048077,
+        "RMSE": 120.75736790459771,
+        "MAPE": 0.0039304561967100264
+    },
+    "metrics_holdout_final": {
+        "MAE": 102.6268780048077,
+        "RMSE": 120.75736790459771,
+        "MAPE": 0.0039304561967100264
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly reasonable and reflects a stable, realistic trading range consistent with current market spot data.",
+        "diagnose": "Performance metrics (MAE: 102.63, MAPE: 0.0039) suggest a highly reliable model with no signs of overfitting or excessive sensitivity to volatility.",
+        "contextualize": "Recent market data confirms USD/VND is stable near 26,270. The model's projection accurately mirrors current macro-economic conditions.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26246.798828125,
+            26250.072265625,
+            26256.841796875,
+            26256.841796875,
+            26269.220703125,
+            26262.390625,
+            26259.0546875
+        ],
+        "80_ci_lower": [
+            26197.55859375,
+            26197.74609375,
+            26198.6953125,
+            26222.38671875,
+            26222.38671875,
+            26228.19921875,
+            26222.150390625
+        ],
+        "80_ci_upper": [
+            26279.03125,
+            26279.03125,
+            26279.03125,
+            26279.03125,
+            26279.03125,
+            26276.552734375,
+            26276.552734375
+        ],
+        "95_ci_lower": [
+            26188.65625,
+            26188.65625,
+            26188.65625,
+            26198.798828125,
+            26198.798828125,
+            26198.798828125,
+            26197.552734375
+        ],
+        "95_ci_upper": [
+            26329.203125,
+            26329.203125,
+            26329.203125,
+            26329.203125,
+            26329.203125,
+            26329.203125,
+            26329.203125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend September 2026 current status"
+        ],
+        "key_findings": "As of September 2, 2026, the USD/VND exchange rate is hovering around 26,260\u201326,280 VND/USD, consistent with global market conditions where the USD remains stable against emerging market currencies. Recent news reports highlight moderate market activity for the pair as gold prices and other assets see volatility."
+    }
+}
