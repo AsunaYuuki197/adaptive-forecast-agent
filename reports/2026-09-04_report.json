@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 111.5116436298077,
+        "RMSE": 128.75372018090283,
+        "MAPE": 0.004271347935136874
+    },
+    "metrics_holdout_final": {
+        "MAE": 111.5116436298077,
+        "RMSE": 128.75372018090283,
+        "MAPE": 0.004271347935136874
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is directionally reasonable and aligns with current market expectations of upward pressure on the USD/VND exchange rate.",
+        "diagnose": "High predictive accuracy (MAPE 0.43%) with stable performance (low RMSE/MAE ratio). The model is slightly conservative/flat.",
+        "contextualize": "Market sentiment, supported by Fed policy expectations, aligns with the model's prediction of a stronger USD against the VND.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 120,
+        "max_depth": 4,
+        "learning_rate": 0.08
+    },
+    "7_day_forecast": {
+        "point": [
+            26248.552734375,
+            26250.837890625,
+            26260.7734375,
+            26259.14453125,
+            26271.388671875,
+            26271.65625,
+            26264.443359375
+        ],
+        "80_ci_lower": [
+            26240.033203125,
+            26240.603515625,
+            26243.900390625,
+            26243.384765625,
+            26248.267578125,
+            26244.662109375,
+            26244.234375
+        ],
+        "80_ci_upper": [
+            26283.787109375,
+            26283.787109375,
+            26283.787109375,
+            26285.623046875,
+            26285.623046875,
+            26285.623046875,
+            26285.623046875
+        ],
+        "95_ci_lower": [
+            26237.099609375,
+            26237.099609375,
+            26237.099609375,
+            26237.099609375,
+            26237.099609375,
+            26237.099609375,
+            26237.099609375
+        ],
+        "95_ci_upper": [
+            26330.14453125,
+            26330.14453125,
+            26330.14453125,
+            26330.14453125,
+            26330.14453125,
+            26330.14453125,
+            26330.14453125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate news September 2026 current trends"
+        ],
+        "key_findings": "As of September 3, 2026, the USD/VND exchange rate was around 25,860. Market analysts and reports indicate pressure on the Vietnamese Dong due to potential Federal Reserve interest rate hikes in late 2026. Experts have projected the exchange rate could potentially reach 26,400 in Q3 2026. The current model forecast of ~26,260 aligns closely with the market sentiment and the upward pressure on the USD."
+    }
+}
