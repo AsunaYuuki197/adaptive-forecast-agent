@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 128.118515625,
+        "RMSE": 143.66259540610122,
+        "MAPE": 0.004908589330796202
+    },
+    "metrics_holdout_final": {
+        "MAE": 154.09,
+        "RMSE": 170.36468744762212,
+        "MAPE": 0.005903058975340817
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast displays an unrealistic lack of volatility for a currency pair, suggesting an overly aggressive smoothing mechanism.",
+        "diagnose": "The model exhibits signs of overfitting or excessive smoothing, evidenced by an extremely low MAPE and an essentially stagnant 7-day trajectory.",
+        "contextualize": "High volatility in Vietnamese asset markets (specifically gold) suggests the macro environment is currently dynamic, not static, rendering a flat currency forecast unreliable.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02
+    },
+    "7_day_forecast": {
+        "point": [
+            26294.0234375,
+            26295.0,
+            26301.0859375,
+            26293.18359375,
+            26264.55859375,
+            26267.083984375,
+            26254.724609375
+        ],
+        "80_ci_lower": [
+            26258.423828125,
+            26261.21875,
+            26261.091796875,
+            26268.630859375,
+            26253.6640625,
+            26267.564453125,
+            26260.037109375
+        ],
+        "80_ci_upper": [
+            26317.17578125,
+            26316.896484375,
+            26314.91796875,
+            26309.23828125,
+            26308.38671875,
+            26308.6484375,
+            26312.51953125
+        ],
+        "95_ci_lower": [
+            26239.60546875,
+            26239.60546875,
+            26239.60546875,
+            26239.60546875,
+            26239.60546875,
+            26239.60546875,
+            26227.232421875
+        ],
+        "95_ci_upper": [
+            26341.5078125,
+            26341.5078125,
+            26341.5078125,
+            26341.5078125,
+            26341.5078125,
+            26341.5078125,
+            26341.5078125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend September 2026 economic news Vietnam"
+        ],
+        "key_findings": "As of September 6-7, 2026, the Vietnamese financial environment is experiencing volatility, notably marked by a significant downturn in domestic gold prices and high volatility in various speculative assets denominated in VND. There is no specific news of a catastrophic devaluation event for the currency itself, but market sentiment is cautious regarding gold and broader economic stability."
+    }
+}
