@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 179.17638221153845,
+        "RMSE": 198.09887783553472,
+        "MAPE": 0.00687333561217768
+    },
+    "metrics_holdout_final": {
+        "MAE": 179.17638221153845,
+        "RMSE": 198.09887783553472,
+        "MAPE": 0.00687333561217768
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable consolidation phase for the VND=X pair, with values consistently hovering near the 26,250-26,290 range.",
+        "diagnose": "The model performs excellently, evidenced by a very low MAPE (0.69%), suggesting high accuracy and no significant signs of overfitting or underfitting.",
+        "contextualize": "Recent market sentiment regarding Vietnam's banking liquidity and potential interest rate peaks provides a logical backdrop for a stable currency outlook.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26288.58203125,
+            26290.857421875,
+            26289.888671875,
+            26284.609375,
+            26260.544921875,
+            26258.04296875,
+            26255.798828125
+        ],
+        "80_ci_lower": [
+            26252.259765625,
+            26251.1015625,
+            26248.900390625,
+            26249.666015625,
+            26241.55859375,
+            26260.271484375,
+            26251.392578125
+        ],
+        "80_ci_upper": [
+            26306.373046875,
+            26301.6171875,
+            26299.88671875,
+            26299.498046875,
+            26277.58984375,
+            26278.16015625,
+            26278.548828125
+        ],
+        "95_ci_lower": [
+            26243.859375,
+            26241.95703125,
+            26242.4921875,
+            26241.95703125,
+            26242.2265625,
+            26244.12890625,
+            26231.95703125
+        ],
+        "95_ci_upper": [
+            26336.2265625,
+            26332.54296875,
+            26331.328125,
+            26331.328125,
+            26331.14453125,
+            26331.14453125,
+            26331.14453125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend September 2026 macroeconomic news"
+        ],
+        "key_findings": "Macroeconomic data from early September 2026 suggests potential stabilization in Vietnam's banking liquidity, with deposit growth outpacing credit growth, potentially capping interest rates. The forecast reflects this stability with a very tight range around the 26,200-26,300 VND level."
+    }
+}
