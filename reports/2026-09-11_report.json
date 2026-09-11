@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 172.04987980769232,
+        "RMSE": 189.79433699489098,
+        "MAPE": 0.006603152149653192
+    },
+    "metrics_holdout_final": {
+        "MAE": 184.93870192307693,
+        "RMSE": 202.16890411143564,
+        "MAPE": 0.007097284017083588
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is reasonably anchored near current spot rates but lacks necessary volatility.",
+        "diagnose": "The model appears to be overfitting to a stable mean, showing suspiciously low variance in the forecast horizon.",
+        "contextualize": "Upward pressure on the USD/VND pair is reported in recent news, aligning with the model's slightly elevated price target relative to the bank rate.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.08
+    },
+    "7_day_forecast": {
+        "point": [
+            26279.55078125,
+            26274.826171875,
+            26273.26953125,
+            26270.8828125,
+            26257.912109375,
+            26256.470703125,
+            26254.8984375
+        ],
+        "80_ci_lower": [
+            26256.84765625,
+            26257.419921875,
+            26254.2265625,
+            26254.169921875,
+            26246.109375,
+            26249.6796875,
+            26244.16015625
+        ],
+        "80_ci_upper": [
+            26311.259765625,
+            26310.509765625,
+            26302.328125,
+            26302.328125,
+            26301.05859375,
+            26277.09375,
+            26279.205078125
+        ],
+        "95_ci_lower": [
+            26245.408203125,
+            26239.646484375,
+            26239.646484375,
+            26239.646484375,
+            26239.646484375,
+            26245.408203125,
+            26235.8125
+        ],
+        "95_ci_upper": [
+            26322.36328125,
+            26321.18359375,
+            26318.455078125,
+            26318.455078125,
+            26318.421875,
+            26318.421875,
+            26318.421875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate news September 2026"
+        ],
+        "key_findings": "As of September 10, 2026, the USD/VND exchange rate is hovering around 26,100 at Vietcombank and approximately 25,760 on the black market. There is documented upward pressure on the dollar due to economic factors, despite the State Bank of Vietnam occasionally adjusting the reference rate."
+    }
+}
