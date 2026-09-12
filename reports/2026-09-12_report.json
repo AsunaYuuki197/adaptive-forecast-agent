@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 172.08834134615384,
+        "RMSE": 189.8641622870289,
+        "MAPE": 0.006604655704957427
+    },
+    "metrics_holdout_final": {
+        "MAE": 184.03327824519232,
+        "RMSE": 201.63323297027765,
+        "MAPE": 0.007062684452150195
+    },
+    "agent_evaluation": {
+        "evaluate": "Forecast is mathematically precise but economically unrealistic due to lack of volatility.",
+        "diagnose": "Model exhibits signs of overfitting and failure to capture market-driven currency volatility.",
+        "contextualize": "Model ignores macroeconomic context of Vietnam's K-shaped growth and central bank credit policies.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26279.07421875,
+            26277.376953125,
+            26274.9453125,
+            26271.203125,
+            26262.626953125,
+            26261.845703125,
+            26261.83984375
+        ],
+        "80_ci_lower": [
+            26252.48828125,
+            26253.01953125,
+            26253.107421875,
+            26251.333984375,
+            26246.068359375,
+            26247.603515625,
+            26248.30859375
+        ],
+        "80_ci_upper": [
+            26319.44140625,
+            26315.515625,
+            26312.859375,
+            26310.5703125,
+            26310.107421875,
+            26310.1015625,
+            26308.92578125
+        ],
+        "95_ci_lower": [
+            26237.208984375,
+            26237.35546875,
+            26238.185546875,
+            26238.203125,
+            26238.873046875,
+            26239.375,
+            26235.125
+        ],
+        "95_ci_upper": [
+            26344.228515625,
+            26341.619140625,
+            26341.134765625,
+            26341.1171875,
+            26341.205078125,
+            26341.138671875,
+            26341.10546875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD/VND exchange rate September 2026 and recent economic news Vietnam September 2026"
+        ],
+        "key_findings": "Vietnam is experiencing an 8.2% GDP growth rate in H1 2026, driven by high industrial production and exports. However, the economy is described as 'K-shaped', with large, politically favored conglomerates receiving disproportionate credit. The State Bank of Vietnam is managing liquidity for key projects. The USD/VND (VND=X) is trading in a range consistent with these macroeconomic pressures."
+    }
+}
