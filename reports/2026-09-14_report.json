@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 175.421640625,
+        "RMSE": 192.06257447002642,
+        "MAPE": 0.006736100962185884
+    },
+    "metrics_holdout_final": {
+        "MAE": 192.146015625,
+        "RMSE": 207.3251737572947,
+        "MAPE": 0.007377424561706408
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast appears unrealistically stable and lacks directional movement, failing to reflect current market pressures.",
+        "diagnose": "High likelihood of overfitting and loss of sensitivity to market trends; the model is producing a 'stagnant' forecast.",
+        "contextualize": "Macroeconomic reports for September 2026 highlight upward pressure on the VND/USD rate due to global trade risks and export demand issues, which the model is ignoring.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26269.2734375,
+            26269.126953125,
+            26267.96875,
+            26266.828125,
+            26264.974609375,
+            26262.998046875,
+            26260.015625
+        ],
+        "80_ci_lower": [
+            26242.03515625,
+            26241.73828125,
+            26239.98046875,
+            26240.095703125,
+            26238.177734375,
+            26237.98046875,
+            26237.51171875
+        ],
+        "80_ci_upper": [
+            26316.767578125,
+            26313.50390625,
+            26309.123046875,
+            26307.796875,
+            26307.302734375,
+            26307.412109375,
+            26307.318359375
+        ],
+        "95_ci_lower": [
+            26223.984375,
+            26223.984375,
+            26223.861328125,
+            26223.861328125,
+            26223.24609375,
+            26227.21875,
+            26230.392578125
+        ],
+        "95_ci_upper": [
+            26344.115234375,
+            26341.923828125,
+            26340.46875,
+            26340.421875,
+            26340.421875,
+            26340.421875,
+            26340.421875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend September 2026"
+        ],
+        "key_findings": "The VND/USD exchange rate is experiencing upward pressure as of September 2026, driven by global market conditions and trade-related risks. The model predicts a flat-to-slightly-decreasing trajectory for the next 7 days, which contradicts the broader fundamental trend of upward pressure."
+    }
+}
