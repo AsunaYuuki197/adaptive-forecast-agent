@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 177.9053125,
+        "RMSE": 194.8393778978635,
+        "MAPE": 0.0068336413817778495
+    },
+    "metrics_holdout_final": {
+        "MAE": 177.9053125,
+        "RMSE": 194.8393778978635,
+        "MAPE": 0.0068336413817778495
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is unrealistic and stagnant, failing to reflect the inherent volatility of currency markets.",
+        "diagnose": "The model is likely overfitted, evidenced by the extremely low MAPE and lack of directional variance in the forecast.",
+        "contextualize": "Recent macroeconomic data highlights ongoing exchange-rate pressure and market volatility; the model fails to capture these fundamental inputs.",
+        "recommend": "retrain",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 7,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26247.58984375,
+            26247.58984375,
+            26247.58984375,
+            26246.892578125,
+            26246.892578125,
+            26246.892578125,
+            26243.740234375
+        ],
+        "80_ci_lower": [
+            26192.875,
+            26192.875,
+            26192.875,
+            26192.875,
+            26192.875,
+            26192.875,
+            26228.267578125
+        ],
+        "80_ci_upper": [
+            26298.986328125,
+            26298.193359375,
+            26298.193359375,
+            26298.193359375,
+            26298.193359375,
+            26298.193359375,
+            26298.26171875
+        ],
+        "95_ci_lower": [
+            26146.6953125,
+            26146.6953125,
+            26146.6953125,
+            26146.6953125,
+            26146.6953125,
+            26146.6953125,
+            26163.005859375
+        ],
+        "95_ci_upper": [
+            26331.123046875,
+            26329.890625,
+            26329.486328125,
+            26329.486328125,
+            26329.486328125,
+            26329.486328125,
+            26329.486328125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend September 2026 macroeconomic news"
+        ],
+        "key_findings": "As of mid-September 2026, the USD/VND exchange rate is facing upward pressure due to a strong USD and global economic headwinds. Market reports indicate businesses are cautious regarding currency volatility. The model's stagnant forecast is inconsistent with the expected dynamic environment."
+    }
+}
