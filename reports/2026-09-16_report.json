@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 182.20087139423077,
+        "RMSE": 199.31824736931978,
+        "MAPE": 0.00699988949376024
+    },
+    "metrics_holdout_final": {
+        "MAE": 176.1650390625,
+        "RMSE": 193.76700719244903,
+        "MAPE": 0.006768306400435311
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is directionally aligned with recent market trends, showing a stable but slightly elevated trajectory consistent with the current USD/VND appreciation.",
+        "diagnose": "The model displays signs of overfitting or high persistence (MAPE 0.0070). The exceptionally narrow confidence interval indicates an underestimation of potential market volatility.",
+        "contextualize": "Recent news confirms a strengthening USD against the VND, supported by upward adjustments in the State Bank of Vietnam's reference rate. Global sentiment regarding Fed policy and geopolitical risks are current drivers not captured by the model's static range.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26241.197265625,
+            26241.197265625,
+            26241.197265625,
+            26241.197265625,
+            26241.197265625,
+            26241.197265625,
+            26238.501953125
+        ],
+        "80_ci_lower": [
+            26194.021484375,
+            26194.021484375,
+            26194.021484375,
+            26194.021484375,
+            26194.021484375,
+            26194.021484375,
+            26206.484375
+        ],
+        "80_ci_upper": [
+            26304.40625,
+            26304.279296875,
+            26304.279296875,
+            26301.8984375,
+            26301.8984375,
+            26301.8984375,
+            26301.8984375
+        ],
+        "95_ci_lower": [
+            26147.556640625,
+            26147.556640625,
+            26147.556640625,
+            26147.556640625,
+            26147.556640625,
+            26147.556640625,
+            26161.337890625
+        ],
+        "95_ci_upper": [
+            26339.14453125,
+            26339.14453125,
+            26339.14453125,
+            26336.98828125,
+            26336.98828125,
+            26336.98828125,
+            26336.98828125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend September 2026"
+        ],
+        "key_findings": "As of September 16, 2026, the USD/VND exchange rate is showing an upward trend, with the dollar recently trading around VND 26,130 at major banks. The State Bank of Vietnam has been gradually raising its reference rate in response to global dollar strength and macroeconomic pressures."
+    }
+}
