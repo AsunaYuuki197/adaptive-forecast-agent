@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 133.1346153846154,
+        "RMSE": 152.44227016537465,
+        "MAPE": 0.0051200719143860525
+    },
+    "metrics_holdout_final": {
+        "MAE": 145.68697415865384,
+        "RMSE": 163.65221630696175,
+        "MAPE": 0.00560207203110959
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is numerically accurate relative to current spot prices but functionally unrealistic due to its total lack of variance.",
+        "diagnose": "The model is likely suffering from underfitting or using a naive persistence strategy, masking volatility.",
+        "contextualize": "Market conditions are volatile due to recent Fed interest rate hikes, which this static forecast fails to capture.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 500,
+        "max_depth": 7,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26189.91796875,
+            26189.91796875,
+            26189.91796875,
+            26189.91796875,
+            26189.91796875,
+            26189.716796875,
+            26189.716796875
+        ],
+        "80_ci_lower": [
+            26115.435546875,
+            26115.435546875,
+            26115.435546875,
+            26115.435546875,
+            26099.021484375,
+            26082.392578125,
+            26068.0234375
+        ],
+        "80_ci_upper": [
+            26231.669921875,
+            26231.669921875,
+            26231.669921875,
+            26231.669921875,
+            26231.669921875,
+            26231.669921875,
+            26231.669921875
+        ],
+        "95_ci_lower": [
+            26108.2109375,
+            26108.2109375,
+            26108.2109375,
+            26108.2109375,
+            26108.2109375,
+            26100.4296875,
+            26070.6171875
+        ],
+        "95_ci_upper": [
+            26286.982421875,
+            26286.982421875,
+            26286.982421875,
+            26286.982421875,
+            26286.982421875,
+            26286.982421875,
+            26286.982421875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current VND/USD exchange rate September 2026 and recent economic news Vietnam"
+        ],
+        "key_findings": "The USD/VND exchange rate has been trading near 26,000\u201326,200 VND/USD in mid-September 2026. The State Bank of Vietnam set the reference rate around 25,637 VND/USD. Recent Fed interest rate hikes have placed slight depreciation pressure on the VND, but market analysts and the State Bank maintain stability through active management. The exchange rate is generally expected to oscillate around the 26,000 level."
+    }
+}
