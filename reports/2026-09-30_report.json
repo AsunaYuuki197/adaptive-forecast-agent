@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 161.6923828125,
+        "RMSE": 172.93018601559402,
+        "MAPE": 0.006220981063414328
+    },
+    "metrics_holdout_final": {
+        "MAE": 176.57481971153845,
+        "RMSE": 186.96806709618897,
+        "MAPE": 0.006793129315644166
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is numerically plausible but structurally suspicious due to its near-static trajectory.",
+        "diagnose": "High risk of overfitting suggested by extremely low MAPE (0.62%) and lack of variance in the forecast.",
+        "contextualize": "The forecast aligns with general long-term depreciation trends, but ignores short-term forex market volatility.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26195.109375,
+            26195.140625,
+            26195.02734375,
+            26194.70703125,
+            26192.271484375,
+            26180.27734375,
+            26172.962890625
+        ],
+        "80_ci_lower": [
+            26152.033203125,
+            26152.033203125,
+            26164.2109375,
+            26164.2734375,
+            26161.8203125,
+            26146.04296875,
+            26136.859375
+        ],
+        "80_ci_upper": [
+            26269.80078125,
+            26269.80078125,
+            26269.80078125,
+            26269.80078125,
+            26269.80078125,
+            26269.80078125,
+            26269.80078125
+        ],
+        "95_ci_lower": [
+            26089.310546875,
+            26089.453125,
+            26091.705078125,
+            26091.48828125,
+            26090.876953125,
+            26089.490234375,
+            26088.451171875
+        ],
+        "95_ci_upper": [
+            26330.05859375,
+            26330.05859375,
+            26330.05859375,
+            26330.05859375,
+            26330.05859375,
+            26330.05859375,
+            26330.05859375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X current price and market trends September 2026"
+        ],
+        "key_findings": "The ticker 'VND=X' typically represents the USD/VND exchange rate. As of late September 2026, the market for various assets in Vietnam remains stable but subject to macroeconomic monitoring. The provided forecast (ranging ~26,140 to 26,180) appears consistent with a standard, long-term depreciating trend of the VND against the USD in a high-interest or inflationary environment, though specific 2026 central bank data was not explicitly retrieved in the snippet."
+    }
+}
