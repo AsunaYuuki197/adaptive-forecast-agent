@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 156.47328125,
+        "RMSE": 166.17944133132536,
+        "MAPE": 0.006022389841970091
+    },
+    "metrics_holdout_final": {
+        "MAE": 156.47328125,
+        "RMSE": 166.17944133132536,
+        "MAPE": 0.006022389841970091
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly consistent with current spot market levels but lacks nuance regarding volatility.",
+        "diagnose": "High precision (MAPE 0.6%) suggests strong short-term alignment, but RMSE/MAE ratio indicates potential sensitivity to historical outliers and current smoothing.",
+        "contextualize": "Market reflects US Dollar strength and stable SBV interventions; the model currently ignores these external macro drivers.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "window_size": 14,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26163.08984375,
+            26165.80078125,
+            26167.642578125,
+            26164.07421875,
+            26164.07421875,
+            26136.2890625,
+            26117.232421875
+        ],
+        "80_ci_lower": [
+            26131.81640625,
+            26131.81640625,
+            26131.81640625,
+            26138.3046875,
+            26138.3046875,
+            26137.07421875,
+            26087.212890625
+        ],
+        "80_ci_upper": [
+            26212.298828125,
+            26212.298828125,
+            26212.298828125,
+            26212.298828125,
+            26212.298828125,
+            26195.00390625,
+            26195.00390625
+        ],
+        "95_ci_lower": [
+            26088.287109375,
+            26088.287109375,
+            26088.287109375,
+            26090.486328125,
+            26090.486328125,
+            26084.04296875,
+            26075.966796875
+        ],
+        "95_ci_upper": [
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current exchange rate VND/USD October 2026 and recent economic news Vietnam"
+        ],
+        "key_findings": "As of October 2, 2026, the USD/VND exchange rate at major banks like Vietcombank is approximately 26,150\u201326,160 VND/USD, while the black market rate is around 26,100 VND/USD. The State Bank of Vietnam has been managing the daily reference rate with slight decreases recently. Global USD strength and US Treasury yields are impacting local currency pressure."
+    }
+}
