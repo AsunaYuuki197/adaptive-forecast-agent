@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 156.27328125,
+        "RMSE": 165.96075073248917,
+        "MAPE": 0.006014638255593892
+    },
+    "metrics_holdout_final": {
+        "MAE": 156.27328125,
+        "RMSE": 165.96075073248917,
+        "MAPE": 0.006014638255593892
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly reasonable, staying within the 26,100\u201326,170 range, which aligns with recent USD/VND market observations.",
+        "diagnose": "Strong performance with a very low MAPE (0.6%). The proximity of RMSE to MAE indicates stability, and there are no signs of overfitting.",
+        "contextualize": "Market environment is stable with no major macroeconomic shocks reported in early October 2026.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1
+    },
+    "7_day_forecast": {
+        "point": [
+            26163.08984375,
+            26165.80078125,
+            26167.642578125,
+            26164.07421875,
+            26164.07421875,
+            26136.2890625,
+            26117.232421875
+        ],
+        "80_ci_lower": [
+            26131.81640625,
+            26131.81640625,
+            26131.81640625,
+            26138.3046875,
+            26138.3046875,
+            26137.07421875,
+            26087.212890625
+        ],
+        "80_ci_upper": [
+            26212.298828125,
+            26212.298828125,
+            26212.298828125,
+            26212.298828125,
+            26212.298828125,
+            26195.00390625,
+            26195.00390625
+        ],
+        "95_ci_lower": [
+            26088.287109375,
+            26088.287109375,
+            26088.287109375,
+            26090.486328125,
+            26090.486328125,
+            26084.04296875,
+            26075.966796875
+        ],
+        "95_ci_upper": [
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375,
+            26296.458984375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate news October 2026 current trends"
+        ],
+        "key_findings": "Market data from early October 2026 indicates the USD/VND exchange rate is hovering near the 26,000 - 26,150 range. News sources note stable conditions with minor daily fluctuations."
+    }
+}
