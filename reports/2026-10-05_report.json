@@ -1,0 +1,82 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 155.90171875,
+        "RMSE": 163.80155054273777,
+        "MAPE": 0.006000649237248642
+    },
+    "metrics_holdout_final": {
+        "MAE": 155.90171875,
+        "RMSE": 163.80155054273777,
+        "MAPE": 0.006000649237248642
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is highly reasonable and reflects a low-volatility, stable trading environment for the USD/VND pair.",
+        "diagnose": "The model is well-fitted with excellent error metrics (MAPE 0.6%). No evidence of overfitting or anomalous volatility sensitivity.",
+        "contextualize": "Recent market conditions show a consolidation phase for the VND, which the model has successfully captured.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26155.859375,
+            26155.859375,
+            26160.447265625,
+            26159.876953125,
+            26159.876953125,
+            26132.6015625,
+            26113.1171875
+        ],
+        "80_ci_lower": [
+            26141.2109375,
+            26141.2109375,
+            26141.376953125,
+            26143.033203125,
+            26137.572265625,
+            26124.677734375,
+            26071.421875
+        ],
+        "80_ci_upper": [
+            26210.6953125,
+            26210.6953125,
+            26210.6953125,
+            26210.6953125,
+            26210.6953125,
+            26190.587890625,
+            26190.587890625
+        ],
+        "95_ci_lower": [
+            26084.712890625,
+            26084.712890625,
+            26084.712890625,
+            26085.865234375,
+            26085.865234375,
+            26085.865234375,
+            26062.681640625
+        ],
+        "95_ci_upper": [
+            26291.736328125,
+            26291.736328125,
+            26291.736328125,
+            26291.736328125,
+            26291.736328125,
+            26291.736328125,
+            26291.736328125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trends October 2026",
+            "USD/VND exchange rate news October 2026",
+            "Vietnam macroeconomic outlook October 2026"
+        ],
+        "key_findings": "The USD/VND (VND=X) is currently trading in a highly stable, tight range. Given the current date of October 2026, the currency pair shows minimal volatility, reflecting strong central bank intervention or a period of macroeconomic stabilization in Vietnam. The model's low MAPE (0.6%) is consistent with this low-volatility environment."
+    }
+}
