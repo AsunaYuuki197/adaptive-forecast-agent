@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 149.435546875,
+        "RMSE": 155.44008387425427,
+        "MAPE": 0.00575247647276961
+    },
+    "metrics_holdout_final": {
+        "MAE": 149.435546875,
+        "RMSE": 155.44008387425427,
+        "MAPE": 0.00575247647276961
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a tight, stable consolidation range typical of low-volatility currency periods.",
+        "diagnose": "The model displays excellent fit metrics (MAPE < 1%), with no evidence of overfitting or sensitivity to outliers.",
+        "contextualize": "No significant macro-economic shocks identified; the forecast appears to reflect current market stability.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26140.3671875,
+            26140.3671875,
+            26146.85546875,
+            26155.01953125,
+            26134.740234375,
+            26127.689453125,
+            26118.3203125
+        ],
+        "80_ci_lower": [
+            26116.166015625,
+            26114.849609375,
+            26114.849609375,
+            26115.65625,
+            26114.6875,
+            26099.0234375,
+            26068.599609375
+        ],
+        "80_ci_upper": [
+            26204.33984375,
+            26204.33984375,
+            26204.33984375,
+            26204.33984375,
+            26204.33984375,
+            26180.470703125,
+            26180.470703125
+        ],
+        "95_ci_lower": [
+            26077.771484375,
+            26061.04296875,
+            26061.04296875,
+            26061.04296875,
+            26061.04296875,
+            26061.04296875,
+            26061.04296875
+        ],
+        "95_ci_upper": [
+            26287.2109375,
+            26287.2109375,
+            26287.2109375,
+            26287.2109375,
+            26287.2109375,
+            26287.2109375,
+            26287.2109375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X currency exchange rate trend October 2026 news Vietnam economy"
+        ],
+        "key_findings": "Search results did not provide specific macroeconomic data or trends for the USD/VND (VND=X) exchange rate for October 2026. Available information focused on niche cryptocurrency fluctuations against the VND, which is irrelevant to the institutional USD/VND currency pair."
+    }
+}
