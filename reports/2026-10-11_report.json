@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 166.57279146634616,
+        "RMSE": 174.7593616355319,
+        "MAPE": 0.0064160209052586134
+    },
+    "metrics_holdout_final": {
+        "MAE": 166.57279146634616,
+        "RMSE": 174.7593616355319,
+        "MAPE": 0.0064160209052586134
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is well-aligned with the current trading range of approximately 26,070-26,170 VND/USD seen in the domestic banking sector.",
+        "diagnose": "The model exhibits strong generalization (MAPE 0.64%) and is not showing signs of significant overfitting or underfitting given the stable error metrics.",
+        "contextualize": "Local Vietnamese market data suggests a downward trend in USD/VND bank rates, matching the model's flat-to-slightly-cooling forecast.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1
+    },
+    "7_day_forecast": {
+        "point": [
+            26147.3515625,
+            26146.62890625,
+            26146.62890625,
+            26149.64453125,
+            26149.64453125,
+            26144.38671875,
+            26104.703125
+        ],
+        "80_ci_lower": [
+            26095.04296875,
+            26087.8984375,
+            26087.8984375,
+            26088.095703125,
+            26088.095703125,
+            26088.095703125,
+            26068.72265625
+        ],
+        "80_ci_upper": [
+            26183.0234375,
+            26183.0234375,
+            26183.0234375,
+            26183.0234375,
+            26183.0234375,
+            26172.4375,
+            26172.4375
+        ],
+        "95_ci_lower": [
+            26078.349609375,
+            26061.201171875,
+            26061.201171875,
+            26061.201171875,
+            26061.201171875,
+            26061.201171875,
+            26059.708984375
+        ],
+        "95_ci_upper": [
+            26283.90625,
+            26283.90625,
+            26283.90625,
+            26283.90625,
+            26283.90625,
+            26283.90625,
+            26283.90625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current VND/USD exchange rate trend October 2026 macroeconomic news Vietnam"
+        ],
+        "key_findings": "As of October 10, 2026, the USD/VND exchange rate in commercial banks has been trending downward despite a globally strong USD index (DXY > 102). Specifically, banks like Vietcombank have reported selling prices around 26,070 VND/USD, with a general downward pressure noted since early October. The state bank's central exchange rate has remained stable around 25,630 VND/USD."
+    }
+}
