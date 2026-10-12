@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 174.12453125,
+        "RMSE": 179.95294665536525,
+        "MAPE": 0.006706992101251416
+    },
+    "metrics_holdout_final": {
+        "MAE": 175.178671875,
+        "RMSE": 180.08384566775973,
+        "MAPE": 0.006747479299919047
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast trajectory is highly linear and stable, trending slightly higher than current market spot rates (approx. 26,070), which is consistent with the current USD strength.",
+        "diagnose": "The model exhibits signs of potential overfitting, characterized by an unusually low MAPE (0.67%) for a currency pair. The consistency between MAE and RMSE suggests low-volatility bias.",
+        "contextualize": "External factors, including the DXY index strength and the SBV's management, act as anchors for the currency. The model assumes continuity, which is reasonable, but lacks sensitivity to upcoming data (US CPI).",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 80,
+        "max_depth": 2,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26148.74609375,
+            26146.7734375,
+            26149.72265625,
+            26149.72265625,
+            26149.72265625,
+            26136.55859375,
+            26112.365234375
+        ],
+        "80_ci_lower": [
+            26064.861328125,
+            26064.861328125,
+            26064.861328125,
+            26066.138671875,
+            26066.357421875,
+            26066.357421875,
+            26066.357421875
+        ],
+        "80_ci_upper": [
+            26242.79296875,
+            26242.79296875,
+            26242.79296875,
+            26242.79296875,
+            26242.79296875,
+            26242.79296875,
+            26242.79296875
+        ],
+        "95_ci_lower": [
+            26047.201171875,
+            26047.201171875,
+            26047.201171875,
+            26055.892578125,
+            26055.892578125,
+            26055.892578125,
+            26055.892578125
+        ],
+        "95_ci_upper": [
+            26321.8671875,
+            26321.8671875,
+            26321.8671875,
+            26321.8671875,
+            26321.8671875,
+            26321.8671875,
+            26321.8671875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend October 2026 macroeconomic news"
+        ],
+        "key_findings": "As of October 12, 2026, the USD/VND exchange rate remains stable, with commercial banks trading around 26,070 VND/USD. The US Dollar continues to receive support from the Federal Reserve's cautious monetary policy and a strong DXY (maintaining above 102). Market outlooks suggest a constructive but constrained view for the VND, limited by higher US yields and the State Bank of Vietnam's focus on balancing inflation and economic growth."
+    }
+}
