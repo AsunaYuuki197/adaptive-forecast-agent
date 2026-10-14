@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 170.7109375,
+        "RMSE": 175.16867351820903,
+        "MAPE": 0.006576706489603456
+    },
+    "metrics_holdout_final": {
+        "MAE": 158.244140625,
+        "RMSE": 163.043086459208,
+        "MAPE": 0.006096585353898203
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is mathematically stable but reflects a 'business-as-usual' state for a currency pair that is subject to sudden, non-linear central bank interventions.",
+        "diagnose": "The extremely low MAPE suggests the model is well-fit to the recent steady-state of the USD/VND pair, though there is a risk of underfitting potential volatility shocks.",
+        "contextualize": "The State Bank of Vietnam is actively intervening (reference rate adjustment, Oct 13), and U.S. CPI data (Oct 14) represents a high-impact risk factor for the USD side of the pair.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26124.244140625,
+            26124.876953125,
+            26125.923828125,
+            26128.1640625,
+            26128.310546875,
+            26104.634765625,
+            26069.99609375
+        ],
+        "80_ci_lower": [
+            25972.779296875,
+            25972.79296875,
+            25973.6328125,
+            25997.849609375,
+            25997.849609375,
+            26006.021484375,
+            25995.162109375
+        ],
+        "80_ci_upper": [
+            26156.802734375,
+            26156.802734375,
+            26156.802734375,
+            26156.802734375,
+            26156.802734375,
+            26150.234375,
+            26142.759765625
+        ],
+        "95_ci_lower": [
+            25964.806640625,
+            25994.7578125,
+            25997.484375,
+            25999.287109375,
+            25999.287109375,
+            25999.234375,
+            26020.228515625
+        ],
+        "95_ci_upper": [
+            26261.88671875,
+            26261.88671875,
+            26261.88671875,
+            26261.88671875,
+            26261.88671875,
+            26261.88671875,
+            26261.88671875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate trend news October 2026"
+        ],
+        "key_findings": "The USD/VND pair is heavily managed by the State Bank of Vietnam (SBV), which uses a reference exchange rate to peg/suppress the currency. Recent news (Oct 13, 2026) indicates the SBV raised the reference rate, suggesting active intervention against currency depreciation. Upcoming US economic data (CPI, Oct 14) poses significant volatility risk."
+    }
+}
