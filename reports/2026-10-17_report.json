@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 81.34990985576923,
+        "RMSE": 92.8144590560821,
+        "MAPE": 0.003136545913116132
+    },
+    "metrics_holdout_final": {
+        "MAE": 125.87755408653847,
+        "RMSE": 133.56922001344086,
+        "MAPE": 0.00485173982723083
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is numerically aligned with current market levels (~26,080) but is logically flawed due to zero variance over the 7-day horizon.",
+        "diagnose": "The model displays overfitting or reliance on a naive persistence strategy, resulting in zero forecast variance despite market volatility.",
+        "contextualize": "FX markets are currently reacting to a declining DXY and shifting Fed policy expectations, which requires a dynamic model, not a static one.",
+        "recommend": "retrained",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26086.71484375,
+            26085.830078125,
+            26085.830078125,
+            26083.8671875,
+            26082.380859375,
+            26073.470703125,
+            26072.716796875
+        ],
+        "80_ci_lower": [
+            25918.099609375,
+            25921.990234375,
+            25925.396484375,
+            25927.578125,
+            25927.55859375,
+            25935.748046875,
+            25950.20703125
+        ],
+        "80_ci_upper": [
+            26220.041015625,
+            26220.041015625,
+            26220.041015625,
+            26220.041015625,
+            26220.041015625,
+            26220.041015625,
+            26220.041015625
+        ],
+        "95_ci_lower": [
+            25907.837890625,
+            25907.951171875,
+            25908.771484375,
+            25910.15625,
+            25910.2734375,
+            25912.83984375,
+            25924.271484375
+        ],
+        "95_ci_upper": [
+            26311.255859375,
+            26311.255859375,
+            26311.255859375,
+            26311.255859375,
+            26311.255859375,
+            26311.255859375,
+            26311.255859375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend October 2026 news"
+        ],
+        "key_findings": "As of October 17, 2026, the USD/VND exchange rate is showing signs of stabilization and slight softening. The DXY (Dollar Index) experienced its first weekly decline after four weeks of gains. Major banks like Vietcombank are quoting selling prices around 26,080 VND/USD, consistent with the model's prediction of 26,042. However, the market is highly sensitive to US CPI data and Fed expectations, which have recently reduced the upward pressure on the USD."
+    }
+}
