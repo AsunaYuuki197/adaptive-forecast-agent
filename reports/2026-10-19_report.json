@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 45.29234375,
+        "RMSE": 60.9720063810745,
+        "MAPE": 0.00174720812206275
+    },
+    "metrics_holdout_final": {
+        "MAE": 45.29234375,
+        "RMSE": 60.9720063810745,
+        "MAPE": 0.00174720812206275
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is unrealistic, showing a flat, static trajectory that ignores market dynamics.",
+        "diagnose": "Severe underfitting/persistence failure. The model is predicting a constant value, rendering it useless for time-series analysis.",
+        "contextualize": "Recent USD/VND market data reflects active fluctuations due to macroeconomic pressures, which the model fails to incorporate.",
+        "recommend": "retrain",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 500,
+        "max_depth": 8,
+        "learning_rate": 0.01,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            26003.75390625,
+            26003.75390625,
+            26003.75390625,
+            26003.75390625,
+            26003.75390625,
+            26003.75390625,
+            26003.75390625
+        ],
+        "80_ci_lower": [
+            25910.43359375,
+            25910.43359375,
+            25910.43359375,
+            25910.43359375,
+            25910.43359375,
+            25910.43359375,
+            25910.43359375
+        ],
+        "80_ci_upper": [
+            26129.92578125,
+            26129.92578125,
+            26129.92578125,
+            26129.92578125,
+            26129.92578125,
+            26129.92578125,
+            26129.92578125
+        ],
+        "95_ci_lower": [
+            25904.732421875,
+            25904.732421875,
+            25904.5390625,
+            25904.732421875,
+            25904.732421875,
+            25904.732421875,
+            25904.732421875
+        ],
+        "95_ci_upper": [
+            26269.3359375,
+            26269.3359375,
+            26269.3359375,
+            26269.3359375,
+            26269.3359375,
+            26269.3359375,
+            26269.3359375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend October 2026 macroeconomic news"
+        ],
+        "key_findings": "The USD/VND exchange rate is seeing minor fluctuations (recent reference rate down 4 VND on Oct 15). Macroeconomic data from the US indicates rising inflationary pressures (Core PPI up YoY) and strong manufacturing indices, which typically support a strong USD. There is no evidence of a sudden, perfectly flat trajectory for the pair as predicted by the model."
+    }
+}
