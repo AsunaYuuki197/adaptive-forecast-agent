@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 39.791953125,
+        "RMSE": 54.36500172002041,
+        "MAPE": 0.00153518519415066
+    },
+    "metrics_holdout_final": {
+        "MAE": 39.791953125,
+        "RMSE": 54.36500172002041,
+        "MAPE": 0.00153518519415066
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is unrealistic, showing a completely flat trajectory for 7 days, which fails to capture daily currency pair volatility.",
+        "diagnose": "The model appears to be a naive/persistence model. The very low MAPE combined with a static forecast suggests extreme underfitting or a failure to model dynamic components.",
+        "contextualize": "Recent market data confirms downward pressure and active daily adjustments in the USD/VND pair, which the model ignores.",
+        "recommend": "retrain",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 500,
+        "max_depth": 8,
+        "learning_rate": 0.01,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "7_day_forecast": {
+        "point": [
+            25986.685546875,
+            25986.685546875,
+            25986.685546875,
+            25986.685546875,
+            25986.685546875,
+            25986.685546875,
+            25986.685546875
+        ],
+        "80_ci_lower": [
+            25969.572265625,
+            25969.572265625,
+            25969.572265625,
+            25969.572265625,
+            25969.572265625,
+            25913.517578125,
+            25913.517578125
+        ],
+        "80_ci_upper": [
+            26124.00390625,
+            26124.00390625,
+            26124.00390625,
+            26124.00390625,
+            26124.00390625,
+            26124.00390625,
+            26124.00390625
+        ],
+        "95_ci_lower": [
+            25935.78515625,
+            25935.78515625,
+            25935.78515625,
+            25935.78515625,
+            25935.78515625,
+            25904.2109375,
+            25904.2109375
+        ],
+        "95_ci_upper": [
+            26267.61328125,
+            26267.61328125,
+            26267.61328125,
+            26267.61328125,
+            26267.61328125,
+            26267.61328125,
+            26267.61328125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend October 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate (VND=X) saw downward pressure mid-October 2026, with major banks lowering rates from ~26,100 to ~26,060-26,080 VND/USD by October 16-17. The DXY index experienced its first weekly decline after four weeks of gains. The market is currently characterized by stabilization rather than a monotonic trajectory."
+    }
+}
