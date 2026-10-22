@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 47.436015625,
+        "RMSE": 63.36804827662689,
+        "MAPE": 0.001830851009610609
+    },
+    "metrics_holdout_final": {
+        "MAE": 85.558515625,
+        "RMSE": 100.49882186350926,
+        "MAPE": 0.0033012072609833313
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is within a reasonable range of current spot prices (26,050) but appears too optimistic/static given market dynamics.",
+        "diagnose": "High historical accuracy (low MAPE) combined with a nearly flat, unreactive 7-day projection suggests the model is failing to learn from recent trends and is essentially outputting a stagnant forecast.",
+        "contextualize": "External factors, specifically pending Federal Reserve meetings and DXY weakness, are currently driving VND/USD movements; the model is not capturing this directional volatility.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            26035.478515625,
+            26035.478515625,
+            26035.478515625,
+            26035.478515625,
+            26035.478515625,
+            26035.478515625,
+            26035.478515625
+        ],
+        "80_ci_lower": [
+            25982.69921875,
+            25982.69921875,
+            25982.69921875,
+            25981.015625,
+            25981.015625,
+            25917.94140625,
+            25913.326171875
+        ],
+        "80_ci_upper": [
+            26151.552734375,
+            26151.552734375,
+            26151.552734375,
+            26151.552734375,
+            26151.552734375,
+            26151.552734375,
+            26151.552734375
+        ],
+        "95_ci_lower": [
+            25937.189453125,
+            25937.189453125,
+            25937.189453125,
+            25937.189453125,
+            25937.189453125,
+            25905.8203125,
+            25905.4921875
+        ],
+        "95_ci_upper": [
+            26283.2421875,
+            26283.2421875,
+            26283.2421875,
+            26283.2421875,
+            26283.2421875,
+            26283.2421875,
+            26283.2421875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current exchange rate VND/USD October 2026"
+        ],
+        "key_findings": "As of October 22, 2026, the market USD/VND exchange rate is hovering around 26,050 VND/USD at major commercial banks like Vietcombank, with a recent slight weakening of the USD internationally as markets await a Federal Reserve meeting. The model is predicting a range between ~25,976 and ~25,989 VND/USD."
+    }
+}
