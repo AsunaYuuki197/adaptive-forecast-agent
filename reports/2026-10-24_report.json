@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 55.096484375,
+        "RMSE": 76.24748386421534,
+        "MAPE": 0.0021278970791964273
+    },
+    "metrics_holdout_final": {
+        "MAE": 55.096484375,
+        "RMSE": 76.24748386421534,
+        "MAPE": 0.0021278970791964273
+    },
+    "agent_evaluation": {
+        "evaluate": "Forecast is consistent with current market levels (~26,030 VND/USD).",
+        "diagnose": "High precision (0.21% MAPE) but exhibits a 'flat' projection characteristic indicative of dampened momentum.",
+        "contextualize": "Recent international USD weakness (DXY ~101.6) supports the model's projected stability/slight decline.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26004.51171875,
+            26004.51171875,
+            25990.111328125,
+            25982.580078125,
+            25982.580078125,
+            25982.580078125,
+            25982.580078125
+        ],
+        "80_ci_lower": [
+            25994.337890625,
+            25994.337890625,
+            25985.357421875,
+            25978.904296875,
+            25978.904296875,
+            25925.146484375,
+            25925.146484375
+        ],
+        "80_ci_upper": [
+            26106.7578125,
+            26106.7578125,
+            26106.7578125,
+            26106.7578125,
+            26106.7578125,
+            26106.7578125,
+            26106.7578125
+        ],
+        "95_ci_lower": [
+            25938.244140625,
+            25938.244140625,
+            25938.244140625,
+            25938.244140625,
+            25938.244140625,
+            25917.578125,
+            25918.732421875
+        ],
+        "95_ci_upper": [
+            26260.0390625,
+            26260.0390625,
+            26260.0390625,
+            26260.0390625,
+            26260.0390625,
+            26260.0390625,
+            26260.0390625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD VND exchange rate October 2026"
+        ],
+        "key_findings": "As of October 23, 2026, the USD/VND exchange rate is showing downward pressure, with bank selling prices around 26,030 VND/USD as the global DXY index weakens to approximately 101.60. Market sentiment is cautious ahead of an upcoming Fed policy meeting."
+    }
+}
