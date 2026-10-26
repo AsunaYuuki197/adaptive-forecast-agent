@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 59.74359375,
+        "RMSE": 82.06088376570887,
+        "MAPE": 0.0023080769484594933
+    },
+    "metrics_holdout_final": {
+        "MAE": 59.74359375,
+        "RMSE": 82.06088376570887,
+        "MAPE": 0.0023080769484594933
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast trajectory is realistic and consistent with current observed market levels around 26,000 VND/USD.",
+        "diagnose": "The model demonstrates excellent short-term accuracy (MAPE 0.23%). The relationship between MAE and RMSE confirms robustness against volatility.",
+        "contextualize": "Macro news confirms a stable USD/VND environment with DXY hovering near 101.75 and market focus on upcoming Fed policy decisions, mirroring the model's 'steady' output.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26004.75,
+            25999.74609375,
+            25991.23828125,
+            25983.767578125,
+            25983.767578125,
+            25981.23828125,
+            25981.23828125
+        ],
+        "80_ci_lower": [
+            25987.072265625,
+            25987.072265625,
+            25987.072265625,
+            25976.533203125,
+            25976.533203125,
+            25926.76953125,
+            25926.76953125
+        ],
+        "80_ci_upper": [
+            26102.6640625,
+            26102.6640625,
+            26102.6640625,
+            26102.6640625,
+            26102.6640625,
+            26102.6640625,
+            26102.6640625
+        ],
+        "95_ci_lower": [
+            25938.685546875,
+            25938.685546875,
+            25938.685546875,
+            25938.685546875,
+            25938.685546875,
+            25912.732421875,
+            25910.916015625
+        ],
+        "95_ci_upper": [
+            26256.826171875,
+            26256.826171875,
+            26256.826171875,
+            26256.826171875,
+            26256.826171875,
+            26256.826171875,
+            26256.826171875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate news October 2026"
+        ],
+        "key_findings": "As of late October 2026, the USD/VND exchange rate has been hovering around the 26,000 VND level at commercial banks (e.g., Vietcombank). The USD index (DXY) has been fluctuating between 101.6 and 101.8 points. Market sentiment is characterized by stability ahead of major Fed policy meetings, with some analysts forecasting a slight upward trend toward the end of the year."
+    }
+}
