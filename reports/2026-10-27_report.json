@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 67.253828125,
+        "RMSE": 89.97695153598359,
+        "MAPE": 0.0025986987180619276
+    },
+    "metrics_holdout_final": {
+        "MAE": 75.829345703125,
+        "RMSE": 95.60892459908553,
+        "MAPE": 0.0029296366122830036
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is overly conservative and deviates from current market selling rates.",
+        "diagnose": "Model is underfitting the recent volatility and upward pressure on the USD/VND pair.",
+        "contextualize": "Recent market news confirms the Dong is weakening, with banks quoting selling rates at 26,140, against the model's predicted range of ~25,980.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26009.654296875,
+            26009.654296875,
+            26009.654296875,
+            26009.654296875,
+            26009.654296875,
+            26009.654296875,
+            26009.654296875
+        ],
+        "80_ci_lower": [
+            25975.814453125,
+            25965.78515625,
+            25983.388671875,
+            25985.23828125,
+            25983.150390625,
+            25983.150390625,
+            25983.150390625
+        ],
+        "80_ci_upper": [
+            26078.44921875,
+            26078.44921875,
+            26078.44921875,
+            26078.44921875,
+            26078.44921875,
+            26078.44921875,
+            26078.44921875
+        ],
+        "95_ci_lower": [
+            25926.86328125,
+            25932.638671875,
+            25945.7421875,
+            25944.064453125,
+            25944.064453125,
+            25944.064453125,
+            25944.064453125
+        ],
+        "95_ci_upper": [
+            26236.353515625,
+            26236.353515625,
+            26236.353515625,
+            26236.353515625,
+            26236.353515625,
+            26236.353515625,
+            26236.353515625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend October 2026 macroeconomic news"
+        ],
+        "key_findings": "As of October 26, 2026, the USD/VND mid-market rate is approximately 25,837, though selling rates at banks have reached as high as 26,140. The Vietnamese Dong is experiencing pressure due to global dollar demand and anticipation of upcoming US inflation data. The market shows a high degree of volatility with a trading band of \u00b15%."
+    }
+}
