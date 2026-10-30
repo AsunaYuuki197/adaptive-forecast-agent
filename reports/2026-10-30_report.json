@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 87.280703125,
+        "RMSE": 109.82553686283848,
+        "MAPE": 0.0033746058586956278
+    },
+    "metrics_holdout_final": {
+        "MAE": 98.415703125,
+        "RMSE": 117.1038116088834,
+        "MAPE": 0.0038041471269723622
+    },
+    "agent_evaluation": {
+        "evaluate": "Forecast is numerically stable but contradicts current market momentum which is leaning towards USD appreciation.",
+        "diagnose": "High likelihood of overfitting (MAPE < 1%) and failure to incorporate current macroeconomic momentum (RMSE > MAE).",
+        "contextualize": "USD/VND is facing upward pressure due to SBV reference rate increases and global DXY strength; model predicts unrealistic stabilization/decline.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+    },
+    "7_day_forecast": {
+        "point": [
+            26015.126953125,
+            26009.259765625,
+            26000.484375,
+            26000.484375,
+            26000.484375,
+            26000.484375,
+            26000.439453125
+        ],
+        "80_ci_lower": [
+            25982.568359375,
+            25982.21875,
+            25981.044921875,
+            25981.45703125,
+            25981.45703125,
+            25920.23046875,
+            25913.734375
+        ],
+        "80_ci_upper": [
+            26154.3515625,
+            26154.3515625,
+            26154.3515625,
+            26154.3515625,
+            26154.3515625,
+            26154.3515625,
+            26154.3515625
+        ],
+        "95_ci_lower": [
+            25933.080078125,
+            25933.080078125,
+            25933.080078125,
+            25933.080078125,
+            25933.080078125,
+            25908.248046875,
+            25907.79296875
+        ],
+        "95_ci_upper": [
+            26287.55859375,
+            26287.55859375,
+            26287.55859375,
+            26287.55859375,
+            26287.55859375,
+            26287.55859375,
+            26287.55859375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current status and recent news VND=X October 2026 Vietnamese Dong USD exchange rate"
+        ],
+        "key_findings": "The USD/VND exchange rate has been under upward pressure recently, with the State Bank of Vietnam (SBV) reference rate trending upward (around 25,633 VND/USD). Commercial banks are quoting selling rates around 26,013 - 26,050 VND/USD as of late October 2026. The exchange rate is experiencing volatility influenced by global USD strength (DXY index) and domestic policy adjustments."
+    }
+}
