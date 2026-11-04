@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 113.34104567307692,
+        "RMSE": 137.66296564213172,
+        "MAPE": 0.00438623107766123
+    },
+    "metrics_holdout_final": {
+        "MAE": 113.34104567307692,
+        "RMSE": 137.66296564213172,
+        "MAPE": 0.00438623107766123
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a tight, realistic range consistent with current bank quotes.",
+        "diagnose": "High predictive accuracy (MAPE 0.44%) and stable error metrics (MAE/RMSE) indicate a well-fitted model.",
+        "contextualize": "Recent market data shows USD/VND trading just below 26,000, supporting the model's range.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26012.251953125,
+            26005.21875,
+            25983.060546875,
+            25987.52734375,
+            25984.212890625,
+            25984.212890625,
+            25989.44140625
+        ],
+        "80_ci_lower": [
+            25986.7734375,
+            25986.7734375,
+            25964.216796875,
+            25981.193359375,
+            25986.01953125,
+            25980.318359375,
+            25980.318359375
+        ],
+        "80_ci_upper": [
+            26077.2734375,
+            26077.2734375,
+            26077.2734375,
+            26077.2734375,
+            26077.2734375,
+            26077.2734375,
+            26077.2734375
+        ],
+        "95_ci_lower": [
+            25940.984375,
+            25940.984375,
+            25939.533203125,
+            25940.984375,
+            25940.984375,
+            25940.984375,
+            25925.3515625
+        ],
+        "95_ci_upper": [
+            26247.9140625,
+            26247.9140625,
+            26247.9140625,
+            26247.9140625,
+            26247.9140625,
+            26247.9140625,
+            26247.9140625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news November 2026"
+        ],
+        "key_findings": "As of November 4, 2026, the USD/VND exchange rate at major commercial banks is consistently trading below 26,000 VND/USD (e.g., Vietcombank selling at 25,960). The State Bank of Vietnam set the central exchange rate at 25,630 VND/USD. The VND has been performing well recently, ranking among Asia's top currencies despite global pressure, with market rates showing a downward trend."
+    }
+}
