@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 135.14738581730768,
+        "RMSE": 162.08257441897146,
+        "MAPE": 0.00523595265087531
+    },
+    "metrics_holdout_final": {
+        "MAE": 138.61365685096155,
+        "RMSE": 165.2989278294441,
+        "MAPE": 0.00537002386987663
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a steady consolidation phase, which is reasonable given recent stability, but may slightly underestimate current bearish momentum on the pair.",
+        "diagnose": "The model demonstrates excellent short-term predictive accuracy (MAPE 0.52%). No signs of overfitting or significant anomaly detection; the narrow CI reflects a period of low volatility.",
+        "contextualize": "Recent market data shows the VND strengthening against the USD due to improved currency supply and SBV interventions. The model's predicted range of ~25,980 is slightly above the most recent interbank selling rates of ~25,880-25,895.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            26013.216796875,
+            26009.94921875,
+            25983.291015625,
+            25984.158203125,
+            25994.330078125,
+            25984.494140625,
+            25988.44140625
+        ],
+        "80_ci_lower": [
+            25997.8125,
+            25996.837890625,
+            25974.09375,
+            25972.240234375,
+            25989.65625,
+            25989.189453125,
+            25982.70703125
+        ],
+        "80_ci_upper": [
+            26072.1328125,
+            26072.1328125,
+            26072.1328125,
+            26072.1328125,
+            26072.1328125,
+            26072.1328125,
+            26072.1328125
+        ],
+        "95_ci_lower": [
+            25944.984375,
+            25944.984375,
+            25938.017578125,
+            25938.017578125,
+            25944.984375,
+            25944.984375,
+            25933.8515625
+        ],
+        "95_ci_upper": [
+            26244.439453125,
+            26244.439453125,
+            26244.439453125,
+            26244.439453125,
+            26244.439453125,
+            26244.439453125,
+            26244.439453125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD to VND exchange rate trend November 2026 news"
+        ],
+        "key_findings": "As of early November 2026, the USD/VND exchange rate is showing a downward trend. Major banks are reporting selling prices below 26,000 VND/USD, with the State Bank of Vietnam consistently lowering the central exchange rate. Factors such as improved foreign currency supply and positive interest rate differentials have strengthened the Vietnamese Dong, which is currently among Asia's best-performing currencies."
+    }
+}
