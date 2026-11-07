@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 139.9053125,
+        "RMSE": 164.96024499895344,
+        "MAPE": 0.00542037693227563
+    },
+    "metrics_holdout_final": {
+        "MAE": 136.59814453125,
+        "RMSE": 157.81893191182135,
+        "MAPE": 0.005292276261247869
+    },
+    "agent_evaluation": {
+        "evaluate": "Model is over-predicting compared to the current market trend of USD/VND falling.",
+        "diagnose": "Model exhibits low MAPE but fails to capture current downward momentum, suggesting an over-reliance on historical averages.",
+        "contextualize": "Recent news confirms SBV is actively lowering the USD/VND reference rate, which is currently below the model's 26k+ projections.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            25994.16015625,
+            25994.16015625,
+            25994.16015625,
+            25994.16015625,
+            25994.16015625,
+            25994.16015625,
+            25994.16015625
+        ],
+        "80_ci_lower": [
+            25988.4609375,
+            25988.4609375,
+            25988.4609375,
+            25988.4609375,
+            25988.4609375,
+            25988.4609375,
+            25988.4609375
+        ],
+        "80_ci_upper": [
+            26125.39453125,
+            26125.39453125,
+            26125.39453125,
+            26125.39453125,
+            26125.39453125,
+            26125.39453125,
+            26125.39453125
+        ],
+        "95_ci_lower": [
+            25934.884765625,
+            25934.884765625,
+            25934.884765625,
+            25934.884765625,
+            25934.884765625,
+            25934.884765625,
+            25934.884765625
+        ],
+        "95_ci_upper": [
+            26263.435546875,
+            26263.435546875,
+            26263.435546875,
+            26263.435546875,
+            26263.435546875,
+            26263.435546875,
+            26263.435546875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend November 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been experiencing a downward trend as of early November 2026, with the State Bank of Vietnam consistently lowering the daily reference rate between Nov 2 and Nov 6, 2026. News reports characterize the US dollar as hitting 18-month lows at some Vietnamese banks during this period."
+    }
+}
