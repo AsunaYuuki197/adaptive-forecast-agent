@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 139.9053125,
+        "RMSE": 164.96024499895344,
+        "MAPE": 0.00542037693227563
+    },
+    "metrics_holdout_final": {
+        "MAE": 139.9053125,
+        "RMSE": 164.96024499895344,
+        "MAPE": 0.00542037693227563
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, range-bound movement ($25,980-$26,010), which is consistent with current market signals showing a tug-of-war between domestic stability and global USD strength.",
+        "diagnose": "High predictive accuracy indicated by a 0.54% MAPE. The tight gap between MAE and RMSE demonstrates good model stability and lack of overfitting.",
+        "contextualize": "News confirms conflicting pressures: a stronger global DXY vs. a softening domestic reference rate set by the SBV. The forecast effectively represents this neutral, sideways equilibrium.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26009.11328125,
+            26006.6328125,
+            25984.6640625,
+            25989.083984375,
+            25986.44921875,
+            25983.81640625,
+            25984.828125
+        ],
+        "80_ci_lower": [
+            25984.720703125,
+            25984.720703125,
+            25956.939453125,
+            25978.796875,
+            25981.576171875,
+            25981.576171875,
+            25973.958984375
+        ],
+        "80_ci_upper": [
+            26065.953125,
+            26065.953125,
+            26065.953125,
+            26065.953125,
+            26065.953125,
+            26065.953125,
+            26065.953125
+        ],
+        "95_ci_lower": [
+            25941.947265625,
+            25941.947265625,
+            25939.509765625,
+            25941.947265625,
+            25941.947265625,
+            25941.947265625,
+            25930.126953125
+        ],
+        "95_ci_upper": [
+            26242.34375,
+            26242.34375,
+            26242.34375,
+            26242.34375,
+            26242.34375,
+            26242.34375,
+            26242.34375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "current USD VND exchange rate trend November 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate has been under downward pressure domestically (with the State Bank of Vietnam lowering the reference rate), while the global USD (DXY) recently strengthened following stronger-than-expected US employment data. As of November 8, 2026, the market is exhibiting contrasting trends between domestic stability and international volatility."
+    }
+}
