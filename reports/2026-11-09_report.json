@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 159.41328125,
+        "RMSE": 187.88339968322342,
+        "MAPE": 0.0061820555405749
+    },
+    "metrics_holdout_final": {
+        "MAE": 153.37589518229166,
+        "RMSE": 179.1129926622164,
+        "MAPE": 0.005948484215664203
+    },
+    "agent_evaluation": {
+        "evaluate": "Forecast is reasonable and consistent with current domestic bank trading ranges.",
+        "diagnose": "High predictive accuracy (MAPE 0.62%), but exhibits potential 'persistence' bias that may fail to account for recent external USD strength.",
+        "contextualize": "Domestic downward trend via SBV, but external upward pressure from DXY recovery following positive US jobs data.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            25994.6796875,
+            25994.701171875,
+            25994.701171875,
+            25994.708984375,
+            25994.697265625,
+            25994.69921875,
+            25994.66015625
+        ],
+        "80_ci_lower": [
+            25989.79296875,
+            25989.79296875,
+            25992.900390625,
+            25992.900390625,
+            25992.900390625,
+            25992.900390625,
+            25992.900390625
+        ],
+        "80_ci_upper": [
+            26063.15234375,
+            26063.15234375,
+            26063.15234375,
+            26063.15234375,
+            26063.15234375,
+            26063.15234375,
+            26063.15234375
+        ],
+        "95_ci_lower": [
+            25944.49609375,
+            25944.49609375,
+            25944.49609375,
+            25944.49609375,
+            25944.49609375,
+            25944.49609375,
+            25944.49609375
+        ],
+        "95_ci_upper": [
+            26224.0625,
+            26224.0625,
+            26224.0625,
+            26224.0625,
+            26224.0625,
+            26224.0625,
+            26224.0625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD/VND exchange rate trend November 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate has been experiencing downward pressure domestically through early November 2026, with the State Bank of Vietnam (SBV) lowering the daily reference rate. However, external factors, specifically a strong recovery in the global USD index (DXY) following better-than-expected US employment data as of Nov 7-8, 2026, suggest a possible upward shift. Analysts noted a key monitoring range of 25,800-26,000 VND/USD for the coming week."
+    }
+}
