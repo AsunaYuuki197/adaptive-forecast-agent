@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 201.93900240384616,
+        "RMSE": 236.20606655874175,
+        "MAPE": 0.00784735574544214
+    },
+    "metrics_holdout_final": {
+        "MAE": 201.93900240384616,
+        "RMSE": 236.20606655874175,
+        "MAPE": 0.00784735574544214
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast shows a realistic, stable plateau consistent with current market conditions.",
+        "diagnose": "High predictive accuracy with a very low MAPE (0.78%) and balanced error metrics (RMSE/MAE).",
+        "contextualize": "Recent SBV interventions and market trends show the USD/VND rate stabilizing below 26,000, aligning with the model's flat output.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            26012.9921875,
+            26007.169921875,
+            25982.6640625,
+            25983.275390625,
+            25989.537109375,
+            25983.984375,
+            25984.78515625
+        ],
+        "80_ci_lower": [
+            25985.208984375,
+            25985.208984375,
+            25962.04296875,
+            25976.146484375,
+            25980.94140625,
+            25980.94140625,
+            25981.3359375
+        ],
+        "80_ci_upper": [
+            26058.267578125,
+            26058.267578125,
+            26058.267578125,
+            26058.267578125,
+            26058.267578125,
+            26058.267578125,
+            26058.267578125
+        ],
+        "95_ci_lower": [
+            25942.591796875,
+            25942.591796875,
+            25940.416015625,
+            25941.361328125,
+            25942.591796875,
+            25942.591796875,
+            25929.865234375
+        ],
+        "95_ci_upper": [
+            26234.021484375,
+            26234.021484375,
+            26234.021484375,
+            26234.021484375,
+            26234.021484375,
+            26234.021484375,
+            26234.021484375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate November 2026 economic news Vietnam Dong trends"
+        ],
+        "key_findings": "As of mid-November 2026, the USD/VND exchange rate has been under downward pressure. The State Bank of Vietnam (SBV) has been setting lower reference rates, and market rates at commercial banks are trading below the 26,000 VND/USD threshold. The SBV announced liquidity-boosting measures including spot foreign currency purchases starting November 11, 2026, intended to stabilize the market. The forecast of ~25,980-26,012 aligns with current market stabilization trends, reflecting a plateau rather than a sharp breakout."
+    }
+}
