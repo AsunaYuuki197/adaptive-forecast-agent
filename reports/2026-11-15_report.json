@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 205.7359375,
+        "RMSE": 237.2663241617693,
+        "MAPE": 0.007998172336862149
+    },
+    "metrics_holdout_final": {
+        "MAE": 211.25740559895834,
+        "RMSE": 242.3975841810345,
+        "MAPE": 0.00821380646897744
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast predicts a flat-to-slightly-downward trend (~25,970), which contradicts the current bullish momentum observed in the USD/VND market.",
+        "diagnose": "The model exhibits strong statistical fit (MAPE < 1%) but shows signs of underfitting regarding current macro-volatility, failing to capture the upward market pressure.",
+        "contextualize": "USD/VND is under pressure due to a strong DXY (~103) and expectations of Fed rate hikes. Market rates are diverging from official quotes, with black market rates hitting 26,140.",
+        "recommend": "adjusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            25999.787109375,
+            25999.2421875,
+            25998.806640625,
+            25998.806640625,
+            25998.806640625,
+            25998.806640625,
+            25998.685546875
+        ],
+        "80_ci_lower": [
+            25911.037109375,
+            25911.037109375,
+            25911.037109375,
+            25911.037109375,
+            25911.037109375,
+            25911.037109375,
+            25911.037109375
+        ],
+        "80_ci_upper": [
+            26031.837890625,
+            26031.837890625,
+            26031.837890625,
+            26031.837890625,
+            26031.837890625,
+            26031.837890625,
+            26031.837890625
+        ],
+        "95_ci_lower": [
+            25888.078125,
+            25888.078125,
+            25888.078125,
+            25888.078125,
+            25888.078125,
+            25888.078125,
+            25888.078125
+        ],
+        "95_ci_upper": [
+            26192.94921875,
+            26192.94921875,
+            26192.94921875,
+            26192.94921875,
+            26192.94921875,
+            26192.94921875,
+            26192.94921875
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate news November 2026"
+        ],
+        "key_findings": "As of mid-November 2026, the USD/VND exchange rate is experiencing significant upward pressure. The State Bank of Vietnam (SBV) has been adjusting the central exchange rate upward (25,637 VND as of Nov 14). Commercial banks are quoting selling rates around 25,910-25,920 VND, while the black market has seen the USD spike to 26,140 VND due to global USD strength (DXY ~103.4) and expectations of Federal Reserve rate hikes."
+    }
+}
