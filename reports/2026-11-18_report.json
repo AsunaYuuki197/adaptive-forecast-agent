@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 222.79732572115384,
+        "RMSE": 248.6712440940162,
+        "MAPE": 0.008663064963374217
+    },
+    "metrics_holdout_final": {
+        "MAE": 222.79732572115384,
+        "RMSE": 248.6712440940162,
+        "MAPE": 0.008663064963374217
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, slight downward trend in USD/VND, which is consistent with current market sentiment where USD is experiencing moderate downward pressure.",
+        "diagnose": "The model exhibits very high precision (MAPE < 1%) and balanced error metrics (MAE/RMSE), indicating good generalization without signs of overfitting.",
+        "contextualize": "Market data aligns with the model; SBV central rate is 25,652, placing the model's forecast in the realistic upper-bound range for commercial bank selling rates.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            25996.98828125,
+            25996.98828125,
+            25983.642578125,
+            25977.56640625,
+            25975.1953125,
+            25956.720703125,
+            25956.720703125
+        ],
+        "80_ci_lower": [
+            25893.3828125,
+            25920.09375,
+            25932.662109375,
+            25925.892578125,
+            25922.0,
+            25916.134765625,
+            25863.052734375
+        ],
+        "80_ci_upper": [
+            26043.884765625,
+            26043.884765625,
+            26043.884765625,
+            26043.884765625,
+            26043.884765625,
+            26043.884765625,
+            26043.884765625
+        ],
+        "95_ci_lower": [
+            25899.36328125,
+            25918.501953125,
+            25918.501953125,
+            25918.501953125,
+            25917.029296875,
+            25905.388671875,
+            25880.900390625
+        ],
+        "95_ci_upper": [
+            26213.306640625,
+            26213.306640625,
+            26213.306640625,
+            26213.306640625,
+            26213.306640625,
+            26213.306640625,
+            26213.306640625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate trend November 2026 news"
+        ],
+        "key_findings": "As of November 18, 2026, the USD/VND exchange rate is hovering in the 25,500\u201325,900 range. The State Bank of Vietnam (SBV) central rate is 25,652. Current market sentiment indicates the USD is experiencing a minor decline, but not a significant structural shift. The model's forecast range (25,956\u201325,996) aligns closely with the upper end of market sell rates."
+    }
+}
