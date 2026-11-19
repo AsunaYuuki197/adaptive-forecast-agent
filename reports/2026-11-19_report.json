@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 217.47581129807693,
+        "RMSE": 241.6375015426919,
+        "MAPE": 0.008457889727953725
+    },
+    "metrics_holdout_final": {
+        "MAE": 217.47581129807693,
+        "RMSE": 241.6375015426919,
+        "MAPE": 0.008457889727953725
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects values between 25,947 and 25,982, which is consistent with the current strong-USD environment, albeit at the higher end of recent trading bands.",
+        "diagnose": "Strong holdout performance (MAPE < 1%). The model exhibits high precision but a potentially over-conservative (flat) trend projection.",
+        "contextualize": "Upward pressure on USD/VND is driven by aggressive US Fed rate hike expectations, which the model reflects in its elevated baseline.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 120,
+        "max_depth": 4,
+        "learning_rate": 0.08
+    },
+    "7_day_forecast": {
+        "point": [
+            25981.951171875,
+            25981.951171875,
+            25977.7421875,
+            25969.986328125,
+            25947.916015625,
+            25946.939453125,
+            25959.205078125
+        ],
+        "80_ci_lower": [
+            25915.38671875,
+            25941.28515625,
+            25952.529296875,
+            25943.462890625,
+            25887.703125,
+            25888.283203125,
+            25878.509765625
+        ],
+        "80_ci_upper": [
+            26040.765625,
+            26040.765625,
+            26040.765625,
+            26040.765625,
+            26040.765625,
+            26040.765625,
+            26040.765625
+        ],
+        "95_ci_lower": [
+            25900.494140625,
+            25919.1640625,
+            25919.1640625,
+            25919.1640625,
+            25882.736328125,
+            25882.736328125,
+            25879.9140625
+        ],
+        "95_ci_upper": [
+            26211.009765625,
+            26211.009765625,
+            26211.009765625,
+            26211.009765625,
+            26211.009765625,
+            26211.009765625,
+            26211.009765625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate USD/VND November 2026 news trends"
+        ],
+        "key_findings": "As of November 19, 2026, the USD/VND central exchange rate is 25,646. Markets are currently pricing in further US Federal Reserve interest rate hikes in December 2026, which continues to exert upward pressure on the USD/VND pair. The exchange rate has shown recent volatility, peaking near 25,800 before showing signs of brief reversals. Commercial bank sell rates are often quoted near or above 25,900."
+    }
+}
