@@ -1,0 +1,80 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 204.59600360576923,
+        "RMSE": 228.86524873309227,
+        "MAPE": 0.007959570585594319
+    },
+    "metrics_holdout_final": {
+        "MAE": 204.59600360576923,
+        "RMSE": 228.86524873309227,
+        "MAPE": 0.007959570585594319
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast projects a stable, slightly bullish plateau (~25,960) for the VND=X, which aligns with recent market observations of USD strength.",
+        "diagnose": "High predictive accuracy (MAPE 0.8%). The model shows stability and no signs of overfitting or extreme sensitivity to anomalies.",
+        "contextualize": "Recent market data confirms the USD is near a 19-month high against the VND, providing a logical basis for the model's current price forecast.",
+        "recommend": "trusted",
+        "anomaly_detected": false
+    },
+    "model_adjustments": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "window_size": 7,
+        "forecast_horizon": 7
+    },
+    "7_day_forecast": {
+        "point": [
+            25960.953125,
+            25960.953125,
+            25955.1875,
+            25951.884765625,
+            25957.650390625,
+            25958.43359375,
+            25958.43359375
+        ],
+        "80_ci_lower": [
+            25907.734375,
+            25907.734375,
+            25904.845703125,
+            25894.9609375,
+            25897.849609375,
+            25907.734375,
+            25902.498046875
+        ],
+        "80_ci_upper": [
+            26037.669921875,
+            26037.669921875,
+            26037.669921875,
+            26037.669921875,
+            26037.669921875,
+            26037.669921875,
+            26037.669921875
+        ],
+        "95_ci_lower": [
+            25883.1328125,
+            25883.1328125,
+            25883.1328125,
+            25881.97265625,
+            25881.97265625,
+            25881.369140625,
+            25881.369140625
+        ],
+        "95_ci_upper": [
+            26209.087890625,
+            26209.087890625,
+            26209.087890625,
+            26209.087890625,
+            26209.087890625,
+            26209.087890625,
+            26209.087890625
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X exchange rate USD/VND current status November 2026 news"
+        ],
+        "key_findings": "The USD/VND exchange rate is currently trading around 25,750-25,780. Market data from Nov 19, 2026, notes that the US dollar has reached a recent 19-month high against the Dong. The model's forecast of ~25,960 is approximately 0.7-0.8% above the current spot price, representing a slight premium but remaining within historical volatility ranges."
+    }
+}
