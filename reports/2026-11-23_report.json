@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 190.717421875,
+        "RMSE": 214.20328056929176,
+        "MAPE": 0.007422237988443195
+    },
+    "metrics_holdout_final": {
+        "MAE": 194.25838216145834,
+        "RMSE": 216.2006232671579,
+        "MAPE": 0.007560780970701532
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is stagnant and does not reflect current market upward drift.",
+        "diagnose": "Possible underfitting or reliance on a naive persistence component. The high MAPE consistency hides the model's inability to predict directional movement.",
+        "contextualize": "The market is currently reacting to record-high SBV central rates and a strong global USD environment. The forecast ignores this fundamental momentum.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.03
+    },
+    "7_day_forecast": {
+        "point": [
+            25933.912109375,
+            25933.912109375,
+            25933.912109375,
+            25933.912109375,
+            25933.912109375,
+            25933.912109375,
+            25933.912109375
+        ],
+        "80_ci_lower": [
+            25909.716796875,
+            25909.716796875,
+            25909.716796875,
+            25909.716796875,
+            25909.716796875,
+            25909.716796875,
+            25909.716796875
+        ],
+        "80_ci_upper": [
+            26064.814453125,
+            26064.814453125,
+            26064.814453125,
+            26064.814453125,
+            26064.814453125,
+            26064.814453125,
+            26064.814453125
+        ],
+        "95_ci_lower": [
+            25874.130859375,
+            25874.130859375,
+            25874.130859375,
+            25874.130859375,
+            25874.130859375,
+            25874.130859375,
+            25874.130859375
+        ],
+        "95_ci_upper": [
+            26230.068359375,
+            26230.068359375,
+            26230.068359375,
+            26230.068359375,
+            26230.068359375,
+            26230.068359375,
+            26230.068359375
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "USD VND exchange rate November 2026 trends news"
+        ],
+        "key_findings": "As of November 23, 2026, the USD/VND exchange rate is under upward pressure. The State Bank of Vietnam (SBV) raised the central rate to a record 25,668 VND. Commercial banks are quoting USD selling prices near 25,980\u201325,990 VND. Market sentiment is driven by expectations of a Fed rate hike in December, high US bond yields, and geopolitical tensions, leading to a strong USD environment."
+    }
+}
