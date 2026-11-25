@@ -1,0 +1,78 @@
+{
+    "ticker": "VND=X",
+    "metrics_holdout_initial": {
+        "MAE": 160.17608173076923,
+        "RMSE": 184.48023883215464,
+        "MAPE": 0.006234323174551717
+    },
+    "metrics_holdout_final": {
+        "MAE": 188.12334735576923,
+        "RMSE": 209.20558114277483,
+        "MAPE": 0.007319867065865641
+    },
+    "agent_evaluation": {
+        "evaluate": "The forecast is numerically plausible but structurally unrealistic due to zero-variance output.",
+        "diagnose": "The model is underfitting, likely treating the recent trend as a static baseline rather than a dynamic series.",
+        "contextualize": "The forecasted price level is consistent with the current market spot rate of ~25,800-25,900, but ignores ongoing volatility drivers.",
+        "recommend": "adjusted",
+        "anomaly_detected": true
+    },
+    "model_adjustments": {
+        "n_estimators": 250,
+        "max_depth": 6,
+        "learning_rate": 0.05
+    },
+    "7_day_forecast": {
+        "point": [
+            25933.392578125,
+            25933.392578125,
+            25933.392578125,
+            25933.392578125,
+            25933.392578125,
+            25933.392578125,
+            25933.392578125
+        ],
+        "80_ci_lower": [
+            25890.279296875,
+            25890.279296875,
+            25890.279296875,
+            25892.185546875,
+            25892.2265625,
+            25887.373046875,
+            25887.396484375
+        ],
+        "80_ci_upper": [
+            26007.560546875,
+            26007.560546875,
+            26007.560546875,
+            26007.560546875,
+            26007.560546875,
+            26007.560546875,
+            26007.560546875
+        ],
+        "95_ci_lower": [
+            25878.111328125,
+            25878.111328125,
+            25878.111328125,
+            25880.619140625,
+            25881.482421875,
+            25880.0,
+            25879.890625
+        ],
+        "95_ci_upper": [
+            26180.86328125,
+            26180.86328125,
+            26180.86328125,
+            26180.86328125,
+            26180.86328125,
+            26180.86328125,
+            26180.86328125
+        ]
+    },
+    "proof_of_search": {
+        "queries_executed": [
+            "VND=X USD/VND exchange rate news November 2026"
+        ],
+        "key_findings": "The USD/VND exchange rate as of November 24, 2026, was approximately 25,801 VND. Recent market data shows the rate has been fluctuating between 25,600 and 26,000 VND throughout November 2026. The exchange rate is influenced by expectations of US Federal Reserve monetary policy and regional economic factors."
+    }
+}
